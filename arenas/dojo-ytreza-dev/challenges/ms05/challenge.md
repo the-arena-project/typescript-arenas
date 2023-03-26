@@ -1,12 +1,21 @@
 # Attention à la mine
 
-Cette fois, Julius te confronte à un champ de mines qui contient une seule case piégée.
+Tu viens de franchir l'épreuve précédente. Le sourire de Julius s'efface. Il t'applaudit doucement puis tu vois apparaître un rictus sur son visage.
 
-> Une seule case peut suffire à causer la destruction d'une armée. Fais preuve de prudence et de précision.
+> Merveilleux ! J'espère pour toi que tu as fait le bon choix. Nous verrons cela plus tard... Mais pour le moment, fais attention à toi, les choses sérieuses commencent dès maintenant. Au moindre faux pas que tu feras, ce sera la fin pour toi.
 
-Le test que tu dois faire passer est le suivant :
+Cette fois, Julius te confronte à un champ de mines qui peut contenir une mine.
+
+> Une seule mine peut suffire à causer la destruction d'une armée. Fais preuve de prudence et de précision.
+
+Les tests que tu dois faire passer sont les suivants :
 
 ```typescript
+    it("should solve empty field", () => {
+        const solved_field = minesweeper("")
+        expect(solved_field).toEqual("")
+    })
+
     it("should solve one mined cell", () => {
         const solved_field = minesweeper("*")
         expect(solved_field).toEqual("*")
@@ -17,4 +26,4 @@ Pour passer cette épreuve, tu dois commencer par faire un copier-coller du code
 
 Julius s'adresse de nouveau à toi. 
 
-> Que viens-tu de mettre en évidence dans cette épreuve ? Sauras-tu le mettre en valeur dans les prochaines épreuves ?
+> Un tout petit changement peut faire la différence. Seras-tu capable de le repérer ?
