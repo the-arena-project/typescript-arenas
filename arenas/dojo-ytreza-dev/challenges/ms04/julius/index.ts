@@ -1,7 +1,7 @@
 type MinesweeperFn = (field: string) => string
 
 export const minesweeper : MinesweeperFn = (field: string) => {
-    const solvedField : string = ""
+    let solvedField : string = ""
     if (field.length > 0) {
         solvedField += "0"
     }
