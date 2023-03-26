@@ -16,6 +16,8 @@ Le test que tu dois faire passer est le suivant :
 Le champ de mines contient une seule case vide représentée par un point "."
 Dans ce champ, il n'y a pas de mines. La sortie attendue est "0", qui signifie qu'il n'y a pas de mines adjacentes à la case vide.
 
-Tu dois maintenant écrire le code pour résoudre cette épreuve. Rappelle-toi de demander à Julius ce qu'il attend de toi. Si tu reçois une réponse négative (RED), corrige ton code et effectue un nouveau smart commit. Si tu reçois une réponse positive (GREEN), félicitations ! Tu peux passer à l'épreuve suivante.
+Pour passer cette épreuve, tu dois commencer par faire un copier-coller du code de l'épreuve précédente puis apporter la plus petite modification possible pour faire passer le test.
 
-N'oublie pas de rester simple pour satisfaire Julius.
+Rappelle-toi de demander à Julius ce qu'il attend de toi. Si tu reçois une réponse négative (RED), corrige ton code et effectue un nouveau smart commit. Si tu reçois une réponse positive (GREEN), félicitations ! Tu peux passer à l'épreuve suivante.
+
+N'oublie pas de rester le plus simple possible pour satisfaire Julius.
