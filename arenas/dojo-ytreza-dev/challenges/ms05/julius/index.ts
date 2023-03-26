@@ -1,6 +1,10 @@
 type MinesweeperFn = (field: string) => string
 
 export const minesweeper : MinesweeperFn = (field: string) => {
-    return ""
+    let solvedField : string = ""
+    if (field.length > 0) {
+        solvedField += "*"
+    }
+    return solvedField
 }
 
