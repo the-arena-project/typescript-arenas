@@ -1,7 +1,5 @@
 # Bienvenue dans le minesweeper challenge
 
-TODO : revoir tout le texte
-
 ## Description du kata
 Nous allons jouer au démineur (minesweeper en anglais). L'idée de ce kata est de proposer une application qui permette d'indiquer la position des mines et calculer le nombre de mines adjacentes aux cases vides.
 

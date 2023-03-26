@@ -1,7 +1,5 @@
 # Welcome to the minesweeper challenge
 
-TODO: review the whole text
-
 ## Description of the kata
 We are going to play minesweeper. The idea of this kata is to propose an application that allows you to indicate the position of mines and calculate the number of mines adjacent to empty squares.
 
