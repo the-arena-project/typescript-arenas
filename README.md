@@ -1,6 +1,6 @@
 # General documentation
 
-To learn more about how all of this works, please [check this out](https://thearenaproject.notion.site/Track-creation-04163e098f6b46b58afdc9c7e02104dd).
+To learn more about how all of this works, please [read the Official Documentation](https://docs.thearenaproject.co/).
 
 ## Getting started
 
