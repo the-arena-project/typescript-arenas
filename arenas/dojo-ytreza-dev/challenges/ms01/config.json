@@ -9,9 +9,9 @@
     "String.length"
   ],
   "name": "exemple //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt nameFr et nameEn.",
-  "nameFr": "exemple",
-  "nameEn": "example",
+  "nameFr": "Introduction au minesweeper challenge",
+  "nameEn": "Introduction to the minesweeper challenge",
   "hint": "Ceci est un hint. //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt hintFr et hintEn.",
-  "hintFr": "💡Car les exemples génériques, j'adore ça.",
-  "hintEn": "💡Because I love generic examples."
+  "hintFr": "💡 Renseignes toi sur la méthode TDD et le cycle Red Green Refacto",
+  "hintEn": "💡 Find out more about the TDD method and the Red Green Refacto cycle"
 }

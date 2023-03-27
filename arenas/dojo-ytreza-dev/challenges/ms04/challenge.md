@@ -1,10 +1,8 @@
-# Une seule case vide
+# Deux épreuves à la fois
 
-Tu te retrouves face à une nouvelle épreuve. Cette fois-ci, Julius te demande de résoudre un champ de mines contenant une seule case vide.
+Tu progresses petit à petit dans l'arène. Peut-être as-tu trouvé les épreuves précédentes trop facile ? Julius s'en rend compte et te dit avec un sourire féroce.
 
-> Ne sous-estime pas la difficulté de cette tâche. Même si cette épreuve peut sembler simple, il est important de maîtriser chaque étape de notre progression.
-
-Le test que tu dois faire passer est le suivant :
+> Bravo, tu as su triomphé de mes deux champs de mines, mais sauras-tu en gérer deux d'un coup ?
 
 ```typescript
     it("should solve empty field", () => {
@@ -18,11 +16,16 @@ Le test que tu dois faire passer est le suivant :
     })
 ```
 
-Le champ de mines contient une seule case vide représentée par un point "."
-Dans ce champ, il n'y a pas de mines. La sortie attendue est "0", qui signifie qu'il n'y a pas de mines adjacentes à la case vide.
+Julius poursuit : 
 
-Pour passer cette épreuve, tu dois commencer par faire un copier-coller du code de l'épreuve précédente puis apporter la plus petite modification possible pour faire passer le test.
+> Cela peut sembler facile, mais beaucoup sont tombés sous cette épreuve. La complexité les as perdus.
+
+Dans cette épreuve, tu vas continuer à utiliser le code précédent. Mais tu as un choix à faire, du code de quelle épreuve repartiras-tu ? 
+
+Julius reprend : 
+
+> Sauras-tu faire le bon choix ?
 
 Rappelle-toi de demander à Julius ce qu'il attend de toi. Si tu reçois une réponse négative (RED), corrige ton code et effectue un nouveau smart commit. Si tu reçois une réponse positive (GREEN), félicitations ! Tu peux passer à l'épreuve suivante.
 
-N'oublie pas de rester le plus simple possible pour satisfaire Julius.
+N'oublie pas que la simplicité est de rigueur si tu souhaites survivre dans cette arène.
