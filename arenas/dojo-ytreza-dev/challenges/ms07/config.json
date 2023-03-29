@@ -1,5 +1,5 @@
 {
-  "slug": "ms06",
+  "slug": "ms07",
   "baseScore": 25,
   "scorePenaltyPerAttempt": 0,
   "turnedInFile": "minesweeper.ts",
@@ -9,8 +9,8 @@
     "String.length"
   ],
   "name": "exemple //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt nameFr et nameEn.",
-  "nameFr": "Mine ou pas mine ?",
-  "nameEn": "Mine or no mine?",
+  "nameFr": "Une case complète",
+  "nameEn": "A complete box",
   "hint": "Ceci est un hint. //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt hintFr et hintEn.",
   "hintFr": "💡Car les exemples génériques, j'adore ça.",
   "hintEn": "💡Because I love generic examples."
