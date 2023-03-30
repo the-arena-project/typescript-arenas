@@ -1,0 +1,51 @@
+{
+  "slug": "linked-list",
+  "videos": [
+    {
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight05%2F00.png?alt=media",
+      "index": 0,
+      "videoId": "VRhJjkK2zDY"
+    }
+  ],
+  "number": "05",
+  "name": "Listes chaînées",
+  "courseTemplateId": "arena01",
+  "title": "Fight 05",
+  "shortDescription": "Sans les listes chaînées, nous n'aurions pas de queue, de stack ou de bases de données.",
+  "estimatedTime": 15,
+  "challenges": [
+    "ll-create-link",
+    "ll-unshift",
+    "ll-add-after",
+    "ll-count",
+    "ll-get-last",
+    "ll-push",
+    "ll-get-at",
+    "ll-delete-at",
+    "ll-shift",
+    "ll-insert-at",
+    "ll-pop",
+    "ll-for-each",
+    "ll-map",
+    "ll-find",
+    "ll-merge",
+    "ll-reverse",
+    "ll-ultimerge"
+  ],
+  "slideDecks": [],
+  "badgeUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F05.jpg?alt=media",
+  "badge": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F05.jpg?alt=media",
+      "language": "fr"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges_en%2Flinked-list.jpg?alt=media",
+      "language": "en"
+    }
+  ],
+  "shortDescriptionFr": "Sans les listes chaînées, nous n'aurions pas de queue, de stack ou de bases de données.",
+  "shortDescriptionEn": "Without linked lists, we wouldn't have queues, stacks, or databases.",
+  "nameFr": "Listes chaînées",
+  "nameEn": "Linked lists"
+}

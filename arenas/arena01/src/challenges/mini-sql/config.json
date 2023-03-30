@@ -1,0 +1,16 @@
+{
+  "slug": "mini-sql",
+  "name": "Minisql",
+  "baseScore": 3000,
+  "scorePenaltyPerAttempt": 250,
+  "turnedInFile": "Tous les fichiers nécessaires",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [
+    "Toutes les fonctions natives de Typescript et de la librairie standard de NodeJS"
+  ],
+  "nameFr": "Minisql",
+  "nameEn": "Minisql",
+  "hintEn": null,
+  "hintFr": null
+}

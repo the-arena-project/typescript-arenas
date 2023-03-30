@@ -1,0 +1,42 @@
+{
+    "slug": "algorithm",
+    "instructions": "Complète valeureusement tous les rounds de ce fight.\n\nN'oublie pas ton serment à Julius.\n\n- Tu n'utiliseras pas de fonctions, méthodes ou propriétés interdites.\n- Tu n'utiliseras pas d'autres boucles que `while`.\n- Chaque cas de triche constaté te fera encourir le risque d'être banni de l'Arène.\n\nFais honneur à Julius !",
+    "videos": [
+        {
+            "index": 0,
+            "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight07%2F00.png?alt=media",
+            "videoId": "_nfIPhrji-M"
+        }
+    ],
+    "name": "Big O, algorithmes de tri et recherche",
+    "shortDescription": "Être un bon gladiateur implique de savoir parfaitement manipuler des armes. C'est pareil pour un développeur.",
+    "number": "07",
+    "estimatedTime": 15,
+    "title": "Fight 07",
+    "courseTemplateId": "arena01",
+    "challenges": [
+        "insertion-sort",
+        "bubble-sort",
+        "merge-sort",
+        "quick-sort",
+        "linear-search",
+        "jump-search",
+        "binary-search"
+    ],
+    "slideDecks": [],
+    "badgeUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F07.jpg?alt=media",
+    "badge": [
+        {
+            "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F07.jpg?alt=media",
+            "language": "fr"
+        },
+        {
+            "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges_en%2Falgorithm.jpg?alt=media",
+            "language": "en"
+        }
+    ],
+    "shortDescriptionFr": "Être un bon gladiateur implique de savoir parfaitement manipuler des armes. C'est pareil pour un développeur.",
+    "shortDescriptionEn": "Being a good gladiator involves knowing how to manipulate weapons perfectly. It's the same for a developer.",
+    "nameFr": "Big O, algorithmes de tri et recherche",
+    "nameEn": "Big O, Sorting and Searching Algorithms"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "SHELL",
+  "name": "first-commit",
+  "shell": {
+    "execute": ["sh", "check.sh"]
+  }
+}

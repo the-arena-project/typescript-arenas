@@ -1,0 +1,14 @@
+{
+  "slug": "ll-shift",
+  "name": "shift",
+  "baseScore": 850,
+  "scorePenaltyPerAttempt": 125,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "shift",
+  "nameEn": "shift",
+  "hintEn": null,
+  "hintFr": null
+}

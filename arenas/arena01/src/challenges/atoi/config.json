@@ -1,0 +1,21 @@
+{
+  "slug": "atoi",
+  "name": "atoi",
+  "hint": "💡Multiplier un nombre par 10 rajoute un chiffre \"à la fin \". Comparez votre fonction avec parseInt.",
+  "baseScore": 300,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "slideDecks": [
+    {
+      "url": "https://slides.com/thearenaproject/binary-string-to-number/embed"
+    }
+  ],
+  "allowedMaterials": [
+    "Array.length",
+    "String.length"
+  ],
+  "nameFr": "atoi",
+  "nameEn": "atoi",
+  "hintFr": "💡Multiplier un nombre par 10 rajoute un chiffre \"à la fin \". Comparez votre fonction avec parseInt.",
+  "hintEn": "💡Multiplying a number by 10 adds a digit \"at the end\". Compare your function with parseInt."
+}

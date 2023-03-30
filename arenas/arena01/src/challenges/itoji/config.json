@@ -1,0 +1,18 @@
+{
+  "slug": "itoji",
+  "name": "itoji",
+  "baseScore": 1000,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [
+    "Array.length",
+    "String.length",
+    "Math.floor"
+  ],
+  "nameFr": "itoji",
+  "nameEn": "itoji",
+  "hintEn": null,
+  "hintFr": null
+}

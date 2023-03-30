@@ -1,0 +1,14 @@
+{
+  "slug": "chmod",
+  "name": "chmod",
+  "hint": "💡 man ls, man chmod",
+  "baseScore": 75,
+  "scorePenaltyPerAttempt": 5,
+  "turnedInFile": "mode.sh",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "chmod",
+  "nameEn": "chmod",
+  "hintFr": "💡 man ls, man chmod",
+  "hintEn": "💡 man ls, man chmod"
+}

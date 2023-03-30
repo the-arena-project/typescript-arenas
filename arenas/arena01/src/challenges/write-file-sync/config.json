@@ -1,0 +1,18 @@
+{
+  "slug": "write-file-sync",
+  "name": "writeFileSync",
+  "hint": "💡Portez une attention particulière aux \"file system flags\" de fs.openSync.",
+  "baseScore": 1000,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [
+    "fs.openSync",
+    "fs.writeSync",
+    "fs.closeSync"
+  ],
+  "nameFr": "writeFileSync",
+  "nameEn": "writeFileSync",
+  "hintFr": "💡Portez une attention particulière aux \"file system flags\" de fs.openSync.",
+  "hintEn": "💡Pay special attention to the \"file system flags\" of fs.openSync."
+}

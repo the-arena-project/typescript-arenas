@@ -1,0 +1,14 @@
+{
+  "slug": "ll-delete-at",
+  "name": "deleteAt",
+  "baseScore": 1000,
+  "scorePenaltyPerAttempt": 150,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "deleteAt",
+  "nameEn": "deleteAt",
+  "hintEn": null,
+  "hintFr": null
+}

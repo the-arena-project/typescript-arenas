@@ -1,0 +1,15 @@
+{
+  "name": "Quelle est ta profession ?!",
+  "slug": "scream",
+  "hint": "💡 man echo",
+  "baseScore": 25,
+  "scorePenaltyPerAttempt": 5,
+  "turnedInDirectory": "scream",
+  "turnedInFile": "scream.sh",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "Quelle est ta profession ?!",
+  "nameEn": "What is your profession ?!",
+  "hintFr": "💡 man echo",
+  "hintEn": "💡 man echo"
+}

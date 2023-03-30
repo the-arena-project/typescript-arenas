@@ -1,0 +1,14 @@
+{
+  "slug": "index-of",
+  "name": "indexOf",
+  "baseScore": 150,
+  "scorePenaltyPerAttempt": 20,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "indexOf",
+  "nameEn": "indexOf",
+  "hintEn": null,
+  "hintFr": null
+}

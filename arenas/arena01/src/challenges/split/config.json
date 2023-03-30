@@ -1,0 +1,14 @@
+{
+  "slug": "split",
+  "name": "split",
+  "baseScore": 150,
+  "scorePenaltyPerAttempt": 15,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "split",
+  "nameEn": "split",
+  "hintEn": null,
+  "hintFr": null
+}

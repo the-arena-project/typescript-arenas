@@ -1,0 +1,13 @@
+{
+  "type": "PROGRAM",
+  "name": "round-00",
+  "program": {
+    "name": "ls.ts",
+    "invocations": [
+      ["empty-files"],
+      ["./empty-files"],
+      ["./bigfile"],
+      ["./file-and-dir"]
+    ]
+  }
+}

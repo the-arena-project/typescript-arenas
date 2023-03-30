@@ -1,0 +1,14 @@
+{
+  "slug": "some",
+  "name": "some",
+  "baseScore": 100,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "some",
+  "nameEn": "some",
+  "hintEn": null,
+  "hintFr": null
+}

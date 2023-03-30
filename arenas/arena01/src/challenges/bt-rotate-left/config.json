@@ -1,0 +1,14 @@
+{
+  "slug": "bt-rotate-left",
+  "name": "rotateLeft",
+  "baseScore": 1000,
+  "scorePenaltyPerAttempt": 150,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "rotateLeft",
+  "nameEn": "rotateLeft",
+  "hintEn": null,
+  "hintFr": null
+}

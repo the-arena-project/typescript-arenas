@@ -1,0 +1,16 @@
+{
+  "slug": "avoid-the-warriors",
+  "name": "avoidWarriors",
+  "baseScore": 600,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [
+    "Array.length"
+  ],
+  "nameFr": "avoidWarriors",
+  "nameEn": "avoidWarriors",
+  "hintEn": null,
+  "hintFr": null
+}

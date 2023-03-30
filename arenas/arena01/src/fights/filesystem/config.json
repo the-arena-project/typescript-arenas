@@ -1,0 +1,51 @@
+{
+  "slug": "filesystem",
+  "number": "04",
+  "videos": [
+    {
+      "videoId": "E0SL4piXCXE",
+      "index": 0,
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight04%2F00.png?alt=media"
+    },
+    {
+      "index": 1,
+      "videoId": "tE-5s5_hyZQ",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight04%2F01.png?alt=media"
+    }
+  ],
+  "title": "Fight 04",
+  "courseTemplateId": "arena01",
+  "estimatedTime": 15,
+  "shortDescription": "Et si ta liberté tenait à un fichier ?  Saurais-tu comment l'ouvrir, l'afficher, le lire de manière automatisée ?",
+  "name": "Manipulation du File System",
+  "challenges": [
+    "ls",
+    "lsdeep",
+    "read-file-sync",
+    "write-file-sync",
+    "cp"
+  ],
+  "slideDecks": [
+    {
+      "url": "https://slides.com/thearenaproject/turning-in-programs/embed"
+    },
+    {
+      "url": "https://slides.com/thearenaproject/filesystem-general-introduction/embed"
+    }
+  ],
+  "badgeUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F04.jpg?alt=media",
+  "badge": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F04.jpg?alt=media",
+      "language": "fr"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges_en%2Ffilesystem.jpg?alt=media",
+      "language": "en"
+    }
+  ],
+  "shortDescriptionFr": "Et si ta liberté tenait à un fichier ?  Saurais-tu comment l'ouvrir, l'afficher, le lire de manière automatisée ?",
+  "shortDescriptionEn": "If your freedom depended on a file? Would you know how to open, display, and read it automatically?",
+  "nameFr": "Manipulation du File System",
+  "nameEn": "File System Manipulation"
+}

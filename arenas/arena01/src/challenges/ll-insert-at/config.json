@@ -1,0 +1,14 @@
+{
+  "slug": "ll-insert-at",
+  "name": "insertAt",
+  "baseScore": 1000,
+  "scorePenaltyPerAttempt": 150,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "insertAt",
+  "nameEn": "insertAt",
+  "hintEn": null,
+  "hintFr": null
+}

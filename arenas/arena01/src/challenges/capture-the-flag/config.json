@@ -1,0 +1,14 @@
+{
+  "slug": "capture-the-flag",
+  "name": "Capture The Flag",
+  "hint": "💡 man ssh, man find",
+  "baseScore": 250,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "flag.txt",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "Capture The Flag",
+  "nameEn": "Capture The Flag",
+  "hintFr": "💡 man ssh, man find",
+  "hintEn": "💡 man ssh, man find"
+}

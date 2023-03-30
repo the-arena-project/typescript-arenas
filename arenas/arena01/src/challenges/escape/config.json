@@ -1,0 +1,14 @@
+{
+  "slug": "escape",
+  "name": "Escape",
+  "hint": "💡 Il faut trouver une échappatoire",
+  "baseScore": 50,
+  "scorePenaltyPerAttempt": 10,
+  "turnedInFile": "?i'l\"i*\\o?s'",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "Escape",
+  "nameEn": "Escape",
+  "hintFr": "💡 Il faut trouver une échappatoire",
+  "hintEn": "💡 Il faut trouver une échappatoire\" translates to \"💡 We need to find a way out."
+}

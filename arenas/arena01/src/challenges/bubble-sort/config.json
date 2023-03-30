@@ -1,0 +1,14 @@
+{
+  "slug": "bubble-sort",
+  "name": "bubbleSort",
+  "baseScore": 1000,
+  "scorePenaltyPerAttempt": 100,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "bubbleSort",
+  "nameEn": "bubbleSort",
+  "hintEn": null,
+  "hintFr": null
+}

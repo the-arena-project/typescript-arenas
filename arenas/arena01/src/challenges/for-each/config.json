@@ -1,0 +1,14 @@
+{
+  "slug": "for-each",
+  "name": "forEach",
+  "baseScore": 250,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "forEach",
+  "nameEn": "forEach",
+  "hintEn": null,
+  "hintFr": null
+}

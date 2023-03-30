@@ -1,0 +1,14 @@
+{
+  "slug": "nice-to-meet-you",
+  "name": "Nice to meet you",
+  "hint": "💡 man echo",
+  "baseScore": 25,
+  "scorePenaltyPerAttempt": 3,
+  "turnedInFile": "NiceToMeetYou",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "Nice to meet you",
+  "nameEn": "Nice to meet you",
+  "hintFr": "💡 man echo",
+  "hintEn": "💡 man echo"
+}

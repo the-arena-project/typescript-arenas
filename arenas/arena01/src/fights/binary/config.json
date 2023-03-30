@@ -1,0 +1,43 @@
+{
+  "slug": "binary",
+  "number": "03",
+  "estimatedTime": 15,
+  "courseTemplateId": "arena01",
+  "name": "La base 10, le binaire et l'hexadécimal",
+  "shortDescription": "Un programmeur qui ne comprend pas le binaire est comme un gladiateur sans arme.",
+  "videos": [
+    {
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight03%2F00.png?alt=media",
+      "index": 0,
+      "videoId": "GpA8CjEfZwc"
+    }
+  ],
+  "title": "Fight 03",
+  "challenges": [
+    "atoi",
+    "itoa",
+    "itobin",
+    "itohex",
+    "itoji"
+  ],
+  "slideDecks": [
+    {
+      "url": "https://slides.com/thearenaproject/binary-general-introduction/embed"
+    }
+  ],
+  "badgeUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F03.jpg?alt=media",
+  "badge": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F03.jpg?alt=media",
+      "language": "fr"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges_en%2Fbinary.jpg?alt=media",
+      "language": "en"
+    }
+  ],
+  "shortDescriptionFr": "Un programmeur qui ne comprend pas le binaire est comme un gladiateur sans arme.",
+  "shortDescriptionEn": "A programmer who doesn't understand binary is like a gladiator without a weapon.",
+  "nameFr": "La base 10, le binaire et l'hexadécimal",
+  "nameEn": "Base 10, Binary and Hexadecimal."
+}

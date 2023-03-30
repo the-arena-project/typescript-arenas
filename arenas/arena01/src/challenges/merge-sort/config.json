@@ -1,0 +1,14 @@
+{
+  "slug": "merge-sort",
+  "name": "mergeSort",
+  "baseScore": 2000,
+  "scorePenaltyPerAttempt": 200,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "mergeSort",
+  "nameEn": "mergeSort",
+  "hintEn": null,
+  "hintFr": null
+}

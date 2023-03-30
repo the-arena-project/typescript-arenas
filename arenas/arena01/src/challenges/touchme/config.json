@@ -1,0 +1,14 @@
+{
+  "slug": "touchme",
+  "name": "touchme",
+  "hint": "💡 man ls, man mkdir, man touch",
+  "baseScore": 50,
+  "scorePenaltyPerAttempt": 5,
+  "turnedInFile": "touchme.sh",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "touchme",
+  "nameEn": "touchme",
+  "hintFr": "💡 man ls, man mkdir, man touch",
+  "hintEn": "💡 man ls, man mkdir, man touch"
+}

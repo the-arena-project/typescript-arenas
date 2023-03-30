@@ -1,0 +1,14 @@
+{
+  "slug": "linkedin",
+  "name": "linkedin",
+  "hint": "💡 man link",
+  "baseScore": 75,
+  "scorePenaltyPerAttempt": 5,
+  "turnedInFile": "linkedin.sh",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "linkedin",
+  "nameEn": "linkedin",
+  "hintFr": "💡 man link",
+  "hintEn": "💡 man link"
+}
