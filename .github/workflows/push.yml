@@ -1,0 +1,40 @@
+name: Push to firestore
+
+on:
+  push:
+    branches:
+      - main
+      - preview
+  workflow_dispatch:
+
+jobs:
+  use_base_action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install the Tap CLI
+        uses: the-arena-project/tap-cli-action@main
+        with:
+          private-deploy-key: ${{ secrets.CLI_PRIVATE_DEPLOY_KEY }}
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Configure tap cli
+        run: |
+          tap config set backendUrl ${{ secrets.BACKEND_URL }}
+          tap config set backendApiKey ${{ secrets.BACKEND_API_KEY }}
+
+      - name: push to firestore as preview
+        if: github.ref == 'refs/heads/preview'
+        run: |
+          for trackModelId in $(tap track ls); do
+            tap track r push "$trackModelId" --preRelease
+          done
+
+      - name: push to firestore as production
+        if: github.ref == 'refs/heads/main'
+        run: |
+          for trackModelId in $(tap track ls); do
+            tap track r push "$trackModelId" --preRelease=false
+          done
