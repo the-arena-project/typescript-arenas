@@ -1,0 +1,16 @@
+{
+  "slug": "print-string",
+  "name": "printString",
+  "hint": "💡Vérifiez que le comportement est le même qu'un console.log(), la solution se cache entre les lignes.",
+  "baseScore": 25,
+  "scorePenaltyPerAttempt": 5,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [
+    "process.stdout.write"
+  ],
+  "nameFr": "printString",
+  "nameEn": "printString",
+  "hintFr": "💡Vérifiez que le comportement est le même qu'un console.log(), la solution se cache entre les lignes.",
+  "hintEn": "💡Make sure the behavior is the same as a console.log (), the solution is hidden between the lines."
+}

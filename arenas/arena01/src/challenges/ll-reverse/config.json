@@ -1,0 +1,14 @@
+{
+  "slug": "ll-reverse",
+  "name": "reverse",
+  "baseScore": 2000,
+  "scorePenaltyPerAttempt": 350,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "reverse",
+  "nameEn": "reverse",
+  "hintEn": null,
+  "hintFr": null
+}

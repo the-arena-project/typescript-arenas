@@ -1,0 +1,14 @@
+{
+  "slug": "fibonacci",
+  "name": "fibonacci",
+  "baseScore": 300,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "fibonacci",
+  "nameEn": "fibonacci",
+  "hintEn": null,
+  "hintFr": null
+}

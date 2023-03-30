@@ -1,0 +1,7 @@
+{
+  "type": "SHELL",
+  "name": "round-03",
+  "shell": {
+    "execute": ["sh", "check.sh"]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "bt-insert",
+  "name": "insert",
+  "hint": "💡 Les arbres binaires de recherche ont des propriétés particulières, si seulement vous saviez lesquelles...",
+  "baseScore": 2000,
+  "scorePenaltyPerAttempt": 250,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "insert",
+  "nameEn": "insert",
+  "hintFr": "💡 Les arbres binaires de recherche ont des propriétés particulières, si seulement vous saviez lesquelles...",
+  "hintEn": "💡 Binary search trees have special properties, if only you knew what they are..."
+}

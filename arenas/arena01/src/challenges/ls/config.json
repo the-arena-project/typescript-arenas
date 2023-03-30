@@ -1,0 +1,26 @@
+{
+  "slug": "ls",
+  "name": "ls",
+  "hint": "💡man ls",
+  "baseScore": 750,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "ls.ts",
+  "slideDecks": [],
+  "allowedMaterials": [
+    "fs.readdirSync",
+    "fs.statSync",
+    "process.exit",
+    "fs.writeSync",
+    "Stats.isFile",
+    "Stats.isDirectory",
+    "Array.sort",
+    "Array.length",
+    "String.padEnd",
+    "String.localeCompare",
+    "path.join"
+  ],
+  "nameFr": "ls",
+  "nameEn": "ls",
+  "hintFr": "💡man ls",
+  "hintEn": ""
+}

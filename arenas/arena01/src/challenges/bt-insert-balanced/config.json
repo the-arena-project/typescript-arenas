@@ -1,0 +1,14 @@
+{
+  "slug": "bt-insert-balanced",
+  "name": "insertBalanced",
+  "baseScore": 4000,
+  "scorePenaltyPerAttempt": 500,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "insertBalanced",
+  "nameEn": "insertBalanced",
+  "hintEn": null,
+  "hintFr": null
+}

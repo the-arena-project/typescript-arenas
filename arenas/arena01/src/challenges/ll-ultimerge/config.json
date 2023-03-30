@@ -1,0 +1,14 @@
+{
+  "slug": "ll-ultimerge",
+  "name": "ultimerge",
+  "baseScore": 3000,
+  "scorePenaltyPerAttempt": 400,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "ultimerge",
+  "nameEn": "ultimerge",
+  "hintEn": null,
+  "hintFr": null
+}

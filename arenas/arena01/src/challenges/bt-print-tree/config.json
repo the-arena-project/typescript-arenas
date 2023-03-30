@@ -1,0 +1,14 @@
+{
+  "slug": "bt-print-tree",
+  "name": "printTree",
+  "hint": "💡 On vous a dit que la récursivité c'était pratique quand même...",
+  "baseScore": 4000,
+  "scorePenaltyPerAttempt": 500,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "printTree",
+  "nameEn": "printTree",
+  "hintFr": "💡 On vous a dit que la récursivité c'était pratique quand même...",
+  "hintEn": "💡 You were told that recursion was useful after all..."
+}

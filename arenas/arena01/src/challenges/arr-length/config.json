@@ -1,0 +1,14 @@
+{
+  "slug": "arr-length",
+  "name": "arrLength",
+  "hint": "💡Array.length étant une propriété, elle est bien interdite, on ne le répètera plus.",
+  "baseScore": 100,
+  "scorePenaltyPerAttempt": 10,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "arrLength",
+  "nameEn": "arrLength",
+  "hintFr": "💡Array.length étant une propriété, elle est bien interdite, on ne le répètera plus.",
+  "hintEn": "💡Array.length being a property, it is indeed forbidden, we won't repeat it again."
+}

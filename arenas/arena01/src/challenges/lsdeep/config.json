@@ -1,0 +1,26 @@
+{
+  "slug": "lsdeep",
+  "name": "lsdeep",
+  "baseScore": 1000,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "lsdeep.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [
+    "fs.readdirSync",
+    "fs.statSync",
+    "process.exit",
+    "fs.writeSync",
+    "Stats.isFile",
+    "Stats.isDirectory",
+    "Array.sort",
+    "Array.length",
+    "String.padEnd",
+    "String.localeCompare",
+    "path.join"
+  ],
+  "nameFr": "lsdeep",
+  "nameEn": "lsdeep",
+  "hintEn": null,
+  "hintFr": null
+}

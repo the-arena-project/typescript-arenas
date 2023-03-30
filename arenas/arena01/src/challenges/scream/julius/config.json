@@ -1,0 +1,7 @@
+{
+    "type": "SHELL",
+    "name": "scream",
+    "shell": {
+        "execute": ["sh", "check.sh"]
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "diff",
+  "name": "diff",
+  "baseScore": 350,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "diff",
+  "nameEn": "diff",
+  "hintEn": null,
+  "hintFr": null
+}

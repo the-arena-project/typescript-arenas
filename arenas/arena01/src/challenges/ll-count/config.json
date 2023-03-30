@@ -1,0 +1,14 @@
+{
+  "slug": "ll-count",
+  "name": "count",
+  "baseScore": 1000,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "count",
+  "nameEn": "count",
+  "hintEn": null,
+  "hintFr": null
+}

@@ -1,0 +1,28 @@
+{
+    "id": "arena01",
+    "name": "Les fondamentaux du génie logiciel",
+    "nameFr": "Les fondamentaux du génie logiciel",
+    "nameEn": "The software engineering fundamentals",
+    "status": "Published",
+    "challengeCount": 85,
+    "estimatedDays": 35,
+    "description": "Apprends à manipuler le filesystem, à parler le binaire, à utiliser le backtracking pour résoudre des problèmes complexes pour devenir un vrai développeur ou une vraie développeuse !",
+    "descriptionFr": "Apprends à manipuler le filesystem, à parler le binaire, à utiliser le backtracking pour résoudre des problèmes complexes pour devenir un vrai développeur ou une vraie développeuse !",
+    "descriptionEn": "Learn to manipulate the filesystem, speak binary, use backtracking to solve complex problems to become a true developer!",
+    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Fcourses%2Fcourse-00.jpeg?alt=media",
+    "chapters": [
+        "shell",
+        "fundamentals",
+        "recursive",
+        "binary",
+        "filesystem",
+        "linked-list",
+        "btree",
+        "algorithm",
+        "mini-sql"
+    ],
+    "authorIds": [
+        "BN7Clc7GgDNYmy5zW7OZotZ1U0D3",
+        "EFHsK1Bas9Y8Bfhh2MRPbNJRqk62"
+    ]
+}

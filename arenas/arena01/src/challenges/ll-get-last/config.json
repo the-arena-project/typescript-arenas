@@ -1,0 +1,14 @@
+{
+  "slug": "ll-get-last",
+  "name": "getLast",
+  "baseScore": 700,
+  "scorePenaltyPerAttempt": 100,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "getLast",
+  "nameEn": "getLast",
+  "hintEn": null,
+  "hintFr": null
+}

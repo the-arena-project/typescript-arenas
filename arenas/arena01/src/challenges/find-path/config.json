@@ -1,0 +1,17 @@
+{
+  "slug": "find-path",
+  "name": "findPath",
+  "baseScore": 750,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [
+    "Array.length",
+    "Array.push"
+  ],
+  "nameFr": "findPath",
+  "nameEn": "findPath",
+  "hintEn": null,
+  "hintFr": null
+}

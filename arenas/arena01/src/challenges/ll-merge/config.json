@@ -1,0 +1,14 @@
+{
+  "slug": "ll-merge",
+  "name": "merge",
+  "baseScore": 1750,
+  "scorePenaltyPerAttempt": 300,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "merge",
+  "nameEn": "merge",
+  "hintEn": null,
+  "hintFr": null
+}

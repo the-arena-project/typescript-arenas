@@ -1,0 +1,22 @@
+{
+  "slug": "itoa",
+  "name": "itoa",
+  "hint": "Le modulo peut être utile.",
+  "baseScore": 350,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "slideDecks": [
+    {
+      "url": "https://slides.com/thearenaproject/binary-number-to-string/embed"
+    }
+  ],
+  "allowedMaterials": [
+    "Array.length",
+    "String.length",
+    "Math.floor"
+  ],
+  "nameFr": "itoa",
+  "nameEn": "itoa",
+  "hintFr": "Le modulo peut être utile.",
+  "hintEn": "The modulo can be useful."
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "read-file-sync",
+  "name": "readFileSync",
+  "baseScore": 500,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [
+    "fs.openSync",
+    "fs.readSync",
+    "fs.closeSync",
+    "Buffer.alloc",
+    "Buffer.copy",
+    "Buffer.toString"
+  ],
+  "nameFr": "readFileSync",
+  "nameEn": "readFileSync",
+  "hintEn": null,
+  "hintFr": null
+}

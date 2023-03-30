@@ -1,0 +1,14 @@
+{
+  "slug": "insertion-sort",
+  "name": "insertionSort",
+  "baseScore": 1000,
+  "scorePenaltyPerAttempt": 100,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "insertionSort",
+  "nameEn": "insertionSort",
+  "hintEn": null,
+  "hintFr": null
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "shortest-path",
+  "name": "shortestPath",
+  "baseScore": 2500,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [
+    "Array.length",
+    "Array.push"
+  ],
+  "nameFr": "shortestPath",
+  "nameEn": "shortestPath",
+  "hintEn": null,
+  "hintFr": null
+}

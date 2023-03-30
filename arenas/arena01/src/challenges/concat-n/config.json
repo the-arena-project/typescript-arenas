@@ -1,0 +1,14 @@
+{
+  "slug": "concat-n",
+  "name": "concatN",
+  "baseScore": 250,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "concatN",
+  "nameEn": "concatN",
+  "hintEn": null,
+  "hintFr": null
+}

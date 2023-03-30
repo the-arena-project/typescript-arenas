@@ -1,0 +1,8 @@
+{
+  "type": "CUSTOM_TEST_RUNNER",
+  "name": "round-04",
+  "customTestRunner": {
+    "executable": "sh",
+    "executableArgs": ["test/check.sh"]
+  }
+}

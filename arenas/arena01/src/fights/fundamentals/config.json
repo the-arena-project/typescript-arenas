@@ -1,0 +1,72 @@
+{
+  "number": "01",
+  "title": "Fight 01",
+  "name": "Structures basiques : les chaînes et les tableaux",
+  "slug": "fundamentals",
+  "videos": [
+    {
+      "index": 0,
+      "videoId": "AXboahdHUYw",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight01%2F00.png?alt=media"
+    },
+    {
+      "index": 1,
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight01%2F01.png?alt=media",
+      "videoId": "34FiBh6lMMA"
+    },
+    {
+      "videoId": "HL0UXSmZgXw",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight01%2F02.png?alt=media",
+      "index": 2
+    }
+  ],
+  "challenges": [
+    "print-string",
+    "print-number",
+    "arr-length",
+    "str-length",
+    "split",
+    "reverse-string",
+    "push",
+    "reverse-number",
+    "index-of",
+    "for-each",
+    "map",
+    "filter",
+    "find",
+    "some",
+    "every",
+    "diff",
+    "is-alpha",
+    "concat-n",
+    "compare-n"
+  ],
+  "shortDescription": "Ce sont de loin les structures les plus utilisées pour stocker de la donnée.",
+  "estimatedTime": 12,
+  "slideDecks": [
+    {
+      "url": "https://slides.com/thearenaproject/getting-started-with-typescript/embed"
+    },
+    {
+      "url": "https://slides.com/thearenaproject/submit-your-first-ts-challenge/embed"
+    },
+    {
+      "url": "https://slides.com/thearenaproject/programming-basics-in-ts/embed"
+    }
+  ],
+  "badgeUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F01.jpg?alt=media",
+  "badge": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F01.jpg?alt=media",
+      "language": "fr"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges_en%2Ffundamentals.jpg?alt=media",
+      "language": "en"
+    }
+  ],
+  "shortDescriptionFr": "Ce sont de loin les structures les plus utilisées pour stocker de la donnée.",
+  "shortDescriptionEn": "By far, these structures are the most commonly used to store data.",
+  "nameFr": "Structures basiques : les chaînes et les tableaux",
+  "nameEn": "Basic Structures: Strings and Arrays"
+}

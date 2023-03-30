@@ -1,0 +1,16 @@
+{
+  "slug": "print-number",
+  "name": "printNumber",
+  "baseScore": 25,
+  "scorePenaltyPerAttempt": 5,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [
+    "process.stdout.write"
+  ],
+  "nameFr": "printNumber",
+  "nameEn": "printNumber",
+  "hintEn": null,
+  "hintFr": null
+}

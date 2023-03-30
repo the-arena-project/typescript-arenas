@@ -1,0 +1,29 @@
+{
+  "slug": "mini-sql",
+  "shortDescription": "Pour gagner ta liberté tu devras concevoir un algorithme capable de te faire échapper de l'Arène.",
+  "videos": [],
+  "title": "Ultimate Fight",
+  "courseTemplateId": "arena01",
+  "number": "08",
+  "name": "Le combat final",
+  "estimatedTime": 22,
+  "challenges": [
+    "mini-sql"
+  ],
+  "slideDecks": [],
+  "badgeUrl": null,
+  "badge": [
+    {
+      "url": null,
+      "language": "fr"
+    },
+    {
+      "url": null,
+      "language": "en"
+    }
+  ],
+  "shortDescriptionFr": "Pour gagner ta liberté tu devras concevoir un algorithme capable de te faire échapper de l'Arène.",
+  "shortDescriptionEn": "To win your freedom you will have to design an algorithm capable of making you escape from the Arena.",
+  "nameFr": "Le combat final",
+  "nameEn": "The final battle"
+}

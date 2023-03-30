@@ -1,0 +1,15 @@
+{
+  "name": "Une arme !",
+  "slug": "throwing-knife",
+  "hint": "💡 Les redirections shell",
+  "baseScore": 25,
+  "scorePenaltyPerAttempt": 5,
+  "turnedInDirectory": "throwing-knife",
+  "turnedInFile": "throw.sh",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "Une arme !",
+  "nameEn": "A new weapon!",
+  "hintFr": "💡 Les redirections shell",
+  "hintEn": "💡 Shell redirections"
+}
