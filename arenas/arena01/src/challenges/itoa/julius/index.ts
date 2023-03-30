@@ -30,5 +30,3 @@ export const itoa: ItoaFn = (n) => {
 
     return str.join('');
 }
-
-console.log(itoa(+process.argv[2]));
