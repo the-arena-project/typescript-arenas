@@ -1,0 +1,32 @@
+name: Rebuild Julius
+
+on:
+  push:
+    branches:
+      - main
+      - preview
+  workflow_dispatch:
+
+jobs:
+  push-to-firestore:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: set branch-scoped environment
+        run: |
+          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+            echo "REF_NAME=main" >> $GITHUB_ENV
+          elif [ "${{ github.ref }}" == "refs/heads/preview" ]; then
+            echo "REF_NAME=feat/*" >> $GITHUB_ENV
+          fi
+
+      - name: Trigger pipeline to rebuild julius
+        run: |
+          echo "Triggering pipeline to rebuild julius. REF_NAME=${{ env.REF_NAME }}"
+          curl  \
+            -X POST ${{ secrets.BITBUCKET_API_BASE_URL }}/repositories/arenaproject/julius-api/pipelines  \
+            -H "Authorization: Bearer ${{ secrets.BITBUCKET_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -H "Accept: application/json" \
+            -d '{"target": {"ref_type": "branch", "type": "pipeline_ref_target", "ref_name": "${{ env.REF_NAME }}"}}'
+          echo "Pipeline triggered.";
