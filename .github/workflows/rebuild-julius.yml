@@ -8,18 +8,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  push-to-firestore:
+  trigger-bitbucket-pipeline-to-rebuild-julius:
     runs-on: ubuntu-latest
 
     steps:
-      - name: set branch-scoped environment
-        run: |
-          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
-            echo "REF_NAME=main" >> $GITHUB_ENV
-          elif [ "${{ github.ref }}" == "refs/heads/preview" ]; then
-            echo "REF_NAME=feat/*" >> $GITHUB_ENV
-          fi
-
       - name: Trigger pipeline to rebuild julius
         run: |
           echo "Triggering pipeline to rebuild julius. REF_NAME=${{ env.REF_NAME }}"
@@ -28,5 +20,5 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.BITBUCKET_API_TOKEN }}" \
             -H "Content-Type: application/json" \
             -H "Accept: application/json" \
-            -d '{"target": {"ref_type": "branch", "type": "pipeline_ref_target", "ref_name": "${{ env.REF_NAME }}"}}'
+            -d '{"target": {"ref_type": "branch", "type": "pipeline_ref_target", "ref_name": "main"}}'
           echo "Pipeline triggered.";
