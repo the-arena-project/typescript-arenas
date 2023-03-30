@@ -22,6 +22,7 @@ jobs:
       - name: Build tap cli
         run: |
           cd tap-cli
+          npm ci
           npm run build
 
       - name: Install tap cli
