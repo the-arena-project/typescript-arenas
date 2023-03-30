@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  use_base_action:
+  push-to-firestore:
     runs-on: ubuntu-latest
 
     steps:
