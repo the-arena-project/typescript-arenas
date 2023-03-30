@@ -29,13 +29,14 @@ jobs:
         run: |
           cd tap-cli
           sudo cp -r bin/tap /usr/bin/tap
+          sudo chmod _+x /usr/bin/tap
 
       - name: Cleanup tap cli
         run: |
           rm -rf tap-cli
 
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Checkout arena repository
+        uses: actions/checkout@v3
 
       - name: Configure tap cli
         run: |
