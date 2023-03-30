@@ -17,6 +17,21 @@ jobs:
         with:
           repository: the-arena-project/tap-cli
           ssh-key: ${{ secrets.CLI_PRIVATE_DEPLOY_KEY }}
+          path: tap-cli
+      
+      - name: Build tap cli
+        run: |
+          cd tap-cli
+          npm run build
+
+      - name: Install tap cli
+        run: |
+          cd tap-cli
+          sudo cp -r bin/tap /usr/bin/tap
+
+      - name: Cleanup tap cli
+        run: |
+          rm -rf tap-cli
 
       - name: Checkout repository
         uses: actions/checkout@v2
