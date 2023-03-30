@@ -1,0 +1,14 @@
+{
+  "slug": "ll-create-link",
+  "name": "createLink",
+  "baseScore": 500,
+  "scorePenaltyPerAttempt": 75,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "createLink",
+  "nameEn": "createLink",
+  "hintEn": null,
+  "hintFr": null
+}

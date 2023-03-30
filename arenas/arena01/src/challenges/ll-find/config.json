@@ -1,0 +1,14 @@
+{
+  "slug": "ll-find",
+  "name": "find",
+  "baseScore": 1000,
+  "scorePenaltyPerAttempt": 100,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "find",
+  "nameEn": "find",
+  "hintEn": null,
+  "hintFr": null
+}

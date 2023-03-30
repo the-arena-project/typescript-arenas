@@ -1,0 +1,19 @@
+{
+    "name": "Ton premier commit",
+    "slug": "first-commit",
+    "hint": "💡 man touch ; man mkdir",
+    "baseScore": 25,
+    "scorePenaltyPerAttempt": 5,
+    "turnedInDirectory": "first-commit",
+    "turnedInFile": "hello",
+    "slideDecks": [
+        {
+            "url": "https://slides.com/thearenaproject/your-first-commit/embed"
+        }
+    ],
+    "allowedMaterials": [],
+    "nameFr": "Ton premier commit",
+    "nameEn": "Your first commit",
+    "hintFr": "💡 man touch ; man mkdir",
+    "hintEn": "man touch ; man mkdir"
+}

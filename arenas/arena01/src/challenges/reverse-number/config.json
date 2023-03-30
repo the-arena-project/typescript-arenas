@@ -1,0 +1,14 @@
+{
+  "slug": "reverse-number",
+  "name": "reverseNumbers",
+  "baseScore": 70,
+  "scorePenaltyPerAttempt": 10,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "reverseNumbers",
+  "nameEn": "reverseNumbers",
+  "hintEn": null,
+  "hintFr": null
+}

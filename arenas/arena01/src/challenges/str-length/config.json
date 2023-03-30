@@ -1,0 +1,14 @@
+{
+  "slug": "str-length",
+  "name": "strLength",
+  "baseScore": 50,
+  "scorePenaltyPerAttempt": 10,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "strLength",
+  "nameEn": "strLength",
+  "hintEn": null,
+  "hintFr": null
+}

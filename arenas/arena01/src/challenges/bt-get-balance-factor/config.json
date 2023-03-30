@@ -1,0 +1,14 @@
+{
+  "slug": "bt-get-balance-factor",
+  "name": "getBalanceFactor",
+  "baseScore": 1750,
+  "scorePenaltyPerAttempt": 300,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "getBalanceFactor",
+  "nameEn": "getBalanceFactor",
+  "hintEn": null,
+  "hintFr": null
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "btree",
+  "courseTemplateId": "arena01",
+  "videos": [
+    {
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight06%2F00.png?alt=media",
+      "index": 0,
+      "videoId": "pEGkAi8b1nE"
+    },
+    {
+      "videoId": "xH-JNv6LYfs",
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight06%2F01.png?alt=media",
+      "index": 1
+    }
+  ],
+  "title": "Fight06",
+  "name": "Structures avancées : arbres binaires",
+  "shortDescription": "Sans eux, pas de base de données, pas de stack, pas de machine learning...",
+  "estimatedTime": 15,
+  "number": "06",
+  "challenges": [
+    "bt-insert",
+    "bt-search",
+    "bt-get-height",
+    "bt-get-balance-factor",
+    "bt-rotate-right",
+    "bt-rotate-left",
+    "bt-rotate-right-left",
+    "bt-rotate-left-right",
+    "bt-insert-balanced",
+    "bt-print-tree"
+  ],
+  "slideDecks": [],
+  "badgeUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F06.jpg?alt=media",
+  "badge": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F06.jpg?alt=media",
+      "language": "fr"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges_en%2Fbtree.jpg?alt=media",
+      "language": "en"
+    }
+  ],
+  "shortDescriptionFr": "Sans eux, pas de base de données, pas de stack, pas de machine learning...",
+  "shortDescriptionEn": "Without them, no database, no stack, no machine learning...",
+  "nameFr": "Structures avancées : arbres binaires",
+  "nameEn": "Advanced structures: binary trees"
+}

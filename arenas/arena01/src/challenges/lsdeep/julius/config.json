@@ -1,0 +1,15 @@
+{
+  "type": "PROGRAM",
+  "name": "round-01",
+  "program": {
+    "name": "lsdeep.ts",
+    "invocations": [
+      ["empty-files"],
+      ["./empty-files"],
+      ["./bigfile"],
+      ["./file-and-dir"],
+      ["./folded-simple"],
+      ["./folded-complex"]
+    ]
+  }
+}

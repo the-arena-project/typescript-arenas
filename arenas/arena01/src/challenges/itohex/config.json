@@ -1,0 +1,18 @@
+{
+  "slug": "itohex",
+  "name": "itohex",
+  "baseScore": 400,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [
+    "Array.length",
+    "String.length",
+    "Math.floor"
+  ],
+  "nameFr": "itohex",
+  "nameEn": "itohex",
+  "hintEn": null,
+  "hintFr": null
+}

@@ -1,0 +1,58 @@
+{
+  "number": "01",
+  "title": "Fight 00",
+  "name": "Le shell : from zero to hero",
+  "slug": "shell",
+  "estimatedTime": 10,
+  "shortDescription": "L'objectif de cette journée est de vous faire maîtriser le shell.",
+  "videos": [
+    {
+      "index": 1,
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight00%2F00.jpeg?alt=media",
+      "videoId": "V2sad3syyr0"
+    },
+    {
+      "index": 2,
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight00%2F01.png?alt=media",
+      "videoId": "Ep-F4N2wuu8"
+    },
+    {
+      "index": 3,
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight00%2Fonboarding-00.jpeg?alt=media",
+      "videoId": "X77EnaFS_5M"
+    }
+  ],
+  "challenges": [
+    "first-commit",
+    "scream",
+    "throwing-knife",
+    "hello-julius",
+    "nice-to-meet-you",
+    "chmod",
+    "linkedin",
+    "touchme",
+    "filterme",
+    "escape",
+    "capture-the-flag"
+  ],
+  "slideDecks": [
+    {
+      "url": "https://slides.com/thearenaproject/arena01-shell/embed"
+    }
+  ],
+  "badgeUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F00.jpg?alt=media",
+  "badge": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F00.jpg?alt=media",
+      "language": "fr"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges_en%2Fshell.jpg?alt=media",
+      "language": "en"
+    }
+  ],
+  "shortDescriptionFr": "L'objectif de cette journée est de vous faire maîtriser le shell.",
+  "shortDescriptionEn": "The objective of this day is to make you master the shell.",
+  "nameFr": "Le shell : from zero to hero",
+  "nameEn": "The shell: from zero to hero"
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "hello-julius",
+  "name": "Hello Julius",
+  "hint": "💡 man cat",
+  "baseScore": 25,
+  "scorePenaltyPerAttempt": 3,
+  "turnedInFile": "Julius",
+  "slideDecks": [],
+  "allowedMaterials": [
+    "rien"
+  ],
+  "nameFr": "Hello Julius",
+  "nameEn": "Hello Julius",
+  "hintFr": "💡 man cat",
+  "hintEn": ""
+}

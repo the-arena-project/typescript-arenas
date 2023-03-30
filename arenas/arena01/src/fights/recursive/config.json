@@ -1,0 +1,47 @@
+{
+  "slug": "recursive",
+  "estimatedTime": 33,
+  "shortDescription": "Pour survivre tu auras besoin de maîtriser une nouvelle arme : le backtracking.",
+  "number": "02",
+  "courseTemplateId": "arena01",
+  "title": "Fight 02",
+  "videos": [
+    {
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight02%2F00.png?alt=media",
+      "index": 0,
+      "videoId": "g5s6BTRSfA8"
+    }
+  ],
+  "name": "L'itérativité et la récursivité",
+  "challenges": [
+    "iterative-factorial",
+    "recursive-factorial",
+    "iterative-power",
+    "recursive-power",
+    "fibonacci",
+    "the-corridor",
+    "avoid-the-warriors",
+    "find-path",
+    "shortest-path"
+  ],
+  "slideDecks": [
+    {
+      "url": "https://slides.com/thearenaproject/recursion/embed"
+    }
+  ],
+  "badgeUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F02.jpg?alt=media",
+  "badge": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges%2F02.jpg?alt=media",
+      "language": "fr"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Fbadges_en%2Frecursive.jpg?alt=media",
+      "language": "en"
+    }
+  ],
+  "shortDescriptionFr": "Pour survivre tu auras besoin de maîtriser une nouvelle arme : le backtracking.",
+  "shortDescriptionEn": " To survive, you will need to master a new weapon: backtracking.",
+  "nameFr": "L'itérativité et la récursivité",
+  "nameEn": "Iteration and recursion"
+}

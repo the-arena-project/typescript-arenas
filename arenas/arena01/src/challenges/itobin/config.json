@@ -1,0 +1,22 @@
+{
+  "slug": "itobin",
+  "name": "itobin",
+  "baseScore": 400,
+  "scorePenaltyPerAttempt": 50,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [
+    {
+      "url": "https://slides.com/thearenaproject/binary-number-bases/embed"
+    }
+  ],
+  "allowedMaterials": [
+    "Array.length",
+    "String.length",
+    "Math.floor"
+  ],
+  "nameFr": "itobin",
+  "nameEn": "itobin",
+  "hintEn": null,
+  "hintFr": null
+}

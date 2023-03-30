@@ -1,0 +1,27 @@
+{
+  "slug": "cp",
+  "name": "cp",
+  "baseScore": 2000,
+  "scorePenaltyPerAttempt": 100,
+  "turnedInFile": "cp.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [
+    "path.basename",
+    "path.join",
+    "fs.openSync",
+    "fs.writeSync",
+    "fs.readSync",
+    "fs.closeSync",
+    "Buffer.alloc",
+    "Buffer.copy",
+    "fs.statSync",
+    "Stats.isFile",
+    "Stats.isDirectory",
+    "process.exit"
+  ],
+  "nameFr": "cp",
+  "nameEn": "cp",
+  "hintEn": null,
+  "hintFr": null
+}

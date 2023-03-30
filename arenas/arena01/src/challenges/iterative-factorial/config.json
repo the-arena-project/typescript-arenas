@@ -1,0 +1,14 @@
+{
+  "slug": "iterative-factorial",
+  "name": "iterativeFactorial",
+  "hint": "💡https://fr.wikipedia.org/wiki/Factorielle",
+  "baseScore": 100,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "iterativeFactorial",
+  "nameEn": "iterativeFactorial",
+  "hintFr": "💡https://fr.wikipedia.org/wiki/Factorielle",
+  "hintEn": "https://fr.wikipedia.org/wiki/Factorielle"
+}

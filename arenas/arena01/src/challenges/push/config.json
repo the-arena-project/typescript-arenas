@@ -1,0 +1,14 @@
+{
+  "slug": "push",
+  "name": "push",
+  "baseScore": 100,
+  "scorePenaltyPerAttempt": 10,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "push",
+  "nameEn": "push",
+  "hintEn": null,
+  "hintFr": null
+}

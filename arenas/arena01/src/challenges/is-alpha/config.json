@@ -1,0 +1,14 @@
+{
+  "slug": "is-alpha",
+  "name": "isAlpha",
+  "baseScore": 100,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "isAlpha",
+  "nameEn": "isAlpha",
+  "hintEn": null,
+  "hintFr": null
+}

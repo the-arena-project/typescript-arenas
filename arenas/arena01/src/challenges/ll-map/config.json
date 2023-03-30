@@ -1,0 +1,14 @@
+{
+  "slug": "ll-map",
+  "name": "map",
+  "baseScore": 1500,
+  "scorePenaltyPerAttempt": 250,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "map",
+  "nameEn": "map",
+  "hintEn": null,
+  "hintFr": null
+}

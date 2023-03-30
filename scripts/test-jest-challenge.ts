@@ -8,7 +8,7 @@ const printUsage = () => {
 
 const getRootDirPath = (arenaId: string, challengeId?: string) => {
     if (challengeId) {
-        return join(__dirname, "..", "arenas", arenaId, "challenges", challengeId);
+        return join(__dirname, "..", "arenas", arenaId, "src", "challenges", challengeId);
     }
 
     return join(__dirname, "..", "arenas", arenaId);

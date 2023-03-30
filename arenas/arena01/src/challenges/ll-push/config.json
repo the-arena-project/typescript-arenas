@@ -1,0 +1,14 @@
+{
+  "slug": "ll-push",
+  "name": "push",
+  "baseScore": 800,
+  "scorePenaltyPerAttempt": 100,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "push",
+  "nameEn": "push",
+  "hintEn": null,
+  "hintFr": null
+}

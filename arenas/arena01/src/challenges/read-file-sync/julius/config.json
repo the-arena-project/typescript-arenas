@@ -1,0 +1,7 @@
+{
+  "type": "JEST",
+  "name": "round-02",
+  "jest": {
+    "jestCliArgs": []
+  }
+}

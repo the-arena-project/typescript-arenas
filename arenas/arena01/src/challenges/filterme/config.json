@@ -1,0 +1,14 @@
+{
+  "slug": "filterme",
+  "name": "filterme",
+  "hint": "💡 man grep",
+  "baseScore": 50,
+  "scorePenaltyPerAttempt": 5,
+  "turnedInFile": "filterme.sh",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "filterme",
+  "nameEn": "filterme",
+  "hintFr": "💡 man grep",
+  "hintEn": "💡 man grep"
+}

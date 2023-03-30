@@ -1,0 +1,14 @@
+{
+  "slug": "bt-rotate-right",
+  "name": "rotateRight",
+  "baseScore": 1000,
+  "scorePenaltyPerAttempt": 150,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "rotateRight",
+  "nameEn": "rotateRight",
+  "hintEn": null,
+  "hintFr": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "bt-search",
+  "name": "search",
+  "hint": "💡Les arbres binaires de recherche ont des propriétés particulières, si seulement vous saviez lesquelles...",
+  "baseScore": 2500,
+  "scorePenaltyPerAttempt": 350,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "search",
+  "nameEn": "search",
+  "hintFr": "💡Les arbres binaires de recherche ont des propriétés particulières, si seulement vous saviez lesquelles...",
+  "hintEn": "💡Binary search trees have special properties, if only you knew which ones..."
+}

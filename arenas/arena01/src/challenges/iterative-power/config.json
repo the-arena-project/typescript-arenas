@@ -1,0 +1,14 @@
+{
+  "slug": "iterative-power",
+  "name": "iterativePower",
+  "baseScore": 150,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "hint": null,
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "nameFr": "iterativePower",
+  "nameEn": "iterativePower",
+  "hintEn": null,
+  "hintFr": null
+}
