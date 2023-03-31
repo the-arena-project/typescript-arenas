@@ -1,0 +1,17 @@
+{
+  "slug": "ms02",
+  "baseScore": 25,
+  "scorePenaltyPerAttempt": 0,
+  "turnedInFile": "minesweeper.ts",
+  "slideDecks": [],
+  "allowedMaterials": [
+    "Array.length",
+    "String.length"
+  ],
+  "name": "exemple //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt nameFr et nameEn.",
+  "nameFr": "Ton premier champ de mine",
+  "nameEn": "Your first mine field",
+  "hint": "Ceci est un hint. //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt hintFr et hintEn.",
+  "hintFr": "💡 Exécute toujours les tests après chaque ligne de code",
+  "hintEn": "💡 Always run the tests after each line of code"
+}

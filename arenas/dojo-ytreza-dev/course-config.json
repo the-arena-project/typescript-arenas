@@ -1,0 +1,17 @@
+{
+    "id": "dojo-ytreza-dev",
+    "name": "Dojo ytreza.dev",
+    "nameFr": "Dojo ytreza.dev", "nameEn": "Dojo ytreza.dev", "status": "Published",
+    "challengeCount": 1,
+    "estimatedDays": 7,
+    "description": "Venez affuter vos techniques dans le dojo ytreza.dev",
+    "descriptionFr": "Venez affuter vos techniques dans le dojo ytreza.dev",
+    "descriptionEn": "Come and sharpen your techniques in the ytreza.dev dojo",
+    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Fcourses%2Fcourse-01.jpeg?alt=media&token=e3f71205-b3ca-4a57-9ddf-8f148bc9f2cf",
+    "chapters": [
+        "minesweeper"
+    ],
+    "authorIds": [
+        "mVfYJvGtQ9YxiLaeHaMeEJY2dGs1"
+    ]
+}
