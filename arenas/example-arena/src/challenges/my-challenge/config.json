@@ -1,5 +1,5 @@
 {
-  "slug": "example",
+  "slug": "my-challenge",
   "baseScore": 100,
   "scorePenaltyPerAttempt": 10,
   "turnedInFile": "index.ts",
