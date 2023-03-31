@@ -48,6 +48,7 @@ jobs:
         run: |
           for trackModelId in $(tap track ls); do
             tap track r push "$trackModelId" --preRelease
+            tap track r ufm "$trackModelId" --preRelease --nonInteractive
           done
 
       - name: push to firestore as production
@@ -55,4 +56,5 @@ jobs:
         run: |
           for trackModelId in $(tap track ls); do
             tap track r push "$trackModelId" --preRelease=false
+            tap track r ufm "$trackModelId" --preRelease=false --nonInteractive
           done
