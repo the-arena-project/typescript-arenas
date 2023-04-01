@@ -11,7 +11,6 @@
     "descriptionEn": "Learn to manipulate the filesystem, speak binary, use backtracking to solve complex problems to become a true developer!",
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Fcourses%2Fcourse-00.jpeg?alt=media",
     "chapters": [
-        "shell",
         "fundamentals",
         "recursive",
         "binary",
