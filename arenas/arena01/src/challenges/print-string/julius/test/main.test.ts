@@ -1,5 +1,4 @@
 import { spawn } from 'child_process';
-;
 import { join } from 'path';
 
 const spawnTestingProcess = async (s: string) => new Promise((resolve, reject) => {
