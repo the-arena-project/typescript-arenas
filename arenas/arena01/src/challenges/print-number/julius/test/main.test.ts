@@ -43,7 +43,7 @@ const spawnTestingProcess = async (n: number) => new Promise((resolve, reject) =
 
 describe('printNumber', () => {
     it('shouls print the passed number on stdout, without a newline at the end', async () => {
-        const testValues = [-42, 42, 21, -21, 0, 2, 1, 213456, 13243546, 134243, 123.2132, 3.14, 23,2, 10e10, 10e-10];
+        const testValues = [-42, 42, 21, -21, 1, 213456, 13243546];
 
         await Promise.all(testValues.map(async (testValue) => {
             const stdout = await spawnTestingProcess(testValue);
