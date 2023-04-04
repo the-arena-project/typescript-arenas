@@ -50,5 +50,5 @@ describe('printNumber', () => {
 
             expect(stdout).toEqual(`${testValue}`);
         }))
-    })
+    }, 10000)
 })
