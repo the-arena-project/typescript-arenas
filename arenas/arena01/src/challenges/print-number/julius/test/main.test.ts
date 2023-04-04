@@ -17,7 +17,7 @@ const spawnTestingProcess = async (n: number) => new Promise((resolve) => {
 */
 
 const spawnTestingProcess = async (n: number) => new Promise((resolve, reject) => {
-    const process = spawn('ts-node', [join(__dirname, 'execute'), n]);
+    const process = spawn('ts-node', [join(__dirname, 'execute'), `${n}`]);
     let out = '';
     let err = '';
 
