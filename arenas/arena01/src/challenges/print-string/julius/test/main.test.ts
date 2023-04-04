@@ -2,13 +2,26 @@ import { spawn } from 'child_process';
 ;
 import { join } from 'path';
 
-const spawnTestingProcess = async (s: string) => new Promise((resolve) => {
+const spawnTestingProcess = async (s: string) => new Promise((resolve, reject) => {
     const process = spawn('ts-node', [join(__dirname, 'execute'), s]);
     let out = '';
+    let err = '';
 
     process.stdout.on('data', (data) => out += data);
 
+    process.stderr.on('data', (data) => {
+        err += data;
+    });
+
+    process.on('error', (error) => {
+        reject(error);
+    });
+
     process.on('close', () => {
+        if (err) {
+            return reject(err);
+        }
+
         resolve(out);
     })
 });
