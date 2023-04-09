@@ -5,13 +5,7 @@
   "number": "02",
   "courseTemplateId": "arena01",
   "title": "Fight 02",
-  "videos": [
-    {
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight02%2F00.png?alt=media",
-      "index": 0,
-      "videoId": "g5s6BTRSfA8"
-    }
-  ],
+  "videos": [],
   "name": "L'itérativité et la récursivité",
   "challenges": [
     "iterative-factorial",

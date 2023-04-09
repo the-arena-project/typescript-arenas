@@ -5,13 +5,7 @@
   "courseTemplateId": "arena01",
   "name": "La base 10, le binaire et l'hexadécimal",
   "shortDescription": "Un programmeur qui ne comprend pas le binaire est comme un gladiateur sans arme.",
-  "videos": [
-    {
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight03%2F00.png?alt=media",
-      "index": 0,
-      "videoId": "GpA8CjEfZwc"
-    }
-  ],
+  "videos": [],
   "title": "Fight 03",
   "challenges": [
     "atoi",

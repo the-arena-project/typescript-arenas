@@ -5,23 +5,7 @@
   "slug": "shell",
   "estimatedTime": 10,
   "shortDescription": "L'objectif de cette journée est de vous faire maîtriser le shell.",
-  "videos": [
-    {
-      "index": 1,
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight00%2F00.jpeg?alt=media",
-      "videoId": "V2sad3syyr0"
-    },
-    {
-      "index": 2,
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight00%2F01.png?alt=media",
-      "videoId": "Ep-F4N2wuu8"
-    },
-    {
-      "index": 3,
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight00%2Fonboarding-00.jpeg?alt=media",
-      "videoId": "X77EnaFS_5M"
-    }
-  ],
+  "videos": [],
   "challenges": [
     "first-commit",
     "scream",
