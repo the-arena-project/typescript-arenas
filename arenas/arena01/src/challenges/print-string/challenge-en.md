@@ -1,4 +1,4 @@
-In all courses, they start with a `console.log("Hello world!")`. 
+All courses start with a `console.log("Hello world!")`. 
 
 In the Arena, we expect you to develop a deeper understanding than that.
 
