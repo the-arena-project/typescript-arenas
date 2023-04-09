@@ -1,18 +1,7 @@
 {
   "slug": "filesystem",
   "number": "04",
-  "videos": [
-    {
-      "videoId": "E0SL4piXCXE",
-      "index": 0,
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight04%2F00.png?alt=media"
-    },
-    {
-      "index": 1,
-      "videoId": "tE-5s5_hyZQ",
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight04%2F01.png?alt=media"
-    }
-  ],
+  "videos": [],
   "title": "Fight 04",
   "courseTemplateId": "arena01",
   "estimatedTime": 15,
