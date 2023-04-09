@@ -1,7 +1,0 @@
-{
-  "type": "JEST",
-  "name": "my-challenge",
-  "jest": {
-    "jestCliArgs": []
-  }
-}

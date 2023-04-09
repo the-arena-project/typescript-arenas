@@ -3,23 +3,7 @@
   "title": "Fight 01",
   "name": "Structures basiques : les chaînes et les tableaux",
   "slug": "fundamentals",
-  "videos": [
-    {
-      "index": 0,
-      "videoId": "AXboahdHUYw",
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight01%2F00.png?alt=media"
-    },
-    {
-      "index": 1,
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight01%2F01.png?alt=media",
-      "videoId": "34FiBh6lMMA"
-    },
-    {
-      "videoId": "HL0UXSmZgXw",
-      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight01%2F02.png?alt=media",
-      "index": 2
-    }
-  ],
+  "videos": [],
   "challenges": [
     "print-string",
     "print-number",
