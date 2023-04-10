@@ -9,16 +9,19 @@ You start to move forward, ready to cross the minefield when suddenly, Julius ra
 > From now on, you will do everything I ask. How you do it matters little to me, as long as you meet my demands. But stay simple; otherwise, you will fail...
 
 ## What you need to do
+
 In general, a minefield contains cells with a mine or cells without a mine. But this one contains neither, so it can be considered empty.
 
 The test you need to pass is as follows:
 
 ```ts
+describe("minesweeper", () => {
   it("should solve empty field", () => {
       const solved_field = minesweeper("")
 
       expect(solved_field).toEqual("")
   })
+})
 ```
 
 To do so, you are required to export your very own `minesweeper` function from your `index.ts` file, like this:

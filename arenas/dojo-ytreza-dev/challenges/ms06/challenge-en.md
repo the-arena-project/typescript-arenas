@@ -7,19 +7,21 @@ You catch Julius' gaze, and you can tell he's enjoying himself.
 The tests you need to pass are as follows:
 
 ```typescript
-it("should solve empty field", () => {
-    const solved_field = minesweeper("")
-    expect(solved_field).toEqual("")
-})
+describe('minesweeper', () => {
+    it("should solve empty field", () => {
+        const solved_field = minesweeper("")
+        expect(solved_field).toEqual("")
+    })
 
-it("should solve one empty cell", () => {
-    const solved_field = minesweeper(".")
-    expect(solved_field).toEqual("0")
-})
+    it("should solve one empty cell", () => {
+        const solved_field = minesweeper(".")
+        expect(solved_field).toEqual("0")
+    })
 
-it("should solve one mined cell", () => {
-    const solved_field = minesweeper("*")
-    expect(solved_field).toEqual("*")
+    it("should solve one mined cell", () => {
+        const solved_field = minesweeper("*")
+        expect(solved_field).toEqual("*")
+    })
 })
 ```
 

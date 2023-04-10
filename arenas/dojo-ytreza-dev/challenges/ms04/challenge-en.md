@@ -5,6 +5,7 @@ You are starting to make your way into the arena. Maybe you found the previous c
 > Congratulations, you have triumphed over my two minefields, but can you handle two at once?
 
 ```typescript
+describe("minesweeper", () => {
     it("should solve empty field", () => {
         const solved_field = minesweeper("")
 
@@ -13,9 +14,10 @@ You are starting to make your way into the arena. Maybe you found the previous c
     
     it("should solve one empty cell", () => {
         const solved_field = minesweeper(".")
-        
+
         expect(solved_field).toEqual("0")
     })
+})
 ```
 
 Julius continues:

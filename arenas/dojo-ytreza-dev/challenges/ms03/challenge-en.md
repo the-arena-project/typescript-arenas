@@ -7,12 +7,15 @@ You now face a new challenge. This time, Julius asks you to solve a minefield co
 The test you need to pass is as follows:
 
 ```ts
-it("should solve one empty cell", () => {
-    const solved_field = minesweeper(".")
+describe("minesweeper", () => {
+    it("should solve one empty cell", () => {
+        const solved_field = minesweeper(".")
 
-    expect(solved_field).toEqual("0")
+        expect(solved_field).toEqual("0")
+    })
 })
 ```
+
 The minefield contains a single empty cell represented by a period "."
 In this field, there are no mines. The expected output is "0", which means there are no adjacent mines to the empty cell.
 
