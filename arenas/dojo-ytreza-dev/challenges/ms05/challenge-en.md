@@ -1,27 +1,29 @@
-# Welcome to the minesweeper challenge
+# Watch Out for the Mine
 
-## Description of the kata
-We are going to play minesweeper. The idea of this kata is to propose an application that allows you to indicate the position of mines and calculate the number of mines adjacent to empty squares.
+You have just passed the previous challenge. Julius' smile fades. He applauds you softly, and then you see a grin appear on his face.
 
-## To get started: 
+> Wonderful! I hope for your sake that you made the right choice. We will see about that later... But for now, be careful, the real challenge starts now. At the slightest misstep you make, it will be the end for you.
 
-### Starting track
-We will make a function `minesweeper` which receives as input a string containing the field of mines (as a rectangle). It returns a string containing the resolved minefield.
+This time, Julius confronts you with a minefield that may contain a mine.
 
-For example, if you have as input : 
-```
-*...
-....
-.*..
-....
-```
+> A single mine can be enough to cause the destruction of an army. Exercise caution and precision.
 
-you'll get the output: 
-```
-*100
-2210
-1*10
-1110
+The tests you need to pass are as follows:
+
+```typescript
+    it("should solve empty field", () => {
+        const solved_field = minesweeper("")
+        expect(solved_field).toEqual("")
+    })
+
+    it("should solve one mined cell", () => {
+        const solved_field = minesweeper("*")
+        expect(solved_field).toEqual("*")
+    })
 ```
 
-Translated with www.DeepL.com/Translator (free version)
+To pass this challenge, you should start by copying and pasting the code from the previous challenge and then make the smallest possible modification to pass the test.
+
+Julius addresses you again.
+
+> A tiny change can make all the difference. Will you be able to spot it?
