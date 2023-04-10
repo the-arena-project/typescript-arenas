@@ -1,27 +1,23 @@
-# Welcome to the minesweeper challenge
+# One Empty Cell
 
-## Description of the kata
-We are going to play minesweeper. The idea of this kata is to propose an application that allows you to indicate the position of mines and calculate the number of mines adjacent to empty squares.
+You now face a new challenge. This time, Julius asks you to solve a minefield containing only one empty cell.
 
-## To get started: 
+> Do not underestimate the difficulty of this task. Even though this challenge may seem simple, it is essential to master each step of our progression.
 
-### Starting track
-We will make a function `minesweeper` which receives as input a string containing the field of mines (as a rectangle). It returns a string containing the resolved minefield.
+The test you need to pass is as follows:
 
-For example, if you have as input : 
+```ts
+it("should solve one empty cell", () => {
+    const solved_field = minesweeper(".")
+
+    expect(solved_field).toEqual("0")
+})
 ```
-*...
-....
-.*..
-....
-```
+The minefield contains a single empty cell represented by a period "."
+In this field, there are no mines. The expected output is "0", which means there are no adjacent mines to the empty cell.
 
-you'll get the output: 
-```
-*100
-2210
-1*10
-1110
-```
+To pass this challenge, you should start by copying and pasting the code from the previous challenge and then make the smallest possible modification to pass the test.
 
-Translated with www.DeepL.com/Translator (free version)
+Remember to ask Julius what he expects from you. If you receive a negative response (RED), correct your code and perform a new smart commit. If you receive a positive response (GREEN), congratulations! You can move on to the next challenge.
+
+Don't forget to keep it as simple as possible to satisfy Julius.
