@@ -1,27 +1,37 @@
-# Welcome to the minesweeper challenge
+# Your First Minefield
 
-## Description of the kata
-We are going to play minesweeper. The idea of this kata is to propose an application that allows you to indicate the position of mines and calculate the number of mines adjacent to empty squares.
+Before you stands your first minefield. Julius gestures for you to move forward and cross it.
 
-## To get started: 
+Fear not. You can proceed confidently because, in fact, this minefield is empty.
 
-### Starting track
-We will make a function `minesweeper` which receives as input a string containing the field of mines (as a rectangle). It returns a string containing the resolved minefield.
+You start to move forward, ready to cross the minefield when suddenly, Julius raises his hand and speaks up.
 
-For example, if you have as input : 
-```
-*...
-....
-.*..
-....
-```
+> From now on, you will do everything I ask. How you do it matters little to me, as long as you meet my demands. But stay simple; otherwise, you will fail...
 
-you'll get the output: 
-```
-*100
-2210
-1*10
-1110
+## What you need to do
+In general, a minefield contains cells with a mine or cells without a mine. But this one contains neither, so it can be considered empty.
+
+The test you need to pass is as follows:
+
+```ts
+  it("should solve empty field", () => {
+      const solved_field = minesweeper("")
+
+      expect(solved_field).toEqual("")
+  })
 ```
 
-Translated with www.DeepL.com/Translator (free version)
+To do so, you are required to export your very own `minesweeper` function from your `index.ts` file, like this:
+
+```ts
+// index.ts
+export const minesweeper = (minefield: string) => {
+    /* your logic goes here */
+}
+```
+
+Keep that in mind, since you will have to add logic to this function in the upcoming challenges!
+
+In this chapter of your adventure, a negative response (let's call it RED) is not a big deal and brings you no penalty. Just write the code that will allow you to fix this error. Once that's done, you'll have to perform a smart commit again. It may fail (RED), or maybe Julius will validate your passage (GREEN).
+
+But remember, if you want to satisfy Julius, you must keep it simple.
