@@ -1,27 +1,33 @@
-# Welcome to the minesweeper challenge
+# Two Challenges at Once
 
-## Description of the kata
-We are going to play minesweeper. The idea of this kata is to propose an application that allows you to indicate the position of mines and calculate the number of mines adjacent to empty squares.
+You are starting to make your way into the arena. Maybe you found the previous challenges too easy? Julius realizes this and tells you with a fierce smile:
 
-## To get started: 
+> Congratulations, you have triumphed over my two minefields, but can you handle two at once?
 
-### Starting track
-We will make a function `minesweeper` which receives as input a string containing the field of mines (as a rectangle). It returns a string containing the resolved minefield.
+```typescript
+    it("should solve empty field", () => {
+        const solved_field = minesweeper("")
 
-For example, if you have as input : 
-```
-*...
-....
-.*..
-....
-```
-
-you'll get the output: 
-```
-*100
-2210
-1*10
-1110
+        expect(solved_field).toEqual("")
+    })
+    
+    it("should solve one empty cell", () => {
+        const solved_field = minesweeper(".")
+        
+        expect(solved_field).toEqual("0")
+    })
 ```
 
-Translated with www.DeepL.com/Translator (free version)
+Julius continues:
+
+> This may seem easy, but many have fallen under this challenge. Complexity has lost them.
+
+In this challenge, you will continue to use the previous code. But you have a choice to make, from which challenge's code will you start?
+
+Julius goes on:
+
+> Will you make the right choice?
+
+Remember to ask Julius what he expects from you. If you receive a negative response (RED), correct your code and perform a new smart commit. If you receive a positive response (GREEN), congratulations! You can move on to the next challenge.
+
+Don't forget that simplicity is crucial if you want to survive in this arena.
