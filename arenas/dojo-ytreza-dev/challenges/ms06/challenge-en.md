@@ -1,27 +1,26 @@
-# Welcome to the minesweeper challenge
+# Mine or No Mine?
 
-## Description of the kata
-We are going to play minesweeper. The idea of this kata is to propose an application that allows you to indicate the position of mines and calculate the number of mines adjacent to empty squares.
+You catch Julius' gaze, and you can tell he's enjoying himself.
 
-## To get started: 
+> So you didn't blow up on the mine, but that was easy because you knew there had to be one. Now, there might be a mine, or there might not be. Will you survive this new challenge?
 
-### Starting track
-We will make a function `minesweeper` which receives as input a string containing the field of mines (as a rectangle). It returns a string containing the resolved minefield.
+The tests you need to pass are as follows:
 
-For example, if you have as input : 
+```typescript
+it("should solve empty field", () => {
+    const solved_field = minesweeper("")
+    expect(solved_field).toEqual("")
+})
+
+it("should solve one empty cell", () => {
+    const solved_field = minesweeper(".")
+    expect(solved_field).toEqual("0")
+})
+
+it("should solve one mined cell", () => {
+    const solved_field = minesweeper("*")
+    expect(solved_field).toEqual("*")
+})
 ```
-*...
-....
-.*..
-....
-```
 
-you'll get the output: 
-```
-*100
-2210
-1*10
-1110
-```
-
-Translated with www.DeepL.com/Translator (free version)
+To pass this challenge, you should start by copying and pasting the code from the previous challenge and make the minimal modification that will allow you to pass the tests.
