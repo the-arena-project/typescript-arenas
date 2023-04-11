@@ -1,0 +1,14 @@
+{
+  "slug": "ms04",
+  "baseScore": 25,
+  "scorePenaltyPerAttempt": 0,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "name": "exemple //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt nameFr et nameEn.",
+  "nameFr": "Deux épreuves à la fois",
+  "nameEn": "Two tests at once",
+  "hint": "Ceci est un hint. //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt hintFr et hintEn.",
+  "hintFr": "💡Car les exemples génériques, j'adore ça.",
+  "hintEn": "💡Because I love generic examples."
+}

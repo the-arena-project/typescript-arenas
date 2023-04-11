@@ -1,0 +1,23 @@
+{
+  "slug": "minesweeper",
+  "estimatedTime": 3,
+  "videos": [
+    {
+      "index": 0,
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight01%2Fintroduction_thumb.jpg?alt=media",
+      "videoId": "3_GwD4oU6z4"
+    }
+  ],
+  "challenges": [
+    "ms01", "ms02", "ms03", "ms04", "ms05", "ms06", "ms07"
+  ],
+  "slideDecks": [],
+  "badgeUrl": null,
+  "badge": [],
+  "shortDescription": "Te voici dans un champ de mine, il va falloir en sortir sans exploser.",
+  "shortDescriptionFr": "Te voici dans un champ de mine, il va falloir en sortir sans exploser.",
+  "shortDescriptionEn": "Here you are in a minefield, you'll have to get out without exploding.",
+  "name": "Minesweeper challenge",
+  "nameFr": "Minesweeper challenge",
+  "nameEn": "Minesweeper challenge"
+}
