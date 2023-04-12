@@ -1,21 +1,19 @@
-import { rotateLeft, rotateLeftRight, rotateRight, rotateRightLeft } from "./rotate"
-import { BNode } from "./test/tree-utils"
+import { rotateLeft, rotateLeftRight, rotateRight, rotateRightLeft } from './rotate';
+import { BNode } from './test/tree-utils';
 
-type InsertBalancedFn = (root: BNode | null, value: number) => BNode
+type InsertBalancedFn = (root: BNode | null, value: number) => BNode;
 
 const rotationLabelToRotationFn = {
-    'LL': rotateLeft,
-    'RR': rotateRight,
-    'LR': rotateLeftRight,
-    'RL': rotateRightLeft
-}
+    LL: rotateLeft,
+    RR: rotateRight,
+    LR: rotateLeftRight,
+    RL: rotateRightLeft,
+};
 
-const performRotation = (
-    root: BNode,
-    rotationLabel: keyof typeof rotationLabelToRotationFn
-) => rotationLabelToRotationFn[rotationLabel](root);
+const performRotation = (root: BNode, rotationLabel: keyof typeof rotationLabelToRotationFn) =>
+    rotationLabelToRotationFn[rotationLabel](root);
 
-type GetBalanceFn = (root: BNode|null) => number
+type GetBalanceFn = (root: BNode | null) => number;
 
 type GetHeightFn = (root: BNode | null) => number;
 
@@ -43,14 +41,14 @@ export const getHeight: GetHeightFn = (root) => {
 
 export const getBalanceFactor: GetBalanceFn = (root) => {
     return root ? getHeight(root.left) - getHeight(root.right) : 0;
-}
+};
 
 const insert = (root: BNode | null, value: number): BNode => {
     if (root === null) {
         return {
             left: null,
             right: null,
-            value
+            value,
         };
     }
 
@@ -75,12 +73,11 @@ const insert = (root: BNode | null, value: number): BNode => {
 
             return performRotation(root, bf2 > 0 ? 'RL' : 'RR');
         }
-   }
+    }
 
     return root;
-}
-
+};
 
 export const insertBalanced: InsertBalancedFn = (root, value) => {
     return insert(root, value);
-}
+};

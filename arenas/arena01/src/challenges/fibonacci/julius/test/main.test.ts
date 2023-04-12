@@ -1,4 +1,4 @@
-import { fibonacci } from "../index";
+import { fibonacci } from '../index';
 
 function refFib(element: number) {
     const sequence = [0, 1];
@@ -18,10 +18,12 @@ describe('fibonacci', () => {
     });
 
     it('should return the sum of the two previous terms when computing the n-th term', () => {
-        const testValues = [4, 3, 8, 10, 12, 14, 16, 22 ]
+        const testValues = [4, 3, 8, 10, 12, 14, 16, 22];
 
         for (const testValue of testValues) {
-            expect(fibonacci(testValue)).toEqual(fibonacci(testValue - 1) + fibonacci(testValue - 2));
+            expect(fibonacci(testValue)).toEqual(
+                fibonacci(testValue - 1) + fibonacci(testValue - 2),
+            );
         }
     });
 
@@ -29,5 +31,5 @@ describe('fibonacci', () => {
         for (let i = 1; i !== 25; ++i) {
             expect(fibonacci(i)).toEqual(refFib(i));
         }
-    })
+    });
 });

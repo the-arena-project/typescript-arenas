@@ -1,4 +1,4 @@
-import {appendFileSync, existsSync, openSync, readdirSync, readFileSync} from "fs";
+import { appendFileSync, existsSync, readFileSync } from 'fs';
 
 export class DumbDb {
     private readonly idToUsername: Record<number, string> = {};
@@ -13,14 +13,14 @@ export class DumbDb {
 
             this.currentId = entries.length;
             for (const entry of entries) {
-                const [ id, ...rest ] = entry.split(' ');
+                const [id, ...rest] = entry.split(' ');
                 const numId = +id;
                 const username = rest.join('');
 
                 this.idToUsername[numId] = username;
 
                 if (typeof this.usernameToIds[username] === 'undefined') {
-                    this.usernameToIds[username] = [ numId ];
+                    this.usernameToIds[username] = [numId];
                 } else {
                     this.usernameToIds[username].push(numId);
                 }
@@ -28,12 +28,12 @@ export class DumbDb {
         }
     }
 
-    insert(username: string): { id: number, username: string } {
+    insert(username: string): { id: number; username: string } {
         const newId = ++this.currentId;
 
         appendFileSync(this.pathToDbFile, `${this.currentId} ${username}\n`);
         if (typeof this.usernameToIds[username] === 'undefined') {
-            this.usernameToIds[username] = [ newId ];
+            this.usernameToIds[username] = [newId];
         } else {
             this.usernameToIds[username].push(newId);
         }

@@ -11,7 +11,7 @@ describe('isAlpha', () => {
             's',
             'o',
             'zawarudo',
-            'abcdefhijklmnopqrstuvwxyz'
+            'abcdefhijklmnopqrstuvwxyz',
         ];
 
         for (const testValue of testValues) {
@@ -29,7 +29,7 @@ describe('isAlpha', () => {
             'S',
             'O',
             'ZAWARUDO',
-            'ABCDEFHIJKLMNOPQRSTUVWXYZ'
+            'ABCDEFHIJKLMNOPQRSTUVWXYZ',
         ];
 
         for (const testValue of testValues) {
@@ -45,13 +45,13 @@ describe('isAlpha', () => {
             'HgmnooqprUofkedw',
             'Amazing',
             'WoW',
-            'AwEsOme'
-        ]
+            'AwEsOme',
+        ];
 
         for (const testValue of testValues) {
             expect(isAlpha(testValue)).toEqual(true);
         }
-    })
+    });
 
     it('should return false if the string contains anything else than a letter', () => {
         const testValues = [
@@ -62,11 +62,11 @@ describe('isAlpha', () => {
             '123456789',
             'ABCDEF-GHIJKLMNOPQRSTUVWZ',
             'int main() { return 0; }',
-            'fuck u'
+            'fuck u',
         ];
 
         for (const testValue of testValues) {
             expect(isAlpha(testValue)).toEqual(false);
         }
     });
-})
+});

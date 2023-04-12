@@ -1,5 +1,5 @@
-import { readdirSync, statSync } from "fs";
-import { join } from "path";
+import { readdirSync, statSync } from 'fs';
+import { join } from 'path';
 
 const pathToDir = process.argv[2];
 
@@ -12,8 +12,7 @@ const listDir = (listedDir: string): void => {
     const outputLines = [] as string[];
     const dirs = [] as string[];
 
-    const filenames = readdirSync(listedDir)
-    .sort((a, b) => a.localeCompare(b));
+    const filenames = readdirSync(listedDir).sort((a, b) => a.localeCompare(b));
 
     let totalSize = 0;
 
@@ -27,16 +26,20 @@ const listDir = (listedDir: string): void => {
         }
 
         totalSize += stat.blocks;
-        outputLines.push(`${String(isDir ? 'Directory' : 'File').padEnd(11)}${filename}`)
+        outputLines.push(`${String(isDir ? 'Directory' : 'File').padEnd(11)}${filename}`);
     }
 
-    process.stdout.write(`${listedDir}:\ntotal ${totalSize}\n${outputLines.join('\n')}${outputLines.length > 0 ? '\n' : ''}`);
+    process.stdout.write(
+        `${listedDir}:\ntotal ${totalSize}\n${outputLines.join('\n')}${
+            outputLines.length > 0 ? '\n' : ''
+        }`,
+    );
 
     for (const dir of dirs) {
         process.stdout.write('\n');
         listDir(dir);
     }
-}
+};
 
 try {
     listDir(pathToDir);

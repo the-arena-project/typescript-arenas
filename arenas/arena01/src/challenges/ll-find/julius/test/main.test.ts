@@ -1,5 +1,5 @@
-import { find } from "../index";
-import { makeList } from "./utils";
+import { find } from '../index';
+import { makeList } from './utils';
 
 describe('find', () => {
     it('should find an element that is present and return it  it', () => {
@@ -15,9 +15,8 @@ describe('find', () => {
         expect(find(list, ({ data }) => data < 0)).toBe(undefined);
     });
 
-
     it('should not call the callback function if the list is empty', () => {
-        const cb = jest.fn((el) => true);
+        const cb = jest.fn(() => true);
 
         find(null, cb);
 

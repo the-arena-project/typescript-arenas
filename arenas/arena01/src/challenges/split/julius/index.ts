@@ -1,6 +1,6 @@
-type SplitFn = (str: string) => string[]
+type SplitFn = (str: string) => string[];
 
-type StrLengthFn = (str: string) => number
+type StrLengthFn = (str: string) => number;
 
 const strLength: StrLengthFn = (s) => {
     let i = 0;
@@ -10,7 +10,7 @@ const strLength: StrLengthFn = (s) => {
     }
 
     return i;
-}
+};
 
 export const split: SplitFn = (s) => {
     const len = strLength(s);
@@ -23,4 +23,4 @@ export const split: SplitFn = (s) => {
     }
 
     return arrayified;
-}
+};

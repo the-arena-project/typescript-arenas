@@ -1,11 +1,10 @@
-import {existsSync, mkdirSync, openSync, readdirSync, statSync} from "fs";
+import { existsSync, mkdirSync, statSync } from 'fs';
 import { join } from 'path';
-import {IndexFile} from "./index-file";
-import {RowFile} from "./row-file";
-import {Seq} from "./seq";
+import { IndexFile } from './index-file';
+import { RowFile } from './row-file';
+import { Seq } from './seq';
 
 const PATH_TO_DB_FILES = join(process.cwd(), '.db');
-const INDEX_FILE_EXTENSION = '.minisql';
 
 export class IndexedDb {
     private indexFiles: Record<string, IndexFile> = {};
@@ -13,7 +12,6 @@ export class IndexedDb {
     private readonly seq: Seq;
 
     constructor() {
-
         if (existsSync(PATH_TO_DB_FILES)) {
             const st = statSync(PATH_TO_DB_FILES);
 

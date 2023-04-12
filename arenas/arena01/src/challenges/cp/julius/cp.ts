@@ -1,16 +1,14 @@
-import { openSync, readSync, statSync, writeSync } from "fs"
-import { basename, join } from "path";
+import { openSync, readSync, statSync, writeSync } from 'fs';
+import { basename, join } from 'path';
 
 const BUFFER_SIZE = 4096;
-
-type CpFunction = (src: string, dst: string) => boolean;
 
 const src = process.argv[2];
 const dst = process.argv[3];
 
 try {
     const srcStat = statSync(src);
-    
+
     if (srcStat.isDirectory()) {
         process.exit(1);
     }

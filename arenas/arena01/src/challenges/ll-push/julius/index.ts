@@ -1,9 +1,9 @@
 type Link<T> = {
-    data: T,
-    next: Link<T>|null
-}
+    data: T;
+    next: Link<T> | null;
+};
 
-type GetLastFn = <T> (list: Link<T>) => Link<T>
+type GetLastFn = <T>(list: Link<T>) => Link<T>;
 
 export const getLast: GetLastFn = (list) => {
     let last = list;
@@ -11,9 +11,9 @@ export const getLast: GetLastFn = (list) => {
         last = last.next;
     }
     return last;
-}
+};
 
-type PushFn = <T> (list: Link<T>|null, data: T) => Link<T>;
+type PushFn = <T>(list: Link<T> | null, data: T) => Link<T>;
 export const push: PushFn = (list, data) => {
     const newNode = { data, next: null };
     if (!list) {
@@ -22,4 +22,4 @@ export const push: PushFn = (list, data) => {
     const last = getLast(list);
     last.next = newNode;
     return last.next;
-}
+};

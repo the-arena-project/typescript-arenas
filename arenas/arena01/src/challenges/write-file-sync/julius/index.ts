@@ -1,4 +1,4 @@
-import { closeSync, openSync, writeSync } from "fs";
+import { closeSync, openSync, writeSync } from 'fs';
 
 type WriteFileSyncFn = (path: string, buffer: Buffer) => number;
 
@@ -9,4 +9,4 @@ export const writeFileSync: WriteFileSyncFn = (path, buffer) => {
     closeSync(fd);
 
     return n;
-}
+};

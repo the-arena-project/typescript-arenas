@@ -1,5 +1,6 @@
-type CallbackFn = (elem: any) => void
-type ForEachFn = (arr: any[], cb: CallbackFn) => void
+/* eslint-disable @typescript-eslint/no-explicit-any */
+type CallbackFn = (elem: any) => void;
+type ForEachFn = (arr: any[], cb: CallbackFn) => void;
 
 export const forEach: ForEachFn = (arr, cb) => {
     let i = 0;
@@ -7,4 +8,4 @@ export const forEach: ForEachFn = (arr, cb) => {
     while (i !== arr.length) {
         cb(arr[i++]);
     }
-}
+};

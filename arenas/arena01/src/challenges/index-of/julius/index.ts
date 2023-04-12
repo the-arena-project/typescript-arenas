@@ -1,4 +1,4 @@
-type IndexOfFn = (arr: unknown[], elem: unknown) => number
+type IndexOfFn = (arr: unknown[], elem: unknown) => number;
 
 export const indexOf: IndexOfFn = (arr, elem) => {
     let i = 0;
@@ -11,4 +11,4 @@ export const indexOf: IndexOfFn = (arr, elem) => {
     }
 
     return -1;
-}
+};

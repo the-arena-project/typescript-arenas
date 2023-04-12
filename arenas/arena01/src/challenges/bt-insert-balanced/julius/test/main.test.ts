@@ -1,7 +1,5 @@
 import { insert, makeTree, treeToOrderedArray } from './tree-utils';
 import { insertBalanced } from '../index';
-import { tsNamedTupleMember } from '@babel/types';
-import { exec } from 'child_process';
 
 describe('insertBalanced', () => {
     it('should make a balanced tree without rebalancing it', () => {
@@ -52,7 +50,7 @@ describe('insertBalanced', () => {
         expect(tree?.right?.value).toEqual(5);
         expect(tree?.right?.left?.value).toEqual(4);
         expect(tree?.right?.right?.value).toEqual(6);
-    })
+    });
 
     /* do not check whether or not it's balanced, just ensure that the insertion is done properly */
     it('should insert a valid tree', () => {
@@ -61,7 +59,7 @@ describe('insertBalanced', () => {
             [12, 123, 2412, 13, 124, 124, 13, 1312, 13],
             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
             [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
-            [42, 21, 22, 23, 72, 43567, 12345, 13245, -123, -3245, 2435]
+            [42, 21, 22, 23, 72, 43567, 12345, 13245, -123, -3245, 2435],
         ];
 
         for (const testValue of testValues) {

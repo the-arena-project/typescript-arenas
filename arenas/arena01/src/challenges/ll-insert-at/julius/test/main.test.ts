@@ -1,11 +1,11 @@
-import {insertAt} from '../index';
+import { insertAt } from '../index';
 
 type Link<T> = {
-    data: T,
-    next: Link<T>|null
-}
+    data: T;
+    next: Link<T> | null;
+};
 
-type GetAtFn = <T> (list: Link<T>, index: number) => Link<T> | undefined;
+type GetAtFn = <T>(list: Link<T>, index: number) => Link<T> | undefined;
 
 export const ourGetAt: GetAtFn = (list, index) => {
     if (!list || index < 0) {
@@ -27,22 +27,20 @@ export const ourGetAt: GetAtFn = (list, index) => {
         i++;
     }
     return undefined;
-}
+};
 
 const genList = (count: number): Link<number> => {
-    const links: Link<number>[] = new Array(count)
-        .fill(1)
-        .map((item, i) => ({
-            data: i,
-            next: null,
-        }));
+    const links: Link<number>[] = new Array(count).fill(1).map((item, i) => ({
+        data: i,
+        next: null,
+    }));
     for (let i = 0; i < links.length - 1; i++) {
         if (links[i + 1]) {
             links[i].next = links[i + 1];
         }
     }
     return links[0];
-}
+};
 
 describe('insertAt', () => {
     it('should return undefined if the index does not exist', () => {
@@ -58,12 +56,12 @@ describe('insertAt', () => {
 
     it('should work at last index', () => {
         const list = genList(10);
-        const lastItem = ourGetAt(list, 9) as Link<number>
-        const anteLastItem = ourGetAt(list, 8) as Link<number>
+        const lastItem = ourGetAt(list, 9) as Link<number>;
+        const anteLastItem = ourGetAt(list, 8) as Link<number>;
 
         const newLink = insertAt(list, 9, 42);
         expect(anteLastItem.next).toStrictEqual(newLink);
-        expect(newLink!.next).toStrictEqual(lastItem);
+        expect(newLink?.next).toStrictEqual(lastItem);
     });
 
     it('should return undefined if list is empty and index > 0', () => {

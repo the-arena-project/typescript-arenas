@@ -1,24 +1,22 @@
 import { count } from '../index';
 
 type Link<T> = {
-    data: T,
-    next: Link<T>|null
-}
+    data: T;
+    next: Link<T> | null;
+};
 
 const genList = (count: number): Link<number> => {
-    const links: Link<number>[] = new Array(count)
-        .fill(1)
-        .map((item, i) => ({
-            data: i,
-            next: null,
-        }));
+    const links: Link<number>[] = new Array(count).fill(1).map((item, i) => ({
+        data: i,
+        next: null,
+    }));
     for (let i = 0; i < links.length - 1; i++) {
         if (links[i + 1]) {
             links[i].next = links[i + 1];
         }
     }
     return links[0];
-}
+};
 
 describe('count', () => {
     it('normal case', () => {

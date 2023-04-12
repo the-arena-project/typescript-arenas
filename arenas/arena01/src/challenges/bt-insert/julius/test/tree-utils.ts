@@ -1,5 +1,3 @@
-import { insert } from '../index';
-
 type BNode = {
     left: BNode | null;
     right: BNode | null;
@@ -8,10 +6,7 @@ type BNode = {
 
 type InsertFn = (root: BNode | null, value: number) => BNode;
 
-export const makeTree = (
-    values: number[],
-    insertFn: InsertFn
-): BNode | null => {
+export const makeTree = (values: number[], insertFn: InsertFn): BNode | null => {
     let treeRoot: BNode | null = null;
 
     for (const value of values) {

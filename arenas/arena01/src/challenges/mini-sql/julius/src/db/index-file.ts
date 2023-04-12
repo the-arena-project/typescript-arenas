@@ -1,4 +1,4 @@
-import {existsSync, fstatSync, openSync, readFileSync, writeSync} from "fs";
+import { existsSync, fstatSync, openSync, readFileSync, writeSync } from 'fs';
 
 export class IndexFile {
     private readonly fd;
@@ -17,7 +17,7 @@ export class IndexFile {
         const content = readFileSync(path);
 
         for (const line of content.toString().split('\n')) {
-            const [id, offset] = line.split(' ').map(n => +n);
+            const [id, offset] = line.split(' ').map((n) => +n);
 
             this.loadedEntries[id] = offset;
         }

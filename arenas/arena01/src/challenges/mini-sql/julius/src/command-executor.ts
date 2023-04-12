@@ -19,7 +19,7 @@ class CommandExecutor {
         if (!this.doesCommandExist(command)) {
             console.error(`Command not found: ${command}`);
 
-            return ;
+            return;
         }
 
         return this.commandHandlers[command.toLowerCase()](args);

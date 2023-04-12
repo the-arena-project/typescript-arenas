@@ -1,4 +1,4 @@
-import { recursivePower } from "../index";
+import { recursivePower } from '../index';
 
 describe('recursivePower', () => {
     it('should return 1 when power is 0', () => {
@@ -17,11 +17,11 @@ describe('recursivePower', () => {
             [1, 1],
             [3, 4],
             [43, 2],
-            [2, 3]
+            [2, 3],
         ];
 
         for (const [testedNb, testedPower] of testValues) {
             expect(recursivePower(testedNb, testedPower)).toEqual(testedNb ** testedPower);
         }
-    })
-})
+    });
+});

@@ -1,14 +1,14 @@
-import { recursiveFactorial } from '../index'
+import { recursiveFactorial } from '../index';
 
 const refFact = (n: number) => {
     let fact = 1;
 
-   for (let i = 2; i <= n; ++i) {
-    fact *= i;
-   }
+    for (let i = 2; i <= n; ++i) {
+        fact *= i;
+    }
 
-   return fact;
-}
+    return fact;
+};
 
 describe('factorial', () => {
     it('should return 1 for 0!', () => {
@@ -19,5 +19,5 @@ describe('factorial', () => {
         for (let i = 0; i !== 20; ++i) {
             expect(recursiveFactorial(i)).toEqual(refFact(i));
         }
-    })
-})
+    });
+});

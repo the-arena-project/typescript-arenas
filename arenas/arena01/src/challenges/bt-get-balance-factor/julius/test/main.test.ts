@@ -1,4 +1,4 @@
-import { getBalanceFactor  } from '../index';
+import { getBalanceFactor } from '../index';
 import { makeTree, insert } from './tree-utils';
 
 describe('getBalanceFactor', () => {
@@ -26,7 +26,6 @@ describe('getBalanceFactor', () => {
 
         expect(getBalanceFactor(tree2)).toEqual(0);
     });
-
 
     it('should return a balance factor > 0 when the left subtree is unbalanced', () => {
         /**
@@ -60,7 +59,7 @@ describe('getBalanceFactor', () => {
          *       \
          *        C
          */
-        const tree1 = makeTree([0, 1, 2 ], insert);
+        const tree1 = makeTree([0, 1, 2], insert);
 
         expect(getBalanceFactor(tree1)).toEqual(-2);
 

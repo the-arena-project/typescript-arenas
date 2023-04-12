@@ -16,7 +16,7 @@ describe('readFileSync', () => {
 
             unlinkSync(filename);
         },
-        TIMEOUT
+        TIMEOUT,
     );
 
     it(
@@ -31,7 +31,7 @@ describe('readFileSync', () => {
 
             unlinkSync(filename);
         },
-        TIMEOUT
+        TIMEOUT,
     );
 
     it(
@@ -46,53 +46,66 @@ describe('readFileSync', () => {
 
             unlinkSync(filename);
         },
-        TIMEOUT
+        TIMEOUT,
     );
 
-    it('should read a file with unicode characters', () => {
-        const filename = 'empty.txt';
-        const data = '🙂😇😗😝😛😎🥳🤩🥸😎➤℞❫]❪♔😽🙀';
+    it(
+        'should read a file with unicode characters',
+        () => {
+            const filename = 'empty.txt';
+            const data = '🙂😇😗😝😛😎🥳🤩🥸😎➤℞❫]❪♔😽🙀';
 
-        writeFileSync(filename, data, { encoding: 'utf-8' });
+            writeFileSync(filename, data, { encoding: 'utf-8' });
 
-        expect(readFileSync(filename)).toEqual(data);
+            expect(readFileSync(filename)).toEqual(data);
 
-        unlinkSync(filename);
-    }, TIMEOUT);
+            unlinkSync(filename);
+        },
+        TIMEOUT,
+    );
 
-    it('should read a file with only newlines', () => {
-        const filename = 'newlines.txt';
-        const data = '\n'.repeat(10000);
+    it(
+        'should read a file with only newlines',
+        () => {
+            const filename = 'newlines.txt';
+            const data = '\n'.repeat(10000);
 
-        writeFileSync(filename, data, { encoding: 'utf-8' });
+            writeFileSync(filename, data, { encoding: 'utf-8' });
 
-        expect(readFileSync(filename)).toEqual(data);
+            expect(readFileSync(filename)).toEqual(data);
 
-        unlinkSync(filename);
-    }, TIMEOUT);
+            unlinkSync(filename);
+        },
+        TIMEOUT,
+    );
 
-    it('should read a file with zeros', () => {
-        const filename = 'newlines.txt';
-        const data =
-            'Hell\0oworld\0this\0\0\0\0\0\0\0\0\0\0\0\0\0\0 is amazing';
+    it(
+        'should read a file with zeros',
+        () => {
+            const filename = 'newlines.txt';
+            const data = 'Hell\0oworld\0this\0\0\0\0\0\0\0\0\0\0\0\0\0\0 is amazing';
 
-        writeFileSync(filename, data, { encoding: 'utf-8' });
+            writeFileSync(filename, data, { encoding: 'utf-8' });
 
-        expect(readFileSync(filename)).toEqual(data);
+            expect(readFileSync(filename)).toEqual(data);
 
-        unlinkSync(filename);
-    }, TIMEOUT);
+            unlinkSync(filename);
+        },
+        TIMEOUT,
+    );
 
-    it('should read a large file', () => {
-        const filename = 'newlines.txt';
-        const data = new Uint8Array(20).fill(48);
+    it(
+        'should read a large file',
+        () => {
+            const filename = 'newlines.txt';
+            const data = new Uint8Array(20).fill(48);
 
-        writeFileSync(filename, data, { encoding: 'utf-8' });
+            writeFileSync(filename, data, { encoding: 'utf-8' });
 
-        expect(readFileSync(filename)).toEqual(
-            Buffer.from(data).toString('utf-8')
-        );
+            expect(readFileSync(filename)).toEqual(Buffer.from(data).toString('utf-8'));
 
-        unlinkSync(filename);
-    }, TIMEOUT);
+            unlinkSync(filename);
+        },
+        TIMEOUT,
+    );
 });

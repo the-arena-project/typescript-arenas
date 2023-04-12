@@ -7,15 +7,15 @@ describe('strLength', () => {
             'World',
             'value '.repeat(100),
             'some-other-string',
-            'some-trick-here'
+            'some-trick-here',
         ];
 
-       for (const testValue of testValues) {
-        expect(strLength(testValue)).toEqual(testValue.length);
-       }
-    })
+        for (const testValue of testValues) {
+            expect(strLength(testValue)).toEqual(testValue.length);
+        }
+    });
 
     it('Should return the proper length of an empty string (zero)', () => {
         expect(strLength('')).toEqual(0);
-    })
-})
+    });
+});

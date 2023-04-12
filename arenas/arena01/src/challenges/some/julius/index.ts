@@ -1,10 +1,10 @@
-type CallbackFn = <T>(elem: T) => boolean
-type SomeFn = <T>(arr: T[], cb: CallbackFn) => boolean
+type CallbackFn = <T>(elem: T) => boolean;
+type SomeFn = <T>(arr: T[], cb: CallbackFn) => boolean;
 
 export const some: SomeFn = (arr, cb) => {
-    let i = 0; 
+    let i = 0;
 
-    while (i !== arr.length){
+    while (i !== arr.length) {
         if (cb(arr[i])) {
             return true;
         }
@@ -13,4 +13,4 @@ export const some: SomeFn = (arr, cb) => {
     }
 
     return false;
-}
+};

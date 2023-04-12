@@ -1,5 +1,5 @@
-import {BNode} from "./test/tree-utils";
-import {writeSync} from "fs";
+import { BNode } from './test/tree-utils';
+import { writeSync } from 'fs';
 
 const printPadding = (padding: number) => {
     if (padding === 0) {
@@ -10,13 +10,13 @@ const printPadding = (padding: number) => {
         if (i + 1 === padding) {
             writeSync(1, '|___');
         } else {
-            writeSync(1, '|   ')
+            writeSync(1, '|   ');
         }
         i++;
     }
-}
+};
 
-const printTreeRecursive = (root: BNode|null, padding: number) => {
+const printTreeRecursive = (root: BNode | null, padding: number) => {
     if (!root) {
         return;
     }
@@ -28,8 +28,8 @@ const printTreeRecursive = (root: BNode|null, padding: number) => {
     if (root.left) {
         printTreeRecursive(root.left, padding + 1);
     }
-}
-type PrintTreeFn = (root: BNode|null) => void
+};
+type PrintTreeFn = (root: BNode | null) => void;
 export const printTree: PrintTreeFn = (root) => {
     printTreeRecursive(root, 0);
-}
+};

@@ -1,5 +1,4 @@
 import { unshift } from '../index';
-import {makeList} from "./utils";
 
 describe('unshift', () => {
     it('should add a new link in front', () => {

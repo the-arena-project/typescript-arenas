@@ -1,16 +1,17 @@
 import { spawn } from 'child_process';
 import { join } from 'path';
 
-const spawnTestingProcess = async (s: string) => new Promise((resolve) => {
-    const process = spawn('ts-node', [join(__dirname, 'execute'), s]);
-    let out = '';
+const spawnTestingProcess = async (s: string) =>
+    new Promise((resolve) => {
+        const process = spawn('ts-node', [join(__dirname, 'execute'), s]);
+        let out = '';
 
-    process.stdout.on('data', (data) => out += data);
+        process.stdout.on('data', (data) => (out += data));
 
-    process.on('close', () => {
-        resolve(out);
-    })
-});
+        process.on('close', () => {
+            resolve(out);
+        });
+    });
 
 describe('printTree', () => {
     it('Should print multiple trees', async () => {
@@ -41,9 +42,11 @@ describe('printTree', () => {
 |   |   |___-3245`,
             },
         ];
-        await Promise.all(testValues.map(async (testValue) => {
-            const stdout = await spawnTestingProcess(testValue.value);
-            expect(stdout).toEqual(`${testValue.output}\n`);
-        }))
+        await Promise.all(
+            testValues.map(async (testValue) => {
+                const stdout = await spawnTestingProcess(testValue.value);
+                expect(stdout).toEqual(`${testValue.output}\n`);
+            }),
+        );
     });
 });

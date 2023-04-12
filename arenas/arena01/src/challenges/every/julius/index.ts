@@ -1,5 +1,5 @@
-type CallbackFn = <T>(elem: T) => boolean
-type EveryFn = <T>(arr: T[], cb: CallbackFn) => boolean
+type CallbackFn = <T>(elem: T) => boolean;
+type EveryFn = <T>(arr: T[], cb: CallbackFn) => boolean;
 
 export const every: EveryFn = (arr, cb) => {
     let i = 0;
@@ -13,4 +13,4 @@ export const every: EveryFn = (arr, cb) => {
     }
 
     return true;
-}
+};

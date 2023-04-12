@@ -3,7 +3,7 @@ import { createInterface } from 'readline';
 export class Prompt {
     private readonly rl = createInterface({
         input: process.stdin,
-        output: process.stdout
+        output: process.stdout,
     });
 
     constructor(prefix = '$ ') {
@@ -14,11 +14,11 @@ export class Prompt {
         this.rl.removeAllListeners();
         this.rl.prompt();
 
-        return new Promise(resolve => {
+        return new Promise((resolve) => {
             this.rl.on('line', (line) => {
                 resolve(line);
-            })
-        })
+            });
+        });
     }
 
     public destroy() {

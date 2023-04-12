@@ -1,4 +1,4 @@
-import { readSync, openSync, closeSync } from "fs";
+import { readSync, openSync, closeSync } from 'fs';
 
 type ReadFileSyncFn = (path: string) => string;
 
@@ -17,4 +17,4 @@ export const readFileSync: ReadFileSyncFn = (path) => {
     closeSync(fd);
 
     return buffer.toString('utf-8');
-}
+};

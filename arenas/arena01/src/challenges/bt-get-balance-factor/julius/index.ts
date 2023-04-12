@@ -1,10 +1,10 @@
 type BNode = {
-    left: BNode|null,
-    right: BNode|null,
-    value: number
-}
+    left: BNode | null;
+    right: BNode | null;
+    value: number;
+};
 
-type GetBalanceFn = (root: BNode|null) => number
+type GetBalanceFn = (root: BNode | null) => number;
 
 type GetHeightFn = (root: BNode | null) => number;
 
@@ -32,4 +32,4 @@ const getHeight: GetHeightFn = (root) => {
 
 export const getBalanceFactor: GetBalanceFn = (root) => {
     return root ? getHeight(root.left) - getHeight(root.right) : 0;
-}
+};

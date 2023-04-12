@@ -1,6 +1,5 @@
-type MinesweeperFn = (field: string) => string
+type MinesweeperFn = (field: string) => string;
 
-export const minesweeper : MinesweeperFn = (field: string) => {
-    return ""
-}
-
+export const minesweeper: MinesweeperFn = () => {
+    return '';
+};

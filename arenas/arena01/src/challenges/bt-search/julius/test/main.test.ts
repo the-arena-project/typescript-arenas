@@ -1,6 +1,5 @@
-import exp from 'constants';
 import { search } from '../index';
-import { makeTree, insert, BNode, treeToValueToNode } from './tree-utils';
+import { makeTree, insert, treeToValueToNode } from './tree-utils';
 
 describe('search', () => {
     it('should find the only value inserted in the tree', () => {

@@ -1,7 +1,7 @@
 type Link<T> = {
-    data: T,
-    next: Link<T>|null
-}
+    data: T;
+    next: Link<T> | null;
+};
 
 export const makeList = <T>(...elements: T[]): Link<T> | null => {
     if (elements.length === 0) {
@@ -23,4 +23,4 @@ export const makeList = <T>(...elements: T[]): Link<T> | null => {
     }
 
     return head;
-}
+};

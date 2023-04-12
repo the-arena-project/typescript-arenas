@@ -1,9 +1,9 @@
 type Link<T> = {
-    data: T,
-    next: Link<T>|null
-}
+    data: T;
+    next: Link<T> | null;
+};
 
-type GetAtFn = <T> (list: Link<T> | null, index: number) => Link<T> | undefined;
+type GetAtFn = <T>(list: Link<T> | null, index: number) => Link<T> | undefined;
 
 export const getAt: GetAtFn = (list, index) => {
     if (!list || index < 0) {
@@ -25,4 +25,4 @@ export const getAt: GetAtFn = (list, index) => {
         i++;
     }
     return undefined;
-}
+};

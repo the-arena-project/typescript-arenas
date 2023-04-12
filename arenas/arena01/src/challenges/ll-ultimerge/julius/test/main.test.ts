@@ -1,5 +1,5 @@
-import { ultimerge } from "../index";
-import { makeList } from "./utils";
+import { ultimerge } from '../index';
+import { makeList } from './utils';
 
 describe('ultimerge', () => {
     it('should ultimerge two simple lists with two elements each', () => {
@@ -16,7 +16,7 @@ describe('ultimerge', () => {
 
     it('should return null when trying to ultimerge two empty lists', () => {
         expect(ultimerge(null, null)).toBe(null);
-    })
+    });
 
     it('should return listA if listB is empty', () => {
         const listA = makeList(1, 2);

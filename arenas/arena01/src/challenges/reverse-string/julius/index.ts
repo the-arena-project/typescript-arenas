@@ -1,4 +1,4 @@
-type ReverseStringFn = (str: string) => string
+type ReverseStringFn = (str: string) => string;
 
 const arrayRoughJoin = (arr: string[]): string => {
     let s = '';
@@ -7,13 +7,14 @@ const arrayRoughJoin = (arr: string[]): string => {
     while (i !== arr.length) {
         s = `${s}${arr[i++]}`;
     }
-    
+
     return s;
-}
+};
 
 export const reverseString: ReverseStringFn = (str) => {
-    let i = 0, j = str.length - 1;
-    let tmp: string = '';
+    let i = 0,
+        j = str.length - 1;
+    let tmp = '';
     const reversedStr = [...str];
 
     while (i < j) {
@@ -23,4 +24,4 @@ export const reverseString: ReverseStringFn = (str) => {
     }
 
     return arrayRoughJoin(reversedStr);
-}
+};

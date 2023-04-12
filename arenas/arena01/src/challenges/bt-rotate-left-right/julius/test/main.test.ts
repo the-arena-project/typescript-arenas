@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { rotateLeftRight } from '../index';
-import { makeTree, insert,  } from './tree-utils';
+import { makeTree, insert } from './tree-utils';
 
 describe('rotateLeftRight', () => {
     it('should operate a LR rotation on a perfectly unbalanced tree', () => {

@@ -1,4 +1,4 @@
-import { itoa } from "../index";
+import { itoa } from '../index';
 
 describe('itoa', () => {
     it('should parse 0', () => {
@@ -13,25 +13,12 @@ describe('itoa', () => {
 
     it('should parse positive numbers', () => {
         const testValues = [
-            2134,
-            23,
-            232432,
-            133,
-            1212342546,
-            1234,
-            1232435,
-            5695,
-            32490,
-            3243,
-            233940,
-            1329,
-            1324,
-            12,
-            123456789
+            2134, 23, 232432, 133, 1212342546, 1234, 1232435, 5695, 32490, 3243, 233940, 1329, 1324,
+            12, 123456789,
         ];
 
         for (const testValue of testValues) {
-             expect(itoa(testValue)).toEqual(`${testValue}`);
+            expect(itoa(testValue)).toEqual(`${testValue}`);
         }
     });
 
@@ -48,12 +35,11 @@ describe('itoa', () => {
             -212,
             -11111111,
             -222222222,
-            -12
-            -123456789
+            -12 - 123456789,
         ];
 
         for (const testValue of testValues) {
-             expect(itoa(testValue)).toEqual(`${testValue}`);
+            expect(itoa(testValue)).toEqual(`${testValue}`);
         }
     });
 });
