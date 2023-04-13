@@ -1,0 +1,19 @@
+{
+    "id": "algo-101",
+    "name": "Algo 101",
+    "nameFr": "Algo 101",
+    "nameEn": "Algo 101",
+    "status": "Published",
+    "challengeCount": 85,
+    "estimatedDays": 35,
+    "description": "Viens faire de l'algo, promis c'est marrant !",
+    "descriptionFr": "Viens faire de l'algo, promis c'est marrant !",
+    "descriptionEn": "Come and do some algo, I promise it's fun!",
+    "coverUrl": "https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc",
+    "chapters": [
+        "kindergarten"
+    ],
+    "authorIds": [
+        "Tintin > Kevin"
+    ]
+}
