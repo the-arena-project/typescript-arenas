@@ -7,7 +7,7 @@
   "allowedMaterials": [],
   "name": "exemple //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt nameFr et nameEn.",
   "nameFr": "Fais le une fois, fais le mille fois !",
-  "nameEn": "Do it once, do it many times !",
+  "nameEn": "Do it once, do it many times!",
   "hint": "Ceci est un hint. //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt hintFr et hintEn.",
   "hintFr": "💡Car les exemples génériques, j'adore ça.",
   "hintEn": "💡Because I love generic examples."

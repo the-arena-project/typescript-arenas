@@ -1,4 +1,4 @@
-# Do it once, do it many times !
+# Do it once, do it many times!
 
 Julius is starting to appreciate your feats. He addresses you:
 
