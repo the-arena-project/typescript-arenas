@@ -1,10 +1,9 @@
-type MinesweeperFn = (field: string) => string
+type MinesweeperFn = (field: string) => string;
 
-export const minesweeper : MinesweeperFn = (field: string) => {
-    let solvedField : string = ""
+export const minesweeper: MinesweeperFn = (field: string) => {
+    let solvedField = '';
     if (field.length > 0) {
-        solvedField += "*"
+        solvedField += '*';
     }
-    return solvedField
-}
-
+    return solvedField;
+};

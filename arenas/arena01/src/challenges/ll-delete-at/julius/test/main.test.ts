@@ -1,12 +1,11 @@
-import {deleteAt} from '../index';
+import { deleteAt } from '../index';
 
 type Link<T> = {
-    data: T,
-    next: Link<T>|null
-}
+    data: T;
+    next: Link<T> | null;
+};
 
-
-type GetAtFn = <T> (list: Link<T>, index: number) => Link<T> | undefined;
+type GetAtFn = <T>(list: Link<T>, index: number) => Link<T> | undefined;
 
 export const ourGetAt: GetAtFn = (list, index) => {
     if (!list || index < 0) {
@@ -28,22 +27,20 @@ export const ourGetAt: GetAtFn = (list, index) => {
         i++;
     }
     return undefined;
-}
+};
 
 const genList = (count: number): Link<number> => {
-    const links: Link<number>[] = new Array(count)
-        .fill(1)
-        .map((item, i) => ({
-            data: i,
-            next: null,
-        }));
+    const links: Link<number>[] = new Array(count).fill(1).map((item, i) => ({
+        data: i,
+        next: null,
+    }));
     for (let i = 0; i < links.length - 1; i++) {
         if (links[i + 1]) {
             links[i].next = links[i + 1];
         }
     }
     return links[0];
-}
+};
 
 describe('deleteAt', () => {
     it('should work with a single node', () => {

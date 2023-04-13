@@ -1,5 +1,5 @@
-import { readFileSync, unlinkSync, write } from "fs";
-import { writeFileSync } from "../index";
+import { readFileSync, unlinkSync } from 'fs';
+import { writeFileSync } from '../index';
 
 const readFileAsString = (path: string) => readFileSync(path).toString();
 
@@ -46,7 +46,6 @@ describe('writeFileSync', () => {
         expect(readFileAsString(filename)).toEqual(data);
 
         unlinkSync(filename);
-
     });
 
     it('should write a string that contains null bytes to a file on the filesystem', () => {
@@ -70,4 +69,4 @@ describe('writeFileSync', () => {
 
         unlinkSync(filename);
     });
-})
+});

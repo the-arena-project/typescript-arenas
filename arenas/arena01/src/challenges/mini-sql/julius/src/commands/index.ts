@@ -1,4 +1,4 @@
-import './exit'
+import './exit';
 import './help';
 import './insert';
 import './select';

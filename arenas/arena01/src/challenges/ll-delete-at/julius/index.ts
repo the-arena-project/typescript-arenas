@@ -1,9 +1,9 @@
 type Link<T> = {
-    data: T,
-    next: Link<T>|null
-}
+    data: T;
+    next: Link<T> | null;
+};
 
-type GetAtFn = <T> (list: Link<T> | null, index: number) => Link<T> | undefined;
+type GetAtFn = <T>(list: Link<T> | null, index: number) => Link<T> | undefined;
 
 export const getAt: GetAtFn = (list, index) => {
     if (!list || index < 0) {
@@ -25,31 +25,23 @@ export const getAt: GetAtFn = (list, index) => {
         i++;
     }
     return undefined;
-}
+};
 
-
-type DeleteAtFn = <T> (
-    list: Link<T> | null,
-    index: number,
-) => Link<T> | undefined
+type DeleteAtFn = <T>(list: Link<T> | null, index: number) => Link<T> | undefined;
 
 export const deleteAt: DeleteAtFn = (list, index) => {
-   const [
-       previousItem,
-       item,
-       nextItem,
-   ] = [
-       getAt(list, index - 1),
-       getAt(list, index),
-       getAt(list, index + 1),
-   ]
-   if (!item) {
-       return undefined;
-   }
+    const [previousItem, item, nextItem] = [
+        getAt(list, index - 1),
+        getAt(list, index),
+        getAt(list, index + 1),
+    ];
+    if (!item) {
+        return undefined;
+    }
 
-   if (previousItem) {
-       previousItem.next = nextItem || null;
-   }
+    if (previousItem) {
+        previousItem.next = nextItem || null;
+    }
 
-   return item;
-}
+    return item;
+};

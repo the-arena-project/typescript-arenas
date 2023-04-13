@@ -1,7 +1,7 @@
-type UltimergeFn = <T> (listA: Link<T> | null, listB: Link<T> | null) => Link<T> | null
+type UltimergeFn = <T>(listA: Link<T> | null, listB: Link<T> | null) => Link<T> | null;
 type Link<T> = {
-    data: T,
-    next: Link<T>|null
+    data: T;
+    next: Link<T> | null;
 };
 
 export const ultimerge: UltimergeFn = (listA, listB) => {
@@ -32,4 +32,4 @@ export const ultimerge: UltimergeFn = (listA, listB) => {
     }
 
     return ultimerged;
-}
+};

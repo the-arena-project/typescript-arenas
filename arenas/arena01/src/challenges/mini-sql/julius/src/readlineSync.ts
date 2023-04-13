@@ -1,4 +1,4 @@
-import {readSync} from "fs";
+import { readSync } from 'fs';
 
 interface ReadState {
     buffer: Buffer;
@@ -6,16 +6,14 @@ interface ReadState {
 }
 
 const BUFFER_SIZE = 4096;
-const fdToBufs: Record<number, ReadState> = {
+const fdToBufs: Record<number, ReadState> = {};
 
-}
-
-const readlineSync = (fd: number): string | null => {
+export const readlineSync = (fd: number): string | null => {
     if (typeof fdToBufs[fd] === 'undefined') {
         fdToBufs[fd] = { buffer: Buffer.alloc(BUFFER_SIZE), filledLength: 0 };
     }
 
-    let { buffer, filledLength } = fdToBufs[fd];
+    const { buffer } = fdToBufs[fd];
     let line = Buffer.from(buffer);
     let newlineIndex = -1;
     let bytesRead = 0;
@@ -25,7 +23,7 @@ const readlineSync = (fd: number): string | null => {
         newlineIndex = readBuf.indexOf('\n');
 
         if (newlineIndex !== -1) {
-            break ;
+            break;
         }
 
         line = Buffer.concat([line, buffer]);
@@ -34,7 +32,7 @@ const readlineSync = (fd: number): string | null => {
     if (newlineIndex !== -1) {
         const tmp = Buffer.alloc(BUFFER_SIZE);
 
-        readBuf.copy(tmp, 0, 0 , newlineIndex);
+        readBuf.copy(tmp, 0, 0, newlineIndex);
         readBuf.copy(fdToBufs[fd].buffer, 0, newlineIndex, bytesRead - newlineIndex);
         fdToBufs[fd].filledLength = bytesRead - newlineIndex;
 
@@ -42,4 +40,4 @@ const readlineSync = (fd: number): string | null => {
     }
 
     return line.toString('utf-8');
-}
+};

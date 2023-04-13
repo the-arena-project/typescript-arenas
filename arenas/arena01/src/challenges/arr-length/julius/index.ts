@@ -1,4 +1,4 @@
-type ArrLengthFn = (arr: number[]) => number
+type ArrLengthFn = (arr: number[]) => number;
 
 export const arrLength: ArrLengthFn = (arr) => {
     let i = 0;
@@ -8,4 +8,4 @@ export const arrLength: ArrLengthFn = (arr) => {
     }
 
     return i;
-}
+};

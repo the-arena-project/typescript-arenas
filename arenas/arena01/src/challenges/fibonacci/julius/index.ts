@@ -6,4 +6,4 @@ export const fibonacci: FibonacciFn = (n) => {
     }
 
     return fibonacci(n - 1) + fibonacci(n - 2);
-}
+};

@@ -1,4 +1,4 @@
-import { iterativePower } from "../index";
+import { iterativePower } from '../index';
 
 describe('iterativePower', () => {
     it('should return 1 when power is 0', () => {
@@ -17,11 +17,11 @@ describe('iterativePower', () => {
             [1, 1],
             [3, 4],
             [43, 2],
-            [2, 3]
+            [2, 3],
         ];
 
         for (const [testedNb, testedPower] of testValues) {
             expect(iterativePower(testedNb, testedPower)).toEqual(testedNb ** testedPower);
         }
-    })
-})
+    });
+});

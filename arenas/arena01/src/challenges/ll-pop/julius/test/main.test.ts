@@ -1,8 +1,8 @@
-import { pop } from "../index";
+import { pop } from '../index';
 import { makeList } from './utils';
 
 describe('pop', () => {
-    it('should return the first link of the list if the list\'s length is 1', () => {
+    it("should return the first link of the list if the list's length is 1", () => {
         const list = makeList(21);
 
         expect(pop(list)).toBe(list);
@@ -24,7 +24,7 @@ describe('pop', () => {
         expect(pop(null)).toBe(undefined);
     });
 
-    it('should remove the last element of a very long list while preserving the whole list\'s integrity', () => {
+    it("should remove the last element of a very long list while preserving the whole list's integrity", () => {
         const MAX_VALUE = 1000;
         const values = Array.from({ length: MAX_VALUE }, (v, idx) => idx + 1);
         const list = makeList(...values);
@@ -43,4 +43,4 @@ describe('pop', () => {
 
         expect(i).toEqual(MAX_VALUE);
     });
-})
+});

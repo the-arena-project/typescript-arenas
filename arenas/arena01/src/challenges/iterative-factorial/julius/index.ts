@@ -8,4 +8,4 @@ export const iterativeFactorial = (n: number) => {
     }
 
     return fact;
-}
+};

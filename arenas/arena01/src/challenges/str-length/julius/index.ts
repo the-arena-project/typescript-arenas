@@ -1,4 +1,4 @@
-type StrLengthFn = (str: string) => number
+type StrLengthFn = (str: string) => number;
 
 export const strLength: StrLengthFn = (s) => {
     let i = 0;
@@ -8,4 +8,4 @@ export const strLength: StrLengthFn = (s) => {
     }
 
     return i;
-}
+};

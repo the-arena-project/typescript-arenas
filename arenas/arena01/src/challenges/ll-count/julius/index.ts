@@ -1,9 +1,9 @@
 type Link<T> = {
-    data: T,
-    next: Link<T>|null
-}
+    data: T;
+    next: Link<T> | null;
+};
 
-type CountFn = <T> (list: Link<T> | null) => number;
+type CountFn = <T>(list: Link<T> | null) => number;
 
 export const count: CountFn = (list) => {
     let i = 0;
@@ -15,4 +15,4 @@ export const count: CountFn = (list) => {
     }
 
     return i;
-}
+};

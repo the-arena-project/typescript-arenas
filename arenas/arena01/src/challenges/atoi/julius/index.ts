@@ -19,8 +19,8 @@ export const atoi: AtoiFn = (s) => {
             return NaN;
         }
 
-        n = n * 10 + s[i].charCodeAt(0) - 48
+        n = n * 10 + s[i].charCodeAt(0) - 48;
     }
 
     return isNegative ? -n : n;
-}
+};

@@ -14,4 +14,4 @@ export const diff: DiffFn = (arrA, arrB) => {
     }
 
     return diffed;
-}
+};

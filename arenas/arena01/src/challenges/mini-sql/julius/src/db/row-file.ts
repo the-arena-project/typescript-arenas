@@ -1,4 +1,4 @@
-import { fstatSync, openSync, readSync,  writeSync} from "fs";
+import { fstatSync, openSync, readSync, writeSync } from 'fs';
 
 export class RowFile {
     private BUFFER_SIZE = 4096;
@@ -16,9 +16,8 @@ export class RowFile {
 
     getAt(offset: number): string | undefined {
         const buf = Buffer.alloc(this.BUFFER_SIZE);
-        let bytesRead = 0;
 
-        while ((bytesRead = readSync(this.fd, buf, 0, this.BUFFER_SIZE, offset)) > 0) {
+        while (readSync(this.fd, buf, 0, this.BUFFER_SIZE, offset) > 0) {
             const newlineIdx = buf.indexOf('\n');
 
             if (newlineIdx !== -1) {
@@ -30,7 +29,7 @@ export class RowFile {
     }
 
     addRow(id: number, data: string): number {
-        let absoluteOffset = this.absoluteOffset;
+        const absoluteOffset = this.absoluteOffset;
 
         const lineToAppend = Buffer.from(`id=${id},data=${data}\n`);
 

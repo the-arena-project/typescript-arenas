@@ -1,8 +1,4 @@
-type CompareNFn = (
-strA: string,
-strB: string,
-n: number
-) => number
+type CompareNFn = (strA: string, strB: string, n: number) => number;
 
 export const compareN: CompareNFn = (strA, strB, n) => {
     let i = 0;
@@ -17,4 +13,4 @@ export const compareN: CompareNFn = (strA, strB, n) => {
     }
 
     return differCount;
-}
+};

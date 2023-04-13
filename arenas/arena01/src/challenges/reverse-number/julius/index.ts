@@ -1,8 +1,9 @@
-type ReverseNumbersFn = (numbers: number[]) => number[]
+type ReverseNumbersFn = (numbers: number[]) => number[];
 
 export const reverseNumbers: ReverseNumbersFn = (numbers) => {
     const reversed = [...numbers];
-    let i = 0, j = numbers.length - 1;
+    let i = 0,
+        j = numbers.length - 1;
 
     while (i < j) {
         reversed[i] = numbers[j];
@@ -10,4 +11,4 @@ export const reverseNumbers: ReverseNumbersFn = (numbers) => {
     }
 
     return reversed;
-}
+};

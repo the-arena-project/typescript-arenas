@@ -1,5 +1,5 @@
-import { merge } from "../index";
-import { makeList } from "./utils";
+import { merge } from '../index';
+import { makeList } from './utils';
 
 describe('merge', () => {
     it('should merge two lists with at least one element each together', () => {
@@ -19,7 +19,6 @@ describe('merge', () => {
         expect(merge(listA, listB)).toBe(listB);
     });
 
-
     it('should return listA if listB is null', () => {
         const listA = makeList(1, 2, 3);
 
@@ -28,4 +27,4 @@ describe('merge', () => {
         expect(merged).toBe(listA);
         expect(merged?.next?.next?.next).toBe(null);
     });
-})
+});

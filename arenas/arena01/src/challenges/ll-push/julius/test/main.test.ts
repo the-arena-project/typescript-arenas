@@ -1,25 +1,5 @@
 import { push } from '../index';
 
-type Link<T> = {
-    data: T,
-    next: Link<T>|null
-}
-
-const genList = (count: number): Link<number> => {
-    const links: Link<number>[] = new Array(count)
-        .fill(1)
-        .map((item, i) => ({
-            data: i,
-            next: null,
-        }));
-    for (let i = 0; i < links.length - 1; i++) {
-        if (links[i + 1]) {
-            links[i].next = links[i + 1];
-        }
-    }
-    return links[0];
-}
-
 describe('push', () => {
     it('should create the list if does not exist', () => {
         const list = push(null, 1);
@@ -33,7 +13,7 @@ describe('push', () => {
 
         expect(first).toEqual({
             data: 1,
-            next: { data: 2, next: { data: 3, next: null }},
+            next: { data: 2, next: { data: 3, next: null } },
         });
 
         expect(first.next).toStrictEqual(second);

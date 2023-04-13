@@ -10,4 +10,4 @@ export const iterativePower: PowerFn = (nb, power) => {
     }
 
     return r;
-}
+};

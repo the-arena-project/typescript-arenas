@@ -1,4 +1,4 @@
-import { existsSync, openSync, readSync, writeSync} from "fs";
+import { existsSync, openSync, readSync, writeSync } from 'fs';
 
 export class Seq {
     private MAX_BUFFER = 16;

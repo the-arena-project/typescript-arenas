@@ -1,4 +1,4 @@
-import {insertionSort} from "../index";
+import { insertionSort } from '../index';
 
 type CompareFn<T> = (a: T, b: T) => number;
 type SortFn<T> = (arr: T[], cmp: CompareFn<T>) => T[];
@@ -16,7 +16,7 @@ const testSort = <T>(arr: T[], cmp: CompareFn<T>, algorithm: SortFn<T> = sortFn)
 
     expect(actualSortedArray).not.toBe(arr); // must be a copy, the array should not have been sorted in place.
     expect(actualSortedArray).toEqual(refSortedArray);
-}
+};
 
 describe('insertionSort', () => {
     it('should return a sorted copy of an array of moderate size', () => {
@@ -25,19 +25,19 @@ describe('insertionSort', () => {
         testSort(numbers, intCmpAsc);
         testSort(numbers, intCmpDesc);
 
-        const strings = [ 'hello', 'world', 'WoRlD', 'HeLlo', '*@/#', '.23AbCdFH.-2', '' ];
+        const strings = ['hello', 'world', 'WoRlD', 'HeLlo', '*@/#', '.23AbCdFH.-2', ''];
 
         testSort(strings, strcmpAsc);
         testSort(strings, strcmpDesc);
-    })
+    });
 
     it('if the array contains only one element, should return a copy of this array with the single element', () => {
-        const intArr = [ 1 ];
+        const intArr = [1];
 
         testSort(intArr, intCmpAsc);
         testSort(intArr, intCmpDesc);
 
-        const sArr = [ 'Hello' ];
+        const sArr = ['Hello'];
 
         testSort(sArr, strcmpAsc);
         testSort(sArr, strcmpDesc);

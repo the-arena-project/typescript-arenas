@@ -1,4 +1,4 @@
-import {commandExecutor} from "../command-executor";
+import { commandExecutor } from '../command-executor';
 
 commandExecutor.register('exit', ([exitCode]) => {
     let nb = 0;
@@ -14,4 +14,4 @@ commandExecutor.register('exit', ([exitCode]) => {
     }
 
     process.exit(nb);
-})
+});

@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { rotateRight } from '../index';
-import { makeTree, insert, BNode, treeToValueToNode } from './tree-utils';
+import { makeTree, insert } from './tree-utils';
 
 describe('rotateRight', () => {
     it('should operate a RR rotation on a perfectly unbalanced tree, where A > B > C', () => {
@@ -15,7 +16,7 @@ describe('rotateRight', () => {
     it('should attach B->left to A->right after RR rotation is performed', () => {
         const originalTree = makeTree([1, 3, 2, 4], insert);
         const actualTree = makeTree([1, 3, 2, 4], insert);
-        const rotatedTree = rotateRight(actualTree!)
+        const rotatedTree = rotateRight(actualTree!);
 
         expect(rotatedTree?.value).toEqual(originalTree?.right?.value);
         expect(rotatedTree?.left?.value).toEqual(originalTree?.value);

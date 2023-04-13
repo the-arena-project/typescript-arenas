@@ -1,48 +1,48 @@
 type Coordinate = [number, number];
 type Matrix = number[][];
 
-type ShortestPathFn = (
-    begin: Coordinate,
-    end: Coordinate,
-    matrix: number[][],
-) => number
+type ShortestPathFn = (begin: Coordinate, end: Coordinate, matrix: number[][]) => number;
 
 const goRight = (matrix: Matrix, currentPosition: Coordinate): Coordinate => {
     const newPosition = [...currentPosition] as Coordinate;
     newPosition[0] += 1;
     return newPosition;
-}
+};
 
 const goLeft = (matrix: Matrix, currentPosition: Coordinate): Coordinate => {
     const newPosition = [...currentPosition] as Coordinate;
     newPosition[0] -= 1;
     return newPosition;
-}
+};
 
 const goUp = (matrix: Matrix, currentPosition: Coordinate): Coordinate => {
     const newPosition = [...currentPosition] as Coordinate;
     newPosition[1] -= 1;
     return newPosition;
-}
+};
 
 const goDown = (matrix: Matrix, currentPosition: Coordinate): Coordinate => {
     const newPosition = [...currentPosition] as Coordinate;
     newPosition[1] += 1;
     return newPosition;
-}
+};
 
 const isAlreadyExplored = (position: Coordinate, explored: Coordinate[]): boolean => {
-    return explored.some((item) => (item[0] === position[0] && item[1] === position[1]));
-}
+    return explored.some((item) => item[0] === position[0] && item[1] === position[1]);
+};
 
 const isPositionEqual = (positionA: Coordinate, positionB: Coordinate) => {
     return positionA[0] === positionB[0] && positionA[1] === positionB[1];
-}
+};
 
-const canMoveToPosition = (position: Coordinate, explored: Coordinate[], matrix: Matrix): boolean => {
+const canMoveToPosition = (
+    position: Coordinate,
+    explored: Coordinate[],
+    matrix: Matrix,
+): boolean => {
     const valueAtPosition = matrix[position[1]] ? matrix[position[1]][position[0]] : 0;
-    return (!isAlreadyExplored(position, explored) && valueAtPosition === 1);
-}
+    return !isAlreadyExplored(position, explored) && valueAtPosition === 1;
+};
 
 const shortedPathRecursive = (
     currentPosition: Coordinate,
@@ -73,7 +73,7 @@ const shortedPathRecursive = (
         shortedPathRecursive(downPos, matrix, exploredTmp, targetPosition, results);
     }
     return exploredTmp;
-}
+};
 
 export const shortestPath: ShortestPathFn = (begin, end, matrix) => {
     const currentCoordinate: Coordinate = begin;
@@ -81,4 +81,4 @@ export const shortestPath: ShortestPathFn = (begin, end, matrix) => {
     shortedPathRecursive(currentCoordinate, matrix, [], end, results);
     const shortest = results.map((a) => a.length + 1).sort((a, b) => a - b);
     return shortest[0];
-}
+};

@@ -1,9 +1,9 @@
 type Link<T> = {
-    data: T,
-    next: Link<T>|null
-}
+    data: T;
+    next: Link<T> | null;
+};
 
-type GetLastFn = <T> (list: Link<T> | null) => Link<T> | null;
+type GetLastFn = <T>(list: Link<T> | null) => Link<T> | null;
 
 export const getLast: GetLastFn = (list) => {
     let last = list;
@@ -13,4 +13,4 @@ export const getLast: GetLastFn = (list) => {
     }
 
     return last;
-}
+};

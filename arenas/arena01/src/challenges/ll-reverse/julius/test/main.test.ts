@@ -32,7 +32,7 @@ describe('reverse', () => {
         let i = LIST_LENGTH;
 
         for (; cur?.next; cur = cur?.next) {
-            expect(cur.data).toEqual(i--)
+            expect(cur.data).toEqual(i--);
         }
 
         expect(i).toEqual(1);

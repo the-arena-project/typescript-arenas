@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { rotateLeft } from '../index';
 import { makeTree, insert } from './tree-utils';
 
@@ -20,6 +21,6 @@ describe('rotateLeft', () => {
         expect(rotatedTree?.value).toEqual(originalTree?.left?.value);
         expect(rotatedTree?.right?.value).toEqual(originalTree?.value);
         expect(rotatedTree?.left?.value).toEqual(originalTree?.left?.left?.value);
-        expect(rotatedTree?.right?.left?.value).toEqual(originalTree?.left?.right?.value)
-    })
+        expect(rotatedTree?.right?.left?.value).toEqual(originalTree?.left?.right?.value);
+    });
 });

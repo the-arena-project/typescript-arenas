@@ -6,4 +6,4 @@ export const recursivePower: PowerFn = (nb, power) => {
     }
 
     return nb * recursivePower(nb, power - 1);
-}
+};

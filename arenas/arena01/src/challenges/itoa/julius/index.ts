@@ -1,18 +1,18 @@
-type ItoaFn = (nb: number) => string
+type ItoaFn = (nb: number) => string;
 
 const getHowManyTimesItCanBeDividedBy = (n: number, divider: number) => {
     let i = 1;
     let nb = n;
 
-    while (Math.trunc(nb /= divider) > 0 ) {
+    while (Math.trunc((nb /= divider)) > 0) {
         ++i;
     }
 
     return i;
-}
+};
 
 export const itoa: ItoaFn = (n) => {
-    let isNegative = n < 0 || 1/n === -Infinity;
+    const isNegative = n < 0 || 1 / n === -Infinity;
     let nb = Math.abs(n);
     const divisableBy = getHowManyTimesItCanBeDividedBy(nb, 10);
     const strLength = divisableBy + +isNegative;
@@ -20,13 +20,13 @@ export const itoa: ItoaFn = (n) => {
     const str = new Array<string>(strLength);
 
     do {
-        str[i--] = String.fromCharCode(nb % 10 + 48);
+        str[i--] = String.fromCharCode((nb % 10) + 48);
         nb = Math.trunc(nb / 10);
-    } while (nb > 0)
+    } while (nb > 0);
 
     if (isNegative) {
         str[i] = '-';
     }
 
     return str.join('');
-}
+};

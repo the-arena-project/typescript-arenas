@@ -1,5 +1,5 @@
-import { readdirSync, statSync } from "fs";
-import { join } from "path";
+import { readdirSync, statSync } from 'fs';
+import { join } from 'path';
 
 const pathToDir = process.argv[2];
 
@@ -20,11 +20,10 @@ try {
 
         totalSize += stat.blocks;
 
-        outputLines.push(`${String(isDir ? 'Directory' : 'File').padEnd(11)}${filename}`)
+        outputLines.push(`${String(isDir ? 'Directory' : 'File').padEnd(11)}${filename}`);
     }
 
     process.stdout.write(`total ${totalSize}\n${outputLines.join('\n')}\n`);
-
 } catch (error) {
     process.stderr.write(`Error: ${pathToDir} is not a valid directory\n`);
     process.exit(-1);

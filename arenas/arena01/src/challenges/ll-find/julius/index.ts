@@ -1,15 +1,11 @@
 type Link<T> = {
-    data: T,
-    next: Link<T>|null
+    data: T;
+    next: Link<T> | null;
 };
 
+type CallbackFn<T> = (elem: Link<T>) => boolean;
 
-type CallbackFn<T> = (elem: Link<T>) => boolean
-
-type FindFn = <T> (
-list: Link<T> | null,
-cb: CallbackFn<T>,
-) => Link<T> | undefined
+type FindFn = <T>(list: Link<T> | null, cb: CallbackFn<T>) => Link<T> | undefined;
 
 export const find: FindFn = (list, cb) => {
     let cur: typeof list = list;
@@ -23,4 +19,4 @@ export const find: FindFn = (list, cb) => {
     }
 
     return undefined;
-}
+};

@@ -1,5 +1,5 @@
-type CallbackFn = <T>(elem: T) => boolean
-type FindFn = <T>(arr: T[], cb: CallbackFn) => T | undefined
+type CallbackFn = <T>(elem: T) => boolean;
+type FindFn = <T>(arr: T[], cb: CallbackFn) => T | undefined;
 
 export const find: FindFn = (arr, cb) => {
     let i = 0;
@@ -12,4 +12,4 @@ export const find: FindFn = (arr, cb) => {
     }
 
     return undefined;
-}
+};

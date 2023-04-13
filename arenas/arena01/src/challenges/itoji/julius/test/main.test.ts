@@ -1,4 +1,4 @@
-import { itoji } from "../index";
+import { itoji } from '../index';
 
 describe('itoji', () => {
     it('should parse positive zero (0 or +0)', () => {
@@ -14,11 +14,11 @@ describe('itoji', () => {
         const testValues = [
             {
                 n: 111,
-                expected: '🐕😊✨'
+                expected: '🐕😊✨',
             },
             {
                 n: 42,
-                expected: '😊🥹'
+                expected: '😊🥹',
             },
             {
                 n: 21,
@@ -26,12 +26,12 @@ describe('itoji', () => {
             },
             {
                 n: 2134356,
-                expected: '🐕👍🐕🐕👍😊🥹🎁'
+                expected: '🐕👍🐕🐕👍😊🥹🎁',
             },
             {
                 n: 32345,
-                expected: '✨✨🐕💕🐕'
-            }
+                expected: '✨✨🐕💕🐕',
+            },
         ];
 
         for (const testValue of testValues) {
@@ -43,11 +43,11 @@ describe('itoji', () => {
         const testValues = [
             {
                 n: -111,
-                expected: '-🐕😊✨'
+                expected: '-🐕😊✨',
             },
             {
                 n: -42,
-                expected: '-😊🥹'
+                expected: '-😊🥹',
             },
             {
                 n: -21,
@@ -55,16 +55,16 @@ describe('itoji', () => {
             },
             {
                 n: -2134356,
-                expected: '-🐕👍🐕🐕👍😊🥹🎁'
+                expected: '-🐕👍🐕🐕👍😊🥹🎁',
             },
             {
                 n: -32345,
-                expected: '-✨✨🐕💕🐕'
-            }
+                expected: '-✨✨🐕💕🐕',
+            },
         ];
 
         for (const testValue of testValues) {
             expect(itoji(testValue.n)).toEqual(testValue.expected);
         }
-    })
-})
+    });
+});

@@ -16,39 +16,41 @@ const spawnTestingProcess = async (n: number) => new Promise((resolve) => {
 });
 */
 
-const spawnTestingProcess = async (n: number) => new Promise((resolve, reject) => {
-    const process = spawn('ts-node', [join(__dirname, 'execute'), `${n}`]);
-    let out = '';
-    let err = '';
+const spawnTestingProcess = async (n: number) =>
+    new Promise((resolve, reject) => {
+        const process = spawn('ts-node', [join(__dirname, 'execute'), `${n}`]);
+        let out = '';
+        let err = '';
 
-    process.stdout.on('data', (data) => out += data);
+        process.stdout.on('data', (data) => (out += data));
 
-    process.stderr.on('data', (data) => {
-        err += data;
+        process.stderr.on('data', (data) => {
+            err += data;
+        });
+
+        process.on('error', (error) => {
+            reject(error);
+        });
+
+        process.on('close', () => {
+            if (err) {
+                return reject(err);
+            }
+
+            resolve(out);
+        });
     });
-
-    process.on('error', (error) => {
-        reject(error);
-    });
-
-    process.on('close', () => {
-        if (err) {
-            return reject(err);
-        }
-
-        resolve(out);
-    })
-});
-
 
 describe('printNumber', () => {
     it('shouls print the passed number on stdout, without a newline at the end', async () => {
         const testValues = [-42, 42, 21, -21, 1, 213456, 13243546];
 
-        await Promise.all(testValues.map(async (testValue) => {
-            const stdout = await spawnTestingProcess(testValue);
+        await Promise.all(
+            testValues.map(async (testValue) => {
+                const stdout = await spawnTestingProcess(testValue);
 
-            expect(stdout).toEqual(`${testValue}`);
-        }))
-    }, 10000)
-})
+                expect(stdout).toEqual(`${testValue}`);
+            }),
+        );
+    }, 10000);
+});

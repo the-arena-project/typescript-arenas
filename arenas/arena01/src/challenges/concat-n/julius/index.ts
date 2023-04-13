@@ -1,4 +1,4 @@
-type ConcatNFn = (strA: string, strB: string, n: number) => string
+type ConcatNFn = (strA: string, strB: string, n: number) => string;
 
 export const concatN: ConcatNFn = (strA, strB, n) => {
     let concatenated = strA;
@@ -9,4 +9,4 @@ export const concatN: ConcatNFn = (strA, strB, n) => {
     }
 
     return concatenated;
-}
+};

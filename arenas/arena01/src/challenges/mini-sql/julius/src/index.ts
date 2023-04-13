@@ -1,4 +1,4 @@
-import {commandExecutor} from "./command-executor";
+import { commandExecutor } from './command-executor';
 
 const main = async () => {
     const prompt = 'miniSQL$ ';
@@ -12,7 +12,7 @@ const main = async () => {
         while ((newlineIndex = buffer.indexOf('\n')) !== -1) {
             const tmp = Buffer.alloc(newlineIndex);
 
-            buffer.copy(tmp, 0, 0, newlineIndex );
+            buffer.copy(tmp, 0, 0, newlineIndex);
 
             const line = tmp.toString('utf-8');
             const [command, ...args] = parseCommandLine(line);
@@ -34,8 +34,8 @@ const main = async () => {
         pushBackBuffer = buffer;
 
         process.stdout.write(prompt);
-    })
-}
+    });
+};
 
 const parseCommandLine = (commandLine: string): string[] => {
     const args: string[] = [];
@@ -47,13 +47,12 @@ const parseCommandLine = (commandLine: string): string[] => {
 
         if (!quote && c === ' ') {
             args.push(commandLine.slice(baseIndex, i));
-            while ((c = commandLine[++i]) === ' ') {}
+            while ((c = commandLine[++i]) === ' ');
             baseIndex = i;
         }
         if (c === '"') {
             quote = quote === 'double' ? null : 'double';
-        }
-        else if (c === '\'') {
+        } else if (c === "'") {
             quote = quote === 'simple' ? null : 'simple';
         }
     }
@@ -72,6 +71,6 @@ const parseCommandLine = (commandLine: string): string[] => {
     }
 
     return args;
-}
+};
 
 main();

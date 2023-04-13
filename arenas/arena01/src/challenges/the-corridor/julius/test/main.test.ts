@@ -1,4 +1,4 @@
-import { exitTheCorridor } from "../index";
+import { exitTheCorridor } from '../index';
 
 describe('exitTheCorridor', () => {
     it('should return the correct value for [0, 0, 0, 0]', () => {

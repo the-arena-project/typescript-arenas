@@ -2,27 +2,15 @@ import { atoi } from '../index';
 
 describe('atoi', () => {
     it('should return NaN if s is not a valid number', () => {
-        const testValues = [
-            '1213a',
-            'a1234',
-            '++12',
-            '+-12',
-            '--21223',
-            '-23a',
-            '+23b',
-        ];
+        const testValues = ['1213a', 'a1234', '++12', '+-12', '--21223', '-23a', '+23b'];
 
         for (const testValue of testValues) {
             expect(atoi(testValue)).toEqual(NaN);
         }
-    })
+    });
 
     it('should return 0, -0 and +0 depending on the leading sign', () => {
-        const testValues = [
-            '+0',
-            '-0',
-            '0'
-        ];
+        const testValues = ['+0', '-0', '0'];
 
         for (const testValue of testValues) {
             expect(atoi(testValue)).toEqual(parseInt(testValue, 10));
@@ -32,7 +20,7 @@ describe('atoi', () => {
     it('should parse valid positive string representations', () => {
         const testValues = [
             '2131223',
-            '212435', 
+            '212435',
             '12300',
             '2140',
             '2',
@@ -42,12 +30,12 @@ describe('atoi', () => {
             '234',
             '312431',
             '2131',
-            '21'
+            '21',
         ];
 
         for (const testValue of testValues) {
             const parsed = atoi(testValue);
-            
+
             expect(parsed).toEqual(parseInt(testValue, 10));
         }
     });
@@ -63,9 +51,9 @@ describe('atoi', () => {
             '-21',
             '-2',
             '-3',
-            '-7'
+            '-7',
         ];
-        
+
         for (const testValue of testValues) {
             const parsed = atoi(testValue);
 

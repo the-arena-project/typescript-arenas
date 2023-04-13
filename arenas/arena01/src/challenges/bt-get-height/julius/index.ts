@@ -1,5 +1,3 @@
-import { makeTree, insert } from './test/tree-utils';
-
 type BNode = {
     left: BNode | null;
     right: BNode | null;

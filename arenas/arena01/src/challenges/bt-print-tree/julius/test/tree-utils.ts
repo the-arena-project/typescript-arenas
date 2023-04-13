@@ -1,4 +1,4 @@
-import { rotateLeft, rotateLeftRight, rotateRight, rotateRightLeft } from "./rotate"
+import { rotateLeft, rotateLeftRight, rotateRight, rotateRightLeft } from './rotate';
 
 export type BNode = {
     left: BNode | null;
@@ -8,10 +8,7 @@ export type BNode = {
 
 type InsertFn = (root: BNode | null, value: number) => BNode;
 
-export const makeTree = (
-    values: number[],
-    insertFn: InsertFn
-): BNode | null => {
+export const makeTree = (values: number[], insertFn: InsertFn): BNode | null => {
     let treeRoot: BNode | null = null;
 
     for (const value of values) {
@@ -69,21 +66,19 @@ export const treeToValueToNode = (root: BNode | null) => {
     return valueToNode;
 };
 
-type InsertBalancedFn = (root: BNode | null, value: number) => BNode
+type InsertBalancedFn = (root: BNode | null, value: number) => BNode;
 
 const rotationLabelToRotationFn = {
-    'LL': rotateLeft,
-    'RR': rotateRight,
-    'LR': rotateLeftRight,
-    'RL': rotateRightLeft
-}
+    LL: rotateLeft,
+    RR: rotateRight,
+    LR: rotateLeftRight,
+    RL: rotateRightLeft,
+};
 
-const performRotation = (
-    root: BNode,
-    rotationLabel: keyof typeof rotationLabelToRotationFn
-) => rotationLabelToRotationFn[rotationLabel](root);
+const performRotation = (root: BNode, rotationLabel: keyof typeof rotationLabelToRotationFn) =>
+    rotationLabelToRotationFn[rotationLabel](root);
 
-type GetBalanceFn = (root: BNode|null) => number
+type GetBalanceFn = (root: BNode | null) => number;
 
 type GetHeightFn = (root: BNode | null) => number;
 
@@ -111,14 +106,14 @@ export const getHeight: GetHeightFn = (root) => {
 
 export const getBalanceFactor: GetBalanceFn = (root) => {
     return root ? getHeight(root.left) - getHeight(root.right) : 0;
-}
+};
 
 const insert = (root: BNode | null, value: number): BNode => {
     if (root === null) {
         return {
             left: null,
             right: null,
-            value
+            value,
         };
     }
 
@@ -146,9 +141,8 @@ const insert = (root: BNode | null, value: number): BNode => {
     }
 
     return root;
-}
-
+};
 
 export const insertBalanced: InsertBalancedFn = (root, value) => {
     return insert(root, value);
-}
+};
