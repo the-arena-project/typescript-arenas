@@ -1,0 +1,5 @@
+type ArrLengthFn = (arr: number[]) => number;
+
+export const arrLength: ArrLengthFn = (arr) => {
+    /* Your code here */
+}

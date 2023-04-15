@@ -1,0 +1,5 @@
+type AvoidTheWarriorsFn = (runway: Runway) => number;
+
+export const avoidTheWarriors: AvoidTheWarriorsFn = (runway) => {
+    /* your code here */
+}

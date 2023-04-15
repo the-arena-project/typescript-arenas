@@ -1,4 +1,4 @@
-Write a function called getHeight that returns the height of a node in your binary tree.
+Write a function called `getHeight` that returns the height of a node in your binary tree.
 
 The height of a node is the maximum depth of that node to a leaf.
 

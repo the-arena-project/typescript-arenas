@@ -1,4 +1,4 @@
-Write a function called binarySearch that replicates the behavior of Array.find.
+Write a function called `binarySearch` that replicates the behavior of Array.find.
 
 If the element is found, it is returned; otherwise, the function returns undefined.
 

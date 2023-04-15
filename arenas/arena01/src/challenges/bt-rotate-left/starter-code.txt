@@ -1,0 +1,5 @@
+type RotateFn = (root: BNode) => BNode
+
+export const rotateLeft: RotateFn = (root) => {
+    /* your code here */
+}

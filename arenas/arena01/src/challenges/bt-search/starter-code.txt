@@ -1,0 +1,5 @@
+type SearchFn = (root: BNode | null, value: number) => BNode | undefined
+
+export const search: SearchFn = (root, value) => {
+    /* your code here */
+}
