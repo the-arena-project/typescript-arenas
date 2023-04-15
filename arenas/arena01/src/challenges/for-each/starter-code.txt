@@ -1,0 +1,6 @@
+type CallbackFn = (elem: any) => any
+type ForEachFn = (arr: any[], cb: CallbackFn) => void
+
+export const forEach: ForEachFn = (arr, cb) => {
+    /* your code here */
+}

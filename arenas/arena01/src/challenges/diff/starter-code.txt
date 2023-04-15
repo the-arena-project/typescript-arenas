@@ -1,0 +1,5 @@
+type DiffFn = (arrA: number[], arrB: number[]) => number[]
+
+export const diff: DiffFn = (arrA, arrB) => {
+    /* your code here */
+}

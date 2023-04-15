@@ -1,0 +1,5 @@
+type IndexOfFn = (arr: any[], elem: any) => number
+
+export const indexOf: IndexOfFn = (arr, elem) => {
+    /* your code here */
+}

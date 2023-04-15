@@ -1,4 +1,4 @@
-Écrire une fonction  fibonacci  qui retourne la valeur du terme n de la suite de Fibonacci, où  n >= 1.
+Écrire une fonction `fibonacci` qui retourne la valeur du terme n de la suite de Fibonacci, où  n >= 1.
 
 Il peut être utile de se pencher sur la définition de cette suite pour faire cet exercice :')
 

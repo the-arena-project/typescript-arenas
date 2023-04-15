@@ -1,0 +1,5 @@
+type IsAlphaFn = (str: string) => boolean
+
+export const isAlpha: IsAlphaFn = (str) => {
+    /* your code goes here */
+}

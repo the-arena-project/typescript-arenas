@@ -1,0 +1,10 @@
+import * as fs from 'fs';
+
+/**
+ * Remember: you need to turn in a program in this challenge.
+ * You don't need to export a function.
+ */
+
+const commandLineArgs = process.argv;
+
+console.log(commandLineArgs);

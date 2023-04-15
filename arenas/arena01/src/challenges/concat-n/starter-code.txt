@@ -1,0 +1,5 @@
+type ConcatNFn = (strA: string, strB: string, n: number) => string
+
+export const concatN = (strA, strB, n) => {
+    /* your code here */
+}

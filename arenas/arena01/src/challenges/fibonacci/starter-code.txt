@@ -1,0 +1,5 @@
+export type FibonacciFn = (n: number) => number
+
+export const fibonacci: FibonacciFn = (n) => {
+    /* your code here */
+}

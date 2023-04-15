@@ -1,0 +1,6 @@
+type CompareFn<T> = (a: T, b: T) => number
+type SortFn = <T>(arr: T[], cmp: CompareFn<T>) => T[]
+
+export const bubbleSort: SortFn = (arr, cmp) => {
+    /* your code here */
+}
