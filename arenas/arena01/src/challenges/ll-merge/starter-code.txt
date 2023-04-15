@@ -1,0 +1,5 @@
+type MergeFn = <T> (listA: Link<T> | null, listB: Link<T> | null) => Link<T> | null
+
+export const merge: MergeFn = (listA, listB) => {
+    /* your code here */
+}

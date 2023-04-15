@@ -1,0 +1,5 @@
+type ReverseStringFn = (str: string) => string;
+
+export const reverseString: ReverseStringFn = (str) => {
+    /* your code here */
+}

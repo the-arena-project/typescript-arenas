@@ -1,0 +1,5 @@
+type ItobinFn = (nb: number) => string
+
+export const itobin: ItobinFn = (nb) => {
+    /* your code here */
+}

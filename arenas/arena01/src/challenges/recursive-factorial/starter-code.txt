@@ -1,0 +1,5 @@
+type FactorialFn = (nb: number) => number;
+
+export const recursiveFactorial: FactorialFn = (n) => {
+    /* your code here */
+}

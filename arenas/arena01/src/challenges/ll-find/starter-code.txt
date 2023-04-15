@@ -1,0 +1,6 @@
+type CallbackFn<T> = (elem: Link<T>) => boolean
+type FindFn = <T> (list: Link<T> | null, cb: CallbackFn<T>) => Link<T> | undefined
+
+export const find: FindFn = (list, cb) => {
+    /* your code here */
+}

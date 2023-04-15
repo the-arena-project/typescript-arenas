@@ -1,0 +1,5 @@
+type StrLengthFn = (str: string) => number;
+
+export const strLength: StrLengthFn = (s) => {
+    /* your code here */
+}

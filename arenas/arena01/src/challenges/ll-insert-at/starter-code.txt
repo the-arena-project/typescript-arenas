@@ -1,0 +1,5 @@
+type InsertAtFn = <T> (list: Link<T> | null, index: number, data: T) => Link<T> | undefined
+
+export const insertAt: InsertAtFn = (list, index, data) => {
+    /* your code here */
+}

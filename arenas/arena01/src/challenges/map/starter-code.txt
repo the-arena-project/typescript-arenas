@@ -1,0 +1,6 @@
+type CallbackFn = (elem: any) => any;
+type MapFn = (arr: any[], cb: CallbackFn) => any[];
+
+export const map: MapFn = (arr, cb) => {
+   /* your code here */ 
+}

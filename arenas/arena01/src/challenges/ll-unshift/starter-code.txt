@@ -1,0 +1,5 @@
+type UnshiftFn = <T>(list: Link<T> | null, data: T) => Link<T>;
+
+export const unshift: UnshiftFn = (list, data) => {
+    /* your code here */
+}

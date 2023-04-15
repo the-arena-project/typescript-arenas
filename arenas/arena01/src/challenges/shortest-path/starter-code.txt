@@ -1,0 +1,8 @@
+type Coordinate = [number, number];
+type Matrix = number[][];
+
+type ShortestPathFn = (begin: Coordinate, end: Coordinate, matrix: number[][]) => number;
+
+export const shortestPath: ShortestPathFn = (begin, end, matrix) => {
+    /* your code here */
+}

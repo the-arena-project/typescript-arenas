@@ -1,0 +1,5 @@
+type SearchFn = (arr: number[], value: number) => number | undefined
+
+export const jumpSearch: SearchFn = (arr, value) => {
+    /* your code here */
+}

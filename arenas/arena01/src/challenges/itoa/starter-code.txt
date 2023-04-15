@@ -1,0 +1,5 @@
+type ItoaFn = (nb: number) => string
+
+export const itoa: ItoaFn = (nb) => {
+    /* your code here */
+}

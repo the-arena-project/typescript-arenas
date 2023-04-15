@@ -1,0 +1,5 @@
+type PushFn = (arr: any[], item: any) => void;
+
+export const push: PushFn = (arr, item) => {
+    /* your code here */
+}

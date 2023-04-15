@@ -1,0 +1,5 @@
+type PushFn = <T>(list: Link<T> | null, data: T) => Link<T>;
+
+export const push: PushFn = (list, data) => {
+    /* your code here */
+}

@@ -1,0 +1,5 @@
+type PopFn = <T> (list: Link<T> | null) => Link<T> | undefined
+
+export const pop: PopFn = (list) => {
+    /* your code here */
+}

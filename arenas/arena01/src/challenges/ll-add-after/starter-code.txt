@@ -1,0 +1,5 @@
+type AddAfterFn = <T> (link: Link<T>|null, data: T) => Link<T>
+
+export const addAfter: AddAfterFn = (link, data) => {
+    /* your code here */
+}

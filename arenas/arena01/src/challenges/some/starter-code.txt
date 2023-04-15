@@ -1,0 +1,6 @@
+type CallbackFn = <T>(elem: T) => boolean;
+type SomeFn = <T>(arr: T[], cb: CallbackFn) => boolean;
+
+export const some: SomeFn = (arr, cb) => {
+    /* your code here */
+}
