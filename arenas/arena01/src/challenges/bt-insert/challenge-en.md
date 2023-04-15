@@ -1,4 +1,4 @@
-Write a function called insert that adds a leaf to a binary search tree passed as an argument.
+Write a function called `insert` that adds a leaf to a binary search tree passed as an argument.
 
 If the tree is empty, the root is created and returned.
 

@@ -1,0 +1,6 @@
+type GetLastFn = <T> (list: Link<T> | null) => Link<T> | null
+
+export const getLast: GetLastFn = (list) => {
+    /* your code here */
+}
+

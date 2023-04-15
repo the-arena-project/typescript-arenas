@@ -1,0 +1,5 @@
+type InsertFn = (root: BNode | null, value: number) => BNode
+
+export const insert: InsertFn = () => {
+    /* your code here */
+}

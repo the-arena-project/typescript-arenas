@@ -1,0 +1,5 @@
+type ShiftFn = <T>(list: Link<T> | null) => Link<T> | undefined;
+
+export const shift: ShiftFn = (list) => {
+    /* your code here */
+}

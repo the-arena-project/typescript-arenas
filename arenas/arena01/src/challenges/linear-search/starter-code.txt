@@ -1,0 +1,6 @@
+type PredicateFn<T> = (elem: T) => boolean
+type SearchFn = <T>(arr: T[], predicate: PredicateFn<T>) => T
+
+export const linearSearch: SearchFn = (arr, predicate) => {
+    /* your code here */
+}

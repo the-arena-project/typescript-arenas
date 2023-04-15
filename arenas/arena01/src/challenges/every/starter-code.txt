@@ -1,0 +1,6 @@
+type CallbackFn = (elem: any) => boolean
+type EveryFn = (arr: any[], cb: CallbackFn) => boolean
+
+export const every = (arr, cb) => {
+    /* your code here */
+}

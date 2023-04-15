@@ -1,0 +1,5 @@
+type FactorialFn = (nb: number) => number
+
+export const iterativeFactorial: FactorialFn = (nb) => {
+    /* your code here */
+}

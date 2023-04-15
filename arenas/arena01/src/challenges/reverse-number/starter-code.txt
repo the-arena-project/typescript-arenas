@@ -1,0 +1,5 @@
+type ReverseNumbersFn = (numbers: number[]) => number[];
+
+export const reverseNumbers: ReverseNumbersFn = (numbers) => {
+    /* your code here */
+}

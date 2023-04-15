@@ -1,0 +1,5 @@
+type DeleteAtFn = <T> (list: Link<T> | null, index: number) => Link<T> | undefined
+
+export const deleteAt: DeleteAtFn = (list, index) => {
+    /* your code here */
+}

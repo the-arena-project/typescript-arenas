@@ -1,0 +1,7 @@
+type Coordinate = [number, number]
+type Matrix = number[][]
+type FindPathFn = (begin: Coordinate, end: Coordinate, matrix: Matrix) => number
+
+export const findPath: FindPathFn = (begin, end, matrix) => {
+    /* your code here */
+}

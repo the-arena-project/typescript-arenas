@@ -1,0 +1,7 @@
+import * as from 'fs';
+
+type ReadFileSyncFn = (path: string) => string;
+
+export const readFileSync: ReadFileSyncFn = (path) => {
+    /* your code here */
+}

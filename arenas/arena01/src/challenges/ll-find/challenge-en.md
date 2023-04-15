@@ -1,4 +1,4 @@
-Write a function called find that reproduces the same behavior as Array.find but on a linked list.
+Write a function called `find` that reproduces the same behavior as Array.find but on a linked list.
 
 Your function should conform to the following prototype:
 

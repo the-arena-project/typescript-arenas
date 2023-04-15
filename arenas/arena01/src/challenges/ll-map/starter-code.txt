@@ -1,0 +1,6 @@
+type CallbackFn<T, R> = (elem: Link<T>, index: number) => R
+type MapFn = <T, R> (list: Link<T> | null, cb: CallbackFn<T, R>) => Array<R>
+
+export const map: MapFn = <T, R>(list: Link<T> | null, cb: CallbackFn<T, R>) => {
+    /* Your code here */
+}

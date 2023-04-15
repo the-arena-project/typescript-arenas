@@ -1,0 +1,5 @@
+type PowerFn = (nb: number, power: number) => number;
+
+export const recursivePower: PowerFn = (nb, power) => {
+    /* your code here */
+}

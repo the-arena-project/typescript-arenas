@@ -1,0 +1,5 @@
+type InsertBalancedFn = (root: BNode | null, value: number) => BNode
+
+export const insertBalanced: InsertBalancedFn = (root, value) => {
+    /* your code here */
+}

@@ -1,0 +1,5 @@
+type SplitFn = (str: string) => string[];
+
+export const split: SplitFn = (s) => {
+    /* your code here */
+}

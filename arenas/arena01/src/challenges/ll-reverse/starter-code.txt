@@ -1,0 +1,5 @@
+type ReverseFn = <T>(list: Link<T> | null) => Link<T> | null;
+
+export const reverse: ReverseFn = (list) => {
+    /* your code here */
+}

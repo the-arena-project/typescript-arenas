@@ -1,0 +1,5 @@
+type PrintTreeFn = (root: BNode | null) => void
+
+export const printTree: PrintTreeFn = () => {
+    /* your code here */
+}

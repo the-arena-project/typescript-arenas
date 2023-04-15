@@ -1,0 +1,7 @@
+type Corridor = number[];
+
+type ExitTheCorridorFn = (corridor: Corridor) => number;
+
+export const exitTheCorridor: ExitTheCorridorFn = (corridor) => {
+    /* your code here */
+}

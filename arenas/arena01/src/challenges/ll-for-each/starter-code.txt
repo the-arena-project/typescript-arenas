@@ -1,0 +1,6 @@
+type CallbackFn<T> = (elem: Link<T>, index: number) => void
+type ForEachFn = <T> (list: Link<T> | null, cb: CallbackFn<T>) => void
+
+export const forEach: ForEachFn = (list, cb) => {
+    /* your code here */
+}

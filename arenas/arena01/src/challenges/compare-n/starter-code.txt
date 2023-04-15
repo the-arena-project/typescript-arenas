@@ -1,0 +1,5 @@
+type CompareNFn = (strA: string, strB: string, n: number) => number
+
+export const compareN: CompareNFn = (strA, strB, n) => {
+    /* your code here */
+}

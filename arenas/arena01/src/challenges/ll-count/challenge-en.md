@@ -1,4 +1,4 @@
-Write a function called count that traverses a linked list passed as an argument and returns the number of nodes present.
+Write a function called `count` that traverses a linked list passed as an argument and returns the number of nodes present.
 
 Your function must conform to the following prototype:
 

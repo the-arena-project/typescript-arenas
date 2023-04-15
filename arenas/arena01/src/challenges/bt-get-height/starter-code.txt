@@ -1,0 +1,5 @@
+type GetHeightFn = (root: BNode | null) => number
+
+export const getHeight: GetHeightFn = (root) => {
+    /* your code here */
+}

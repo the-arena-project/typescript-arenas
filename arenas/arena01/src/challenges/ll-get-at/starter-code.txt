@@ -1,0 +1,5 @@
+type GetAtFn = <T> (list: Link<T> | null, index: number) => Link<T> | undefined
+
+export const getAt: GetAtFn = (list, index) => {
+    /* your code here */
+}

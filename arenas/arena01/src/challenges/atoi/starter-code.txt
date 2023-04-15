@@ -1,0 +1,5 @@
+type AtoiFn = (str: string) => number
+
+export const atoi: AtoiFn = (str) => {
+    /* your code here */
+}

@@ -1,0 +1,6 @@
+type CallbackFn = (elem: any) => boolean
+type FindFn = (arr: any[], cb: CallbackFn) => any
+
+export const find: FindFn = (arr, cb) => {
+    /* your code here */
+}

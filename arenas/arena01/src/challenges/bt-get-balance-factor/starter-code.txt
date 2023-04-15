@@ -1,0 +1,5 @@
+type GetBalanceFn = (root: BNode | null) => number
+
+export const getBalanceFactor: GetBalanceFn = (root) => {
+    /* your code here */
+}

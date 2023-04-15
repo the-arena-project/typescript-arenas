@@ -1,0 +1,5 @@
+type ItohexFn = (nb: number) => string
+
+export const itohex: ItohexFn = (nb) => {
+    /* your code here */
+}
