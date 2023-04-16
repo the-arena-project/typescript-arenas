@@ -1,15 +1,15 @@
 {
     "id": "algo-101",
-    "name": "Algo 101",
-    "nameFr": "Algo 101",
-    "nameEn": "Algo 101",
+    "name": "Algorithmes 101 : De baby-sitter à puissant guerrier",
+    "nameFr": "Algorithmes 101 : De baby-sitter à puissant guerrier",
+    "nameEn": "Algorithms 101 : From Babysitter to Mighty Warrior",
     "status": "Published",
     "challengeCount": 4,
     "estimatedDays": 1,
     "description": "Améliore ton niveau en algo par la pratique et deviens le guerrier le plus futé de l'arène !",
     "descriptionFr": "Améliore ton niveau en algo par la pratique et deviens le guerrier le plus futé de l'arène !",
     "descriptionEn": "Improve your algo level through practice and become the smartest warrior in the arena!",
-    "coverUrl": "https://fastly.picsum.photos/id/9/5000/3269.jpg?hmac=cZKbaLeduq7rNB8X-bigYO8bvPIWtT-mh8GRXtU3vPc",
+    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Fcourses%2Fcover-algo-101.jpeg?alt=media",
     "chapters": [
         "kindergarden"
     ],
