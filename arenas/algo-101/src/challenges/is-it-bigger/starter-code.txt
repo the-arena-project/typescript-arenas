@@ -1,0 +1,3 @@
+export const isBigger = (a: number, b: number): boolean => {
+    /* Your code here */
+};
