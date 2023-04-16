@@ -1,0 +1,14 @@
+{
+  "slug": "even-or-odd",
+  "baseScore": 150,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": ["Any built-in method or property"],
+  "name": "Pair ou Impair ?",
+  "nameFr": "Pair ou Impair ?",
+  "nameEn": "Even or Odd?",
+  "hint": "Il est temps de découvrir un nouvel opérateur",
+  "hintFr": "Il est temps de découvrir un nouvel opérateur",
+  "hintEn": "Time to discover a new operator"
+}

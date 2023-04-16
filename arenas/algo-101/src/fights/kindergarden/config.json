@@ -1,0 +1,20 @@
+{
+    "slug": "kindergarden",
+    "estimatedTime": 1,
+    "videos": [],
+    "challenges": [
+        "enrollment",
+        "is-it-bigger",
+        "even-or-odd",
+        "count-them-all"
+    ],
+    "slideDecks": [],
+    "badgeUrl": null,
+    "badge": [],
+    "shortDescription": "Peux-tu faire mieux qu'un enfant ?",
+    "shortDescriptionFr": "Peux-tu faire mieux qu'un enfant ?",
+    "shortDescriptionEn": "Can you do better than a child?",
+    "name": "Le jardin d'enfants",
+    "nameFr": "Le jardin d'enfants",
+    "nameEn": "Kindergarden"
+}

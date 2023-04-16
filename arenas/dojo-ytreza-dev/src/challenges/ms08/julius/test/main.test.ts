@@ -27,15 +27,14 @@ describe('minesweeper', () => {
             expect(solved_field).toEqual('**');
         });
 
-        it("should solve three empty cells", () => {
-            const solved_field = minesweeper("...")
-            expect(solved_field).toEqual("000")
-        })
+        it('should solve three empty cells', () => {
+            const solved_field = minesweeper('...');
+            expect(solved_field).toEqual('000');
+        });
 
         it('should solve three mined cells', () => {
             const solved_field = minesweeper('***');
             expect(solved_field).toEqual('***');
-        });        
-
+        });
     });
 });
