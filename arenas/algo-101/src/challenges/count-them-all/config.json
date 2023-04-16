@@ -4,7 +4,7 @@
   "scorePenaltyPerAttempt": 25,
   "turnedInFile": "index.ts",
   "slideDecks": [],
-  "allowedMaterials": [],
+  "allowedMaterials": ["Any built-in method or property"],
   "name": "Comptez les tous !",
   "nameFr": "Comptez les tous !",
   "nameEn": "Count them all!",
