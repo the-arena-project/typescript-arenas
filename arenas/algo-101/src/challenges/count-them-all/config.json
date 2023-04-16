@@ -1,0 +1,14 @@
+{
+  "slug": "count-them-all",
+  "baseScore": 150,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "name": "Comptez les tous !",
+  "nameFr": "Comptez les tous !",
+  "nameEn": "Count them all!",
+  "hint": "Vous savez additioner. Reste à apprendre à boucler.",
+  "hintFr": "Vous savez additioner. Reste à apprendre à boucler.",
+  "hintEn": "You know how to add up. You just need to learn how to loop."
+}

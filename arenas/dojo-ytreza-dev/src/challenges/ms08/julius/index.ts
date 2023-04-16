@@ -9,7 +9,7 @@ export const minesweeper: MinesweeperFn = (field: string) => {
         } else {
             solvedField += '0';
         }
-        x += 1
-    }    
+        x += 1;
+    }
     return solvedField;
 };

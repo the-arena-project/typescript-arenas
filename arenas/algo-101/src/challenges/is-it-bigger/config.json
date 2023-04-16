@@ -1,0 +1,14 @@
+{
+  "slug": "is-it-bigger",
+  "baseScore": 100,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "name": "C'est plus grand ?",
+  "nameFr": "C'est plus grand ?",
+  "nameEn": "Is it bigger?",
+  "hint": "Même principe, à un caractère près",
+  "hintFr": "Même principe, à un caractère près",
+  "hintEn": "Same principle, except for one character"
+}

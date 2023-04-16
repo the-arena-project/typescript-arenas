@@ -1,0 +1,14 @@
+{
+  "slug": "enrollment",
+  "baseScore": 100,
+  "scorePenaltyPerAttempt": 25,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "name": "Enrôlement",
+  "nameFr": "Enrôlement",
+  "nameEn": "Enrollment",
+  "hint": "C'est une ... addition",
+  "hintFr": "C'est une ... addition",
+  "hintEn": "It's an ... addition"
+}
