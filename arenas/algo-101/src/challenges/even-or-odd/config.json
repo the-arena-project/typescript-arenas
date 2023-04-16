@@ -4,7 +4,7 @@
   "scorePenaltyPerAttempt": 25,
   "turnedInFile": "index.ts",
   "slideDecks": [],
-  "allowedMaterials": [],
+  "allowedMaterials": ["Any built-in method or property"],
   "name": "Pair ou Impair ?",
   "nameFr": "Pair ou Impair ?",
   "nameEn": "Even or Odd?",
