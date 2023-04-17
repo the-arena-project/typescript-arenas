@@ -16,7 +16,9 @@ You are the only one that can save this Arena.
 
 You have trained your whole life for this moment, and you know that you are ready to face any challenge that comes your way.
 
-The arena and the people who depend on you are counting on you to save them.
+You will fight with honor, with skill, and with all your might.
+
+The arena and the people who depend on you are counting on you to emerge victorious.
 
 You will not let them down.
 
@@ -63,9 +65,13 @@ To see this battle through?.
 
 Here's the function you have to code.
 
+But be careful, it might be harder than you think.
+
 ```typescript
 export const swear = (): number => {
     /* Your code here */
 }
 ```
+
+Yes, it returns a number, this is not a mistake.
 
