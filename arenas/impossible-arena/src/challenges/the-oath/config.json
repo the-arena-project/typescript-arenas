@@ -1,0 +1,14 @@
+{
+  "slug": "the-oath",
+  "baseScore": 350,
+  "scorePenaltyPerAttempt": 100,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": ["Your brain..."],
+  "name": "The Oath",
+  "nameFr": "Le serment",
+  "nameEn": "The Oath",
+  "hint": "",
+  "hintFr": "",
+  "hintEn": ""
+}
