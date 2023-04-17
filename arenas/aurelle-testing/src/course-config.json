@@ -1,0 +1,15 @@
+{
+  "id": "aurelle-testing ",
+  "name": "Aurelle Testing",
+  "nameFr": "Aurelle Testing",
+  "nameEn": "Aurelle Testing",
+  "status": "Published",
+  "challengeCount": 85,
+  "estimatedDays": 35,
+  "description": "This should never ship to prod. This is a test course for Aurelle.",
+  "descriptionFr": "This should never ship to prod. This is a test course for Aurelle.",
+  "descriptionEn": "This should never ship to prod. This is a test course for Aurelle.",
+  "coverUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Fcourses%2Fcover-arena01.jpeg?alt=media",
+  "chapters": ["learn-to-type"],
+  "authorIds": ["BN7Clc7GgDNYmy5zW7OZotZ1U0D3", "EFHsK1Bas9Y8Bfhh2MRPbNJRqk62"]
+}
