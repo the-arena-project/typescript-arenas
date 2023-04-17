@@ -44,7 +44,7 @@ describe('it all ends here?', () => {
     expect(minesweeper('.....')).toEqual('00000');
     expect(minesweeper('......')).toEqual('000000');
     expect(minesweeper('.......')).toEqual('0000000');
-    expect(minesweeper('.............................')).toEqual('000000000000000000000000000000');
+    expect(minesweeper('..............................')).toEqual('000000000000000000000000000000');
     expect(minesweeper('****')).toEqual('****');
     expect(minesweeper('*****')).toEqual('*****');
     expect(minesweeper('******')).toEqual('******');
