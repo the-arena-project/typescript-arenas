@@ -22,7 +22,7 @@ describe("instruction's examples", () => {
     it('should pass example 3', () => {
         const source = 'I already sent a message to julius@thearenaproject.co 2 days ago!';
         const expected =
-            'I already sent a message to julius%40thearenaproject.co NUM(2) days ago%21';
+            'I already sent a message to julius%40thearenaproject%2eco NUM(2) days ago%21';
         const encoder = new MessageRouterEncoder();
         const encoded = encoder.encode(source);
 
