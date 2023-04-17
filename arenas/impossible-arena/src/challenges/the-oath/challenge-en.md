@@ -32,7 +32,7 @@ SWEAR!
 
 Export a function named `swear` that returns the oath:
 
-```
+```text
 I, warrior of the Arena, solemnly swear
 To fight with honor and strength beyond compare.
 
