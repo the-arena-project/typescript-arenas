@@ -1,0 +1,19 @@
+{
+    "id": "impossible-arena",
+    "name": "Impossible Arena: Are you as good as you think?",
+    "nameFr": "Impossible Arena: Are you as good as you think?",
+    "nameEn": "Impossible Arena: Are you as good as you think?",
+    "status": "Published",
+    "challengeCount": 4,
+    "estimatedDays": 1,
+    "description": "Can you solve the impossible Arena? The only way to find out is to start. Enter this escape game and challenge both your programming and thinking skills.",
+    "descriptionFr": "Can you solve the impossible Arena? The only way to find out is to start. Enter this escape game and challenge both your programming and thinking skills.",
+    "descriptionEn": "Can you solve the impossible Arena? The only way to find out is to start. Enter this escape game and challenge both your programming and thinking skills.",
+    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Fcourses%2Fcover-algo-101.jpeg?alt=media",
+    "chapters": [
+        "chapter-1"
+    ],
+    "authorIds": [
+        "EFHsK1Bas9Y8Bfhh2MRPbNJRqk62"
+    ]
+}
