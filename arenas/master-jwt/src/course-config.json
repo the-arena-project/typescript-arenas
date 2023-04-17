@@ -6,8 +6,10 @@
   "status": "Draft",
   "challengeCount": 8,
   "estimatedDays": 1,
+  "description": "Nowadays JWT is a very common way of authenticating to a web application. Every developer should know what they are and how to use them!",
+  "descriptionFr": "Nowadays JWT is a very common way of authenticating to a web application. Every developer should know what they are and how to use them!",
   "descriptionEn": "Nowadays JWT is a very common way of authenticating to a web application. Every developer should know what they are and how to use them!",
   "coverUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Fcourses%2Fcover-jwt-arena.jpeg?alt=media",
-  "chapters": ["encode-decode"],
+  "chapters": ["encoding"],
   "authorIds": ["BN7Clc7GgDNYmy5zW7OZotZ1U0D3"]
 }
