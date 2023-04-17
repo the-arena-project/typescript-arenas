@@ -1,0 +1,21 @@
+{
+  "slug": "encoding",
+  "estimatedTime": 3,
+  "videos": [
+    {
+      "index": 0,
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight01%2Fintroduction_thumb.jpg?alt=media",
+      "videoId": "3_GwD4oU6z4"
+    }
+  ],
+  "challenges": ["make-your-own-encoding"],
+  "slideDecks": [],
+  "badgeUrl": null,
+  "badge": [],
+  "shortDescription": "Encoding is nice",
+  "shortDescriptionEn": "Encoding is nice",
+  "shortDescriptionFr": "Encoding is nice",
+  "name": "Encoding",
+  "nameFr": "Encoding",
+  "nameEn": "Encoding"
+}
