@@ -1,15 +1,31 @@
-import { empty_field, field_of_single_line, complex_field } from '..';
+import { MessageRouterEncoder } from '..';
 
-describe('do you understand the rules ?', () => {
-    it('an empty field should give en empty solved field', () => {
-        expect(empty_field).toEqual('');
+describe("instruction's examples", () => {
+    it('should pass example 1', () => {
+        const source = 'I have 2 apples';
+        const expected = 'I have NUM(2) apples';
+        const encoder = new MessageRouterEncoder();
+        const encoded = encoder.encode(source);
+
+        expect(encoded).toBe(expected);
     });
 
-    it('a field with a single line', () => {
-        expect(field_of_single_line).toEqual('01*10');
+    it('should pass example 2', () => {
+        const source = 'I have 2 apples and 3 oranges';
+        const expected = 'I have NUM(2) apples and NUM(3) oranges';
+        const encoder = new MessageRouterEncoder();
+        const encoded = encoder.encode(source);
+
+        expect(encoded).toBe(expected);
     });
 
-    it('a complex field', () => {
-        expect(complex_field).toEqual('012*10\n13*310\n1**200');
+    it('should pass example 3', () => {
+        const source = 'I already sent a message to julius@thearenaproject.co 2 days ago!';
+        const expected =
+            'I already sent a message to julius%40thearenaproject%2eco NUM(2) days ago%21';
+        const encoder = new MessageRouterEncoder();
+        const encoded = encoder.encode(source);
+
+        expect(encoded).toBe(expected);
     });
 });
