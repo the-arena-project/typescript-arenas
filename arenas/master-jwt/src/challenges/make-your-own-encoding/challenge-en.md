@@ -1,63 +1,73 @@
-# Welcome to the Minesweeper Challenge
+Warrior !
 
-The arena doors open. You enter the enclosure and look around. The crowd is present, all eyes are on you, and seated on his throne is Julius, who looks at you with an authoritative air.
+I know you came here to learn about JWT, but I have a little request for you first.
 
-> "Welcome, you are here to entertain me! What challenge shall I inflict upon you? There's no chance you'll escape, but I wonder how far you will go."
+As you might know, here in the Arena we do have a special machine that we use to process messages and send them to the right place. It's called the "Message Router".
 
-> Yes, I know! Let's prepare the Minesweeper Challenge!
+For absolutely non-obvious and most likely stupid reasons, the "Message Router" cannot handle a particular set of characters as they are and we need to transform them beforehand to ensure proper communication.
 
-## Kata Principle
-You will participate in the Minesweeper Challenge. This exercise is inspired by the kata of the same name. The goal is to create a function that solves a minefield grid and indicates the number of mines surrounding each cell.
+Up until know, I was asking one of our best warriors to do this transformation manually for me, but he's been busy lately and I decided that it was time to automate this process.
 
-## Educational Objective
-The objective is to create this function following the Test Driven Development (TDD) principles based on the Red Green Refactoring cycle.
+As I trust you more than anyone else, you'll be in charge of this task.
 
-Julius's role is to propose the tests you need to pass, which will guide you in the development process.
+I want you to write a Typescript class `MessageRouterEncoder` that has a single method `encode` that takes a string and returns a string.
 
-## To Start:
-Throughout the challenges, you will have to implement the `minesweeper` function that takes a string containing the minefield (in rectangular form) as input. It returns a string containing the solved minefield.
+Something like this:
 
-For example, if you have as input:
-
-```plain
-*...
-....
-.*..
-....
+```typescript
+export class MessageRouterEncoder {
+  encode(message: string): string {
+    // actual encoding logic here
+  }
+}
 ```
 
-you will have as output:
+## Encoding rules
 
-```plain
-*100
-2210
-1*10
-1110
+Here are the encoding rules you have to follow:
+
+### Numbers
+
+We refer to numbers as any sequence of digits (0-9) that is preceded by a space and followed by a space or a period.
+
+A number can be signed, so it can start with ONE `+` or `-` sign.
+
+Any number should be wrapped in a `NUM(n)` tag, where `n` is the number itself.
+
+For example, the string `I have 2 apples.` should be encoded as `I have NUM(2) apples.`. Pretty simple, right?
+
+### Special characters
+
+For every character listed below, you have to encode it as `%XX` where `XX` is the hexadecimal representation of the character's ASCII code.
+
+If this doesn't ring a bell, I would suggest you to read [this article](https://en.wikipedia.org/wiki/ASCII#Printable_characters) to get a better understanding of what I'm talking about.
+
+As to the list of special characters you should encode, here it is:
+
+```
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
 ```
 
-## Did you understand everything?
+For reference, here are some examples of messages that my former assistant encoded:
 
-Julius wants to see that you have fully understood what he expects from you. To do this, you must provide proof of your understanding.
-
-Here are three questions:
-
-What result is expected when the minefield is empty (`""`)?
-
-You must answer this by providing a variable that you export as `empty_field`.
-
-What result is expected for the minefield: `"..*.."`? You will export it in a variable called `field_of_single_line`.
-
-And finally, what result for the minefield: `"...*..\n..*...\n.**..."`?
-You will export it in a variable called `complex_field`.
-
-Once Julius is sure you have fully understood, you can truly begin the challenge.
-
-Given the above instructions, Julius expects you to turn in something like this:
-
-```ts
-export const empty_field = '<YOUR_ABSOLUTELY_RIGHT_ANSWER>';
-
-export const field_of_single_line = '<YOUR_UNDOUBTEDLY_SPECIAL_ANSWER>';
-
-export const complex_field = '<YOUR_HIGHLY_OVERTHOUGHT_ANSWER>';
 ```
+I have 2 apples
+---
+I have NUM(2) apples
+```
+
+```
+I have 2 apples and 3 oranges.
+----
+I have NUM(2) apples and NUM(3) oranges.
+```
+
+```
+I already sent a message to julius@thearenaproject.co 2 days ago!
+---
+I already sent a message to julius%40thearenaproject.co NUM(2) days ago%21
+```
+
+That said, I'm sure you can do this!
+
+It's your time to shine, Warrior !
