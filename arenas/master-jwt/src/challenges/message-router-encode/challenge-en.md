@@ -30,7 +30,8 @@ Here are the encoding rules you have to follow:
 
 We refer to numbers as any sequence of digits (0-9) that is preceded by a space and followed by a space or a period.
 
-A number can be signed, so it can start with ONE `+` or `-` sign.
+A number can be signed, so it can start with one, and ONLY one, `+` or `-` sign.
+Encountered in other contexts, the `+` and `-` signs should be encoded as special characters (see below).
 
 Any number should be wrapped in a `NUM(n)` tag, where `n` is the number itself.
 
@@ -44,25 +45,32 @@ If this doesn't ring a bell, I would suggest you to read [this article](https://
 
 As to the list of special characters you should encode, here it is:
 
-```
+```plain
 ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
 ```
 
-For reference, here are some examples of messages that my former assistant encoded:
+For reference, here are some examples of messages that my former assistant encoded.
+Look at them carefully, they might help you.
 
-```
+```plain
 I have 2 apples
 ---
 I have NUM(2) apples
 ```
 
-```
+```plain
 I have 2 apples and 3 oranges.
 ----
 I have NUM(2) apples and NUM(3) oranges.
 ```
 
+```plain
+4 - +8 = -4
+---
+NUM(4) %2d NUM(8) %3d NUM(-4)
 ```
+
+```plain
 I already sent a message to julius@thearenaproject.co 2 days ago!
 ---
 I already sent a message to julius%40thearenaproject.co NUM(2) days ago%21

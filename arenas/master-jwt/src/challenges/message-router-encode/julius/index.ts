@@ -9,6 +9,25 @@ interface Token {
     value: string;
 }
 
+// create lexer type
+export class Lexer {
+    private currentTokenIndex = 0;
+
+    constructor(private readonly tokens: Token[]) {}
+
+    current(): Token {
+        return this.tokens[this.currentTokenIndex];
+    }
+
+    previous(): Token {
+        return this.tokens[--this.currentTokenIndex];
+    }
+
+    next(): Token {
+        return this.tokens[++this.currentTokenIndex];
+    }
+}
+
 export class MessageRouterEncoder {
     private static readonly SPECIAL_CHARACTERS = [
         '!',
@@ -51,11 +70,15 @@ export class MessageRouterEncoder {
         return MessageRouterEncoder.DIGITS.includes(char);
     }
 
+    private isDigitSign(char: string): boolean {
+        return char === '-' || char === '+';
+    }
+
     private isDigitEndDelimiter(char: string): boolean {
         return !this.isDigit(char);
     }
 
-    private tokenize(message: string): Token[] {
+    private tokenize(message: string): Lexer {
         const tokens: Token[] = [];
         let untouchedSequenceStartingIndex: number | null = null;
         let digitSequenceStartingIndex: number | null = null;
@@ -107,7 +130,7 @@ export class MessageRouterEncoder {
                     type: TokenType.SPECIAL_CHARACTER,
                     value: char,
                 });
-            } else {
+            } else if (!isDigit) {
                 if (untouchedSequenceStartingIndex === null) {
                     untouchedSequenceStartingIndex = i;
                 }
@@ -140,7 +163,9 @@ export class MessageRouterEncoder {
             });
         }
 
-        return tokens;
+        console.log(tokens);
+
+        return new Lexer(tokens);
     }
 
     private isSpecialCharacter(char: string): boolean {
@@ -153,8 +178,8 @@ export class MessageRouterEncoder {
         return `%${hexCode}`;
     }
 
-    private encodeNumber(s: string): string {
-        return `NUM(${s})`;
+    private encodeNumber(s: string, isNegative = false) {
+        return `NUM(${isNegative ? '-' : ''}${s})`;
     }
 
     private tokenTypeToEncoder = {
@@ -164,11 +189,28 @@ export class MessageRouterEncoder {
     };
 
     encode(message: string): string {
-        const tokens = this.tokenize(message);
+        const lexer = this.tokenize(message);
         let encoded = '';
+        let token: null | Token = null;
 
-        for (const token of tokens) {
+        while ((token = lexer.current())) {
+            const isDigitSign = this.isDigitSign(token.value);
+
+            if (isDigitSign) {
+                const nextToken = lexer.next();
+
+                if (nextToken?.type !== TokenType.DIGIT) {
+                    lexer.previous();
+                } else {
+                    encoded += this.encodeNumber(nextToken.value, token.value === '-');
+                    lexer.next();
+                    continue;
+                }
+            }
+
             encoded += this.tokenTypeToEncoder[token.type](token.value);
+
+            lexer.next();
         }
 
         return encoded;
@@ -177,6 +219,4 @@ export class MessageRouterEncoder {
 
 const encoder = new MessageRouterEncoder();
 
-const encoded = encoder.encode('1 2 3 4 5 6 7 88$$1hey%');
-
-console.log(encoded);
+console.log(encoder.encode('-23-24-45'));
