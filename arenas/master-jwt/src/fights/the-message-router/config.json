@@ -8,7 +8,7 @@
       "videoId": "3_GwD4oU6z4"
     }
   ],
-  "challenges": ["message-router-encode"],
+  "challenges": ["message-router-encode", "message-router-decode"],
   "slideDecks": [],
   "badgeUrl": null,
   "badge": [],
