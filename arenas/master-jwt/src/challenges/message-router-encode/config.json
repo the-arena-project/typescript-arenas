@@ -1,14 +1,14 @@
 {
-  "slug": "make-your-own-encoding",
+  "slug": "message-router-encode",
   "baseScore": 0,
   "scorePenaltyPerAttempt": 0,
   "turnedInFile": "index.ts",
   "slideDecks": [],
   "allowedMaterials": [],
   "name": "exemple //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt nameFr et nameEn.",
-  "nameFr": "Make your own encoding",
-  "nameEn": "Make your own encoding",
-  "hint": "Ceci est un hint. //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt hintFr et hintEn.",
-  "hintFr": "💡Renseignes toi sur la méthode TDD et le cycle Red Green Refacto",
-  "hintEn": "💡Find out more about the TDD method and the Red Green Refacto cycle"
+  "nameFr": "The message router: an encoding problem",
+  "nameEn": "The message router: an encoding problem",
+  "hint": null,
+  "hintEn": null,
+  "hintFr": null
 }

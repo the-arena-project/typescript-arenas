@@ -1,5 +1,5 @@
 {
-  "slug": "encoding",
+  "slug": "the-message-router",
   "estimatedTime": 3,
   "videos": [
     {
@@ -12,9 +12,9 @@
   "slideDecks": [],
   "badgeUrl": null,
   "badge": [],
-  "shortDescription": "Encoding is nice",
-  "shortDescriptionEn": "Encoding is nice",
-  "shortDescriptionFr": "Encoding is nice",
+  "shortDescription": "Before you can be taught about JWT, you will have to help Julius about one of his tasks.",
+  "shortDescriptionEn": "Before you can be taught about JWT, you will have to help Julius about one of his tasks.",
+  "shortDescriptionFr": "Before you can be taught about JWT, you will have to help Julius about one of his tasks.",
   "name": "Encoding",
   "nameFr": "Encoding",
   "nameEn": "Encoding"
