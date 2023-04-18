@@ -48,7 +48,8 @@ As to the list of special characters you should encode, here it is:
 ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
 ```
 
-For reference, here are some examples of messages that my former assistant encoded:
+For reference, here are some examples of messages that my former assistant encoded.
+Look at them carefully, they might help you.
 
 ```plain
 I have 2 apples
