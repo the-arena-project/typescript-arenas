@@ -8,14 +8,14 @@
       "videoId": "3_GwD4oU6z4"
     }
   ],
-  "challenges": ["message-router-encode"],
+  "challenges": ["message-router-encode", "message-router-decode"],
   "slideDecks": [],
   "badgeUrl": null,
   "badge": [],
   "shortDescription": "Before you can be taught about JWT, you will have to help Julius about one of his tasks.",
   "shortDescriptionEn": "Before you can be taught about JWT, you will have to help Julius about one of his tasks.",
   "shortDescriptionFr": "Before you can be taught about JWT, you will have to help Julius about one of his tasks.",
-  "name": "Encoding",
-  "nameFr": "Encoding",
-  "nameEn": "Encoding"
+  "name": "The Message Router",
+  "nameFr": "The Message Router",
+  "nameEn": "The Message Router"
 }
