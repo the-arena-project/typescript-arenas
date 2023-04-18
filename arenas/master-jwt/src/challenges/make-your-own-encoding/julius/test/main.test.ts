@@ -63,8 +63,8 @@ describe('MessageRouterEncoder', () => {
             });
 
             it('should pass example 3', () => {
-                const source = '4 - 8 = 4';
-                const expected = 'NUM(4) %2d NUM(8) %3d NUM(4)';
+                const source = '4 - +8 = -4';
+                const expected = 'NUM(4) %2d NUM(8) %3d NUM(-4)';
                 const encoded = encoder.encode(source);
 
                 expect(encoded).toBe(expected);
@@ -103,6 +103,38 @@ describe('MessageRouterEncoder', () => {
 
                     expect(encoded).toBe(expected);
                 }
+            });
+
+            it('should encode a number with a leading plus sign (should strip the plus sign)', () => {
+                const nums = ['+101', '+23', '+34', '+234', '+345'];
+
+                for (const num of nums) {
+                    const source = num;
+                    const expected = `NUM(${num.slice(1)})`;
+                    const encoded = encoder.encode(source);
+
+                    expect(encoded).toBe(expected);
+                }
+            });
+
+            it('should encode a negative number', () => {
+                const nums = ['-101', '-23', '-34', '-234', '-345'];
+
+                for (const num of nums) {
+                    const source = num;
+                    const expected = `NUM(${num})`;
+                    const encoded = encoder.encode(source);
+
+                    expect(encoded).toBe(expected);
+                }
+            });
+
+            it('should encode a message made of consecutive negative numbers', () => {
+                const source = '-101-23-34-234-345';
+                const expected = 'NUM(-101)NUM(-23)NUM(-34)NUM(-234)NUM(-345)';
+                const encoded = encoder.encode(source);
+
+                expect(encoded).toBe(expected);
             });
 
             it('should encode a big number that does not fit in a javascript number (i.e a 32-bit integer)', () => {

@@ -63,7 +63,7 @@ I have NUM(2) apples and NUM(3) oranges.
 ```
 
 ```plain
-4 - 8 = -4
+4 - +8 = -4
 ---
 NUM(4) %2d NUM(8) %3d NUM(-4)
 ```

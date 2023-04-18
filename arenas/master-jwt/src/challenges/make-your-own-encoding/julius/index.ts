@@ -9,6 +9,25 @@ interface Token {
     value: string;
 }
 
+// create lexer type
+export class Lexer {
+    private currentTokenIndex = 0;
+
+    constructor(private readonly tokens: Token[]) {}
+
+    current(): Token {
+        return this.tokens[this.currentTokenIndex];
+    }
+
+    previous(): Token {
+        return this.tokens[--this.currentTokenIndex];
+    }
+
+    next(): Token {
+        return this.tokens[++this.currentTokenIndex];
+    }
+}
+
 export class MessageRouterEncoder {
     private static readonly SPECIAL_CHARACTERS = [
         '!',
@@ -51,11 +70,15 @@ export class MessageRouterEncoder {
         return MessageRouterEncoder.DIGITS.includes(char);
     }
 
+    private isDigitSign(char: string): boolean {
+        return char === '-' || char === '+';
+    }
+
     private isDigitEndDelimiter(char: string): boolean {
         return !this.isDigit(char);
     }
 
-    private tokenize(message: string): Token[] {
+    private tokenize(message: string): Lexer {
         const tokens: Token[] = [];
         let untouchedSequenceStartingIndex: number | null = null;
         let digitSequenceStartingIndex: number | null = null;
@@ -107,7 +130,7 @@ export class MessageRouterEncoder {
                     type: TokenType.SPECIAL_CHARACTER,
                     value: char,
                 });
-            } else {
+            } else if (!isDigit) {
                 if (untouchedSequenceStartingIndex === null) {
                     untouchedSequenceStartingIndex = i;
                 }
@@ -140,7 +163,9 @@ export class MessageRouterEncoder {
             });
         }
 
-        return tokens;
+        console.log(tokens);
+
+        return new Lexer(tokens);
     }
 
     private isSpecialCharacter(char: string): boolean {
@@ -153,8 +178,8 @@ export class MessageRouterEncoder {
         return `%${hexCode}`;
     }
 
-    private encodeNumber(s: string): string {
-        return `NUM(${s})`;
+    private encodeNumber(s: string, isNegative = false) {
+        return `NUM(${isNegative ? '-' : ''}${s})`;
     }
 
     private tokenTypeToEncoder = {
@@ -164,11 +189,28 @@ export class MessageRouterEncoder {
     };
 
     encode(message: string): string {
-        const tokens = this.tokenize(message);
+        const lexer = this.tokenize(message);
         let encoded = '';
+        let token: null | Token = null;
 
-        for (const token of tokens) {
+        while ((token = lexer.current())) {
+            const isDigitSign = this.isDigitSign(token.value);
+
+            if (isDigitSign) {
+                const nextToken = lexer.next();
+
+                if (nextToken?.type !== TokenType.DIGIT) {
+                    lexer.previous();
+                } else {
+                    encoded += this.encodeNumber(nextToken.value, token.value === '-');
+                    lexer.next();
+                    continue;
+                }
+            }
+
             encoded += this.tokenTypeToEncoder[token.type](token.value);
+
+            lexer.next();
         }
 
         return encoded;
@@ -177,29 +219,4 @@ export class MessageRouterEncoder {
 
 const encoder = new MessageRouterEncoder();
 
-const sentences = [
-    'Squirrels are fascinating creatures with a unique ability to navigate through trees at incredible speeds.',
-    'I love watching squirrels play in the park, chasing each other up and down the trees.',
-    'Did you know that squirrels can run up to 20 miles per hour?',
-    "There's nothing quite like the sound of a squirrel scurrying across the roof in the middle of the night.",
-    'Some species of squirrels, like the red squirrel, rely on pine cones as their primary food source.',
-    "It's amazing to watch squirrels use their tails to help them balance while jumping from branch to branch.",
-    'Squirrels are notorious for stealing birdseed from backyard feeders.',
-    "A group of squirrels is known as a 'scurry', which is a fitting name given their frantic movements.",
-    'Squirrels have a natural instinct to hoard food for the winter months, often creating hidden caches of nuts and seeds.',
-    'The Eastern gray squirrel is one of the most common species of squirrel found in North America.',
-    'For many people, squirrels are seen as a nuisance due to their tendency to damage property.',
-    'Some people believe that feeding squirrels can lead to them becoming dependent on humans for food.',
-    'Squirrels have a keen sense of smell, which helps them locate food sources like acorns and seeds.',
-    'Squirrels are social animals and can often be seen grooming each other in communal areas.',
-    "Squirrels' front teeth never stop growing, so they must constantly chew on objects to keep them trimmed.",
-    "Many squirrels live in nests called 'dreys', which are often built using twigs and leaves.",
-    'Squirrels have a natural fear of predators like hawks and snakes, which can threaten their survival.',
-    'Watching squirrels climb down a tree headfirst is a sight to behold.',
-    'Squirrels are known to communicate with each other through various vocalizations and body language.',
-    'Despite their small size, squirrels are incredibly resilient creatures who have adapted to survive in a wide range of environments.',
-];
-
-const encodedSentences = sentences.map((sentence) => encoder.encode(sentence));
-
-console.log(encodedSentences);
+console.log(encoder.encode('-23-24-45'));
