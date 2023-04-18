@@ -163,8 +163,6 @@ export class MessageRouterEncoder {
             });
         }
 
-        console.log(tokens);
-
         return new Lexer(tokens);
     }
 
@@ -216,7 +214,3 @@ export class MessageRouterEncoder {
         return encoded;
     }
 }
-
-const encoder = new MessageRouterEncoder();
-
-console.log(encoder.encode('-23-24-45'));

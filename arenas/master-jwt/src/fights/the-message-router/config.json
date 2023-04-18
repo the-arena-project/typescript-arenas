@@ -8,7 +8,11 @@
       "videoId": "3_GwD4oU6z4"
     }
   ],
-  "challenges": ["message-router-encode", "message-router-decode"],
+  "challenges": [
+    "message-router-encode",
+    "message-router-decode",
+    "julius-cipher"
+  ],
   "slideDecks": [],
   "badgeUrl": null,
   "badge": [],
