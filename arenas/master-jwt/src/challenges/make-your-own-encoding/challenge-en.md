@@ -44,25 +44,31 @@ If this doesn't ring a bell, I would suggest you to read [this article](https://
 
 As to the list of special characters you should encode, here it is:
 
-```
+```plain
 ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
 ```
 
 For reference, here are some examples of messages that my former assistant encoded:
 
-```
+```plain
 I have 2 apples
 ---
 I have NUM(2) apples
 ```
 
-```
+```plain
 I have 2 apples and 3 oranges.
 ----
 I have NUM(2) apples and NUM(3) oranges.
 ```
 
+```plain
+4 - 8 = -4
+---
+NUM(4) - NUM(8) = NUM(-4)
 ```
+
+```plain
 I already sent a message to julius@thearenaproject.co 2 days ago!
 ---
 I already sent a message to julius%40thearenaproject.co NUM(2) days ago%21
