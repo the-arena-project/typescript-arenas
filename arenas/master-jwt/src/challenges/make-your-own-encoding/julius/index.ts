@@ -177,6 +177,29 @@ export class MessageRouterEncoder {
 
 const encoder = new MessageRouterEncoder();
 
-const encoded = encoder.encode('1 2 3 4 5 6 7 88$$1hey%');
+const sentences = [
+    'Squirrels are fascinating creatures with a unique ability to navigate through trees at incredible speeds.',
+    'I love watching squirrels play in the park, chasing each other up and down the trees.',
+    'Did you know that squirrels can run up to 20 miles per hour?',
+    "There's nothing quite like the sound of a squirrel scurrying across the roof in the middle of the night.",
+    'Some species of squirrels, like the red squirrel, rely on pine cones as their primary food source.',
+    "It's amazing to watch squirrels use their tails to help them balance while jumping from branch to branch.",
+    'Squirrels are notorious for stealing birdseed from backyard feeders.',
+    "A group of squirrels is known as a 'scurry', which is a fitting name given their frantic movements.",
+    'Squirrels have a natural instinct to hoard food for the winter months, often creating hidden caches of nuts and seeds.',
+    'The Eastern gray squirrel is one of the most common species of squirrel found in North America.',
+    'For many people, squirrels are seen as a nuisance due to their tendency to damage property.',
+    'Some people believe that feeding squirrels can lead to them becoming dependent on humans for food.',
+    'Squirrels have a keen sense of smell, which helps them locate food sources like acorns and seeds.',
+    'Squirrels are social animals and can often be seen grooming each other in communal areas.',
+    "Squirrels' front teeth never stop growing, so they must constantly chew on objects to keep them trimmed.",
+    "Many squirrels live in nests called 'dreys', which are often built using twigs and leaves.",
+    'Squirrels have a natural fear of predators like hawks and snakes, which can threaten their survival.',
+    'Watching squirrels climb down a tree headfirst is a sight to behold.',
+    'Squirrels are known to communicate with each other through various vocalizations and body language.',
+    'Despite their small size, squirrels are incredibly resilient creatures who have adapted to survive in a wide range of environments.',
+];
 
-console.log(encoded);
+const encodedSentences = sentences.map((sentence) => encoder.encode(sentence));
+
+console.log(encodedSentences);
