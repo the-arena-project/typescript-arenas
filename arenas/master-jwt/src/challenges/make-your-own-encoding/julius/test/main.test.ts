@@ -271,6 +271,22 @@ describe('MessageRouterEncoder', () => {
                 expect(encoded).toBe(expected);
             });
 
+            it('should encode a positive number preceded by two plus signs (the first should then be treated as a special character)', () => {
+                const source = '++23';
+                const expected = '%2bNUM(23)';
+                const encoded = encoder.encode(source);
+
+                expect(encoded).toBe(expected);
+            });
+
+            it('should encode a negative number preceded by an hyphen (negative sign)', () => {
+                const source = '--23';
+                const expected = '%2dNUM(-23)';
+                const encoded = encoder.encode(source);
+
+                expect(encoded).toBe(expected);
+            });
+
             it('should encode a sentence that ends with a number', () => {
                 const source = 'Hi there, today is day number 23';
                 const expected = 'Hi there%2c today is day number NUM(23)';

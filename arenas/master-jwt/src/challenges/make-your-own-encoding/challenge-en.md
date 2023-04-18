@@ -30,7 +30,8 @@ Here are the encoding rules you have to follow:
 
 We refer to numbers as any sequence of digits (0-9) that is preceded by a space and followed by a space or a period.
 
-A number can be signed, so it can start with ONE `+` or `-` sign.
+A number can be signed, so it can start with one, and ONLY one, `+` or `-` sign.
+Encountered in other contexts, the `+` and `-` signs should be encoded as special characters (see below).
 
 Any number should be wrapped in a `NUM(n)` tag, where `n` is the number itself.
 
