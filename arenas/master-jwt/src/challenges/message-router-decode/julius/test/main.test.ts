@@ -80,8 +80,6 @@ describe('MessageRouterDecoder', () => {
             const digits = '123456789';
             const encodedDigits = digits.split('').map((c) => encodeNumber(`-${c}`));
 
-            console.log(encodedDigits);
-
             for (let i = 0; i < digits.length; i++) {
                 const encoded = encodedDigits[i];
                 const decoded = decoder.decode(encoded);

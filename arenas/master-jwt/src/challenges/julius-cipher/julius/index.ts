@@ -44,9 +44,3 @@ export class MessageRouterCipher {
         return this.encrypt(message, -shift);
     }
 }
-
-const c = new MessageRouterCipher().encrypt(process.argv[2], +process.argv[3]);
-const dc = new MessageRouterCipher().decrypt(c, +process.argv[3]);
-
-console.log(c);
-console.log(dc);

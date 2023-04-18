@@ -216,7 +216,3 @@ export class MessageRouterEncoder {
         return encoded;
     }
 }
-
-const encoder = new MessageRouterEncoder();
-
-console.log(encoder.encode('-23-24-45'));
