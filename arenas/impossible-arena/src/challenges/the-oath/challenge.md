@@ -51,10 +51,10 @@ I swear, with heart and soul, to never lose control.
 
 But to find the right sentences, I need a key,
 A pattern hidden, for only me to see.
-Look to the numbers, and to the signs,
+Look at the paragraphs, and to the signs,
 
-Follow the sequence, and make the oath divine.
-Add the odds, substract the evens,
+Count the sentences, and make the oath divine.
+Add the odds, subtract the evens,
 The answer you seek, will soon be given.
 
 So tell me now, with courage true,
@@ -65,7 +65,7 @@ To see this battle through?.
 
 Here's the function you have to code.
 
-But be careful, it might be harder than you think.
+But be careful, it might be harder (or simpler) than you think.
 
 ```typescript
 export const swear = (): number => {
