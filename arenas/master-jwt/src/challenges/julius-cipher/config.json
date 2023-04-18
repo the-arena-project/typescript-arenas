@@ -1,0 +1,14 @@
+{
+  "slug": "julius-cipher",
+  "baseScore": 0,
+  "scorePenaltyPerAttempt": 0,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": [],
+  "name": "exemple //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt nameFr et nameEn.",
+  "nameFr": "Julius' cipher",
+  "nameEn": "Julius' cipher",
+  "hint": null,
+  "hintEn": null,
+  "hintFr": null
+}
