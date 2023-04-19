@@ -51,15 +51,15 @@ I swear, with heart and soul, to never lose control.
 
 But to find the right sentences, I need a key,
 A pattern hidden, for only me to see.
-Look at the paragraphs, and to the signs,
+Look to the numbers, and to the signs,
 
-Count the sentences, and make the oath divine.
-Add the odds, subtract the evens,
+Follow the sequence, and make the oath divine.
+Add the odds, substract the evens,
 The answer you seek, will soon be given.
 
 So tell me now, with courage true,
 What oath will you swear,
-To see this battle through?.
+To see this battle through?
 ```
 
 
