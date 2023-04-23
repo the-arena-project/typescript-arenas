@@ -8,6 +8,12 @@ A gate opens, and a person approaches you. They exude experience. You know they 
 
 > Listen, I only have a few moments to devote to you. You must learn to distinguish the what from the how. Do you know what a minefield is? A row of cells? A row of mines? A single cell? A mine? If you don't know, you need to learn. And another piece of advice, you will learn things in the upcoming battles. Know that they will be useful in the previous ones. I said the "previous" ones.
 
+Spartacus continues : 
+
+> I have to leave you soon, but watch how i fight, maybe you will understand.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rX5AisJ4Spw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 The gate opens again, and you find yourself alone as usual. The *strange* advice resonates in your head, what could it mean? But you don't have time to catch your breath, as you now face a row of cells.
 
 The tests you need to pass are as follows, with two new tests added:
