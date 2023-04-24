@@ -1,0 +1,25 @@
+{
+  "slug": "the-message-router",
+  "estimatedTime": 3,
+  "videos": [
+    {
+      "index": 0,
+      "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/thearenaproject.appspot.com/o/public%2Farena01%2Ffight01%2Fintroduction_thumb.jpg?alt=media",
+      "videoId": "3_GwD4oU6z4"
+    }
+  ],
+  "challenges": [
+    "message-router-encode",
+    "message-router-decode",
+    "julius-cipher"
+  ],
+  "slideDecks": [],
+  "badgeUrl": null,
+  "badge": [],
+  "shortDescription": "Before you can be taught about JWT, you will have to help Julius about one of his tasks.",
+  "shortDescriptionEn": "Before you can be taught about JWT, you will have to help Julius about one of his tasks.",
+  "shortDescriptionFr": "Before you can be taught about JWT, you will have to help Julius about one of his tasks.",
+  "name": "The Message Router",
+  "nameFr": "The Message Router",
+  "nameEn": "The Message Router"
+}
