@@ -1,10 +1,10 @@
-Once upon a time, in a far-off land, there was a great arena where the mightiest warriors from across the land would come to battle for glory and honor.
+Once upon a time, in a far-off land, there was a great arena where the mightiest warriors from across the land would come to battle for glory and honor. 
 
 The arena was a place of legends, where battles were fought with honor and skill.
 
 You know this because you grew up in this Arena.
 
-You are from a long line of warriors, each one passing down their knowledge and skill to the next generation.
+You are from a long line of warriors, each one passing down their knowledge and skill to the next generation. 
 
 But today... everything could end up.
 
@@ -14,17 +14,17 @@ You are the last one.
 
 You are the only one that can save this Arena.
 
-You have trained your whole life for this moment, and you know that you are ready to face any challenge that comes your way.
+You have trained your whole life for this moment, and you know that you are ready to face any challenge that comes your way. 
 
-You will fight with honor, with skill, and with all your might.
+You will fight with honor, with skill, and with all your might. 
 
-The arena and the people who depend on you are counting on you to emerge victorious.
+The arena and the people who depend on you are counting on you to emerge victorious. 
 
 You will not let them down.
 
 This fight is going to be impossible.
 
-But if you decide to take up this challenge, you must swear to fight with honor, to defend the innocent, and to uphold the values of the warrior code.
+But if you decide to take up this challenge, you must swear to fight with honor, to defend the innocent, and to uphold the values of the warrior code. 
 
 You must swear to never give up, to never surrender, and to fight to the death if necessary.
 
@@ -59,13 +59,13 @@ The answer you seek, will soon be given.
 
 So tell me now, with courage true,
 What oath will you swear,
-To see this battle through?.
+To see this battle through?
 ```
 
 
 Here's the function you have to code.
 
-But be careful, it might be harder than you think.
+But be careful, it might be harder (or simpler) than you think.
 
 ```typescript
 export const swear = (): number => {

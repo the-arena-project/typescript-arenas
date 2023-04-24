@@ -59,13 +59,13 @@ The answer you seek, will soon be given.
 
 So tell me now, with courage true,
 What oath will you swear,
-To see this battle through?.
+To see this battle through?
 ```
 
 
 Here's the function you have to code.
 
-But be careful, it might be harder than you think.
+But be careful, it might be harder (or simpler) than you think.
 
 ```typescript
 export const swear = (): number => {
