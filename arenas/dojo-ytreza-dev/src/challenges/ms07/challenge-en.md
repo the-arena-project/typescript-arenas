@@ -10,9 +10,9 @@ A gate opens, and a person approaches you. They exude experience. You know they 
 
 Spartacus continues : 
 
-> I have to leave you soon, but watch how i fight, maybe you will understand.
+> I have to leave you soon, but watch how i fight, maybe you will understand. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rX5AisJ4Spw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Follow this link and watch the video : https://youtu.be/rX5AisJ4Spw
 
 The gate opens again, and you find yourself alone as usual. The *strange* advice resonates in your head, what could it mean? But you don't have time to catch your breath, as you now face a row of cells.
 
