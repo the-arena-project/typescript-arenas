@@ -49,8 +49,23 @@ describe('minesweeper', () => {
             expect(minesweeper("...*")).toEqual("001*")
             expect(minesweeper(".........................*")).toEqual("0000000000000000000000001*")
         })    
-        
     })
+
+    describe("should count mine on the left", () => {
+        it("should count mine on the left", () => {
+            const solved_field = minesweeper("*.")
+            expect(solved_field).toEqual("*1")
+        })    
+
+        it("your other left !", () => {
+            expect(minesweeper("*..")).toEqual("*10")
+            expect(minesweeper("*...")).toEqual("*100")
+            expect(minesweeper("*.........................")).toEqual("*1000000000000000000000000")
+        })    
+
+
+
+    })    
 });
 
 describe('it all ends here?', () => {
@@ -64,5 +79,7 @@ describe('it all ends here?', () => {
     expect(minesweeper('******')).toEqual('******');
     expect(minesweeper('*******')).toEqual('*******');
     expect(minesweeper('******************************')).toEqual('******************************');    
+    expect(minesweeper('*...*')).toEqual('*101*');
+
 })
 

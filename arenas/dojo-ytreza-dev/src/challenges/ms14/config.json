@@ -1,5 +1,5 @@
 {
-  "slug": "ms13",
+  "slug": "ms14",
   "baseScore": 25,
   "scorePenaltyPerAttempt": 0,
   "turnedInFile": "index.ts",
