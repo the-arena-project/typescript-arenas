@@ -8,11 +8,17 @@ A gate opens, and a person approaches you. They exude experience. You know they 
 
 > Listen, I only have a few moments to devote to you. You must learn to distinguish the what from the how. Do you know what a minefield is? A row of cells? A row of mines? A single cell? A mine? If you don't know, you need to learn. And another piece of advice, you will learn things in the upcoming battles. Know that they will be useful in the previous ones. I said the "previous" ones.
 
+Spartacus continues : 
+
+> I have to leave you soon, but watch how i fight, maybe you will understand. 
+
+[Follow this link and watch the video!](https://youtu.be/rX5AisJ4Spw)
+
 The gate opens again, and you find yourself alone as usual. The *strange* advice resonates in your head, what could it mean? But you don't have time to catch your breath, as you now face a row of cells.
 
 The tests you need to pass are as follows, with two new tests added:
 
-\```typescript
+```ts
 describe("minesweeper", () => {
   it("should solve empty field", () => {
     const solved_field = minesweeper("")
@@ -41,6 +47,6 @@ describe("minesweeper", () => {
     })
   })
 })
-\```
+```
 
 To pass this challenge, you should start by copying and pasting the code from the previous challenge and make the minimal modification that will allow you to pass the tests. It's possible that the minimal modification might not be easy to implement. The advice you received might be useful. It's up to you to make good use of it.
