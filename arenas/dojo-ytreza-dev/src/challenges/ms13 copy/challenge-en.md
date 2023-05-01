@@ -1,4 +1,4 @@
-# Watch out for the left!
+# Your Other Right!
 
 Julius continues:
 
@@ -15,4 +15,4 @@ describe('minesweeper', () => {
 });
 ```
 
-There is only one test. You must write the minimal code to pass it. If you have prepared your code well in the previous challenges, there is only one character to change.
+Your code must pass on the first try, without any changes. If it's not the case, it's highly likely that you don't master your right. It would be wise to restart the arena.

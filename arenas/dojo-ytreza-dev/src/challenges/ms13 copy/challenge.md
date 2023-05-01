@@ -1,8 +1,8 @@
-# Watch out for the left!
+# À gauche!
 
-Julius continues:
+Julius continue :
 
-> Watch out for the left!
+> Attention à ta gauche !
 
 ```typescript
 describe('minesweeper', () => {
@@ -15,4 +15,4 @@ describe('minesweeper', () => {
 });
 ```
 
-There is only one test. You must write the minimal code to pass it. If you have prepared your code well in the previous challenges, there is only one character to change.
+Il n'y a qu'un seul test. Tu dois écrire le code minimal pour le réussir. Si tu as bien préparé ton code dans les défis précédents, il n'y a qu'un seul caractère à changer.
