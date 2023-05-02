@@ -12,7 +12,7 @@ Spartacus continues :
 
 > I have to leave you soon, but watch how i fight, maybe you will understand. 
 
-[Follow this link and watch the video!](https://youtu.be/rX5AisJ4Spw)
+Follow this link and watch the video! : [**https://youtu.be/rX5AisJ4Spw**](https://youtu.be/rX5AisJ4Spw)
 
 The gate opens again, and you find yourself alone as usual. The *strange* advice resonates in your head, what could it mean? But you don't have time to catch your breath, as you now face a row of cells.
 
