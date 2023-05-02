@@ -1,0 +1,14 @@
+{
+  "slug": "message-router-decode",
+  "baseScore": 0,
+  "scorePenaltyPerAttempt": 0,
+  "turnedInFile": "index.ts",
+  "slideDecks": [],
+  "allowedMaterials": ["Any native javascript function"],
+  "name": "exemple //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt nameFr et nameEn.",
+  "nameFr": "Decoding the Message Router's messages",
+  "nameEn": "Decoding the Message Router's messages",
+  "hint": null,
+  "hintEn": null,
+  "hintFr": null
+}

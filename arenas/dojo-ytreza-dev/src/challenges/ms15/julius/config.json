@@ -1,0 +1,7 @@
+{
+  "type": "JEST",
+  "name": "ms15",
+  "jest": {
+    "jestCliArgs": []
+  }
+}
