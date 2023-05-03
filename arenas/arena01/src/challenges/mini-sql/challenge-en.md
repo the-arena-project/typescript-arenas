@@ -108,7 +108,7 @@ miniSQL$ INSERT "wise julius"
 added: id=3, username=wise julius
 ```
 
-La commande `SELECT` prend en argument optionnel un `username` et retourne toutes les entrées correspondantes qui sont stockées sur le disque en affichant le nombre de résultats disponibles, comme dans l'exemple suivant :
+The SELECT command takes an optional username argument and returns all matching entries stored on the disk, displaying the number of available results, as in the following examples:
 
 ```bash
 $> npm run start
@@ -117,8 +117,6 @@ found 2 entries:
 -> id=1, username=julius
 -> id=5, username=julius
 ```
-
-The SELECT command takes an optional username argument and returns all matching entries stored on the disk, displaying the number of available results, as in the following example:
 
 ```bash
 $> npm run start
@@ -171,14 +169,14 @@ Here is an example of using build and start:
 
 ```bash
 $> npm run build
-# peu importe l'output de votre commande de build
+# your build command's output does not matter
 $> npm run start
 miniSQL$
 ```
 
 To test your code, we will clone your submission folder, install all the allowed packages, and then inject your package.json to run a build and start your program with your start script.
 
-# Contraintes de performance
+# Constraints
 
 We do not impose any performance constraints.
 
