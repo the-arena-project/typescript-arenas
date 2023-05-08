@@ -1,4 +1,4 @@
-# Your Other Left!
+# Your other left!
 
 Julius continues:
 
