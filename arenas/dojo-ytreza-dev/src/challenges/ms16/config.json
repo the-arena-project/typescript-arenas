@@ -6,8 +6,8 @@
   "slideDecks": [],
   "allowedMaterials": [],
   "name": "exemple //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt nameFr et nameEn.",
-  "nameFr": "À gauche!",
-  "nameEn": "Watch out for the left!",
+  "nameFr": "Une ligne complète !",
+  "nameEn": "The complete row!",
   "hint": "Ceci est un hint. //NOTE: Présent pour des raisons de rétro-compatabilité. Utilisez plutôt hintFr et hintEn.",
   "hintFr": "💡Car les exemples génériques, j'adore ça.",
   "hintEn": "💡Because I love generic examples."
