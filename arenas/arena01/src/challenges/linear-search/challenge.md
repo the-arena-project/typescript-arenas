@@ -8,5 +8,5 @@ Pour cet exercice vous implémenterez un algorithme de type linear search.
 
 ```typescript
 type PredicateFn<T> = (elem: T) => boolean
-type SearchFn = <T>(arr: T[], predicate: PredicateFn<T>) => T
+type SearchFn = <T>(arr: T[], predicate: PredicateFn<T>) => T | undefined
 ```
